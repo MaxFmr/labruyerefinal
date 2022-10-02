@@ -22,7 +22,7 @@ const StyledHomePage = styled.section`
     left: 7%;
     @media (min-width: 768px) {
       left: 15%;
-      top: 20%;
+      top: 25%;
     }
     color: #f1f1f1;
     width: 100%;
