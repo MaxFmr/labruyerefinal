@@ -1,3 +1,5 @@
+import '../styles/globals.css';
+
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 import GlobalStyle from '../components/globalstyles';
 

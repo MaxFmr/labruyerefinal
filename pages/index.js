@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
 
 import StyledHomePage from '../styles/homePage.style';
@@ -28,7 +29,7 @@ export default function Home() {
         <nav>
           <ul>
             <li>
-              <a href='/'>Traiteur</a>
+              <a href='/'>Traiteur </a>
             </li>
             <li>
               <a href='/'>Cours de cuisine</a>
@@ -37,13 +38,19 @@ export default function Home() {
               <a href='/'>Chef à domicile</a>
             </li>
           </ul>
+          <div className='contactbtn'>
+            <a href='/'>CONTACTEZ - NOUS</a>
+          </div>
         </nav>
-        <div className='contactbtn'>
-          <a href='/'>CONTACTEZ - NOUS</a>
-        </div>
+
         <div className='social'>
-          <FaInstagram size={35} />
-          <FaFacebook size={35} />
+          <Link href=''>
+            <FaInstagram size={35} style={{ cursor: 'pointer' }} />
+          </Link>
+
+          <Link href=''>
+            <FaFacebook size={35} style={{ cursor: 'pointer' }} />
+          </Link>
         </div>
       </div>
     </StyledHomePage>
