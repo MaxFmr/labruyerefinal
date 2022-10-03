@@ -9,24 +9,25 @@ const StyledHomePage = styled.section`
   object-fit: cover;
 
   .logo {
-    position: fixed;
-    top: 7%;
-    left: 10%;
-    height: 60px;
-    width: 60px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 
   .items {
     position: fixed;
-    top: 25%;
-    left: 7%;
+    top: 7%;
     @media (min-width: 768px) {
-      left: 15%;
-      top: 25%;
+      top: 1%;
     }
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
+
+    .nav {
+      margin-left: 10%;
+    }
+
     h1 {
       color: ${({ theme }) => theme.colors.primary};
       font-family: ${({ theme }) => theme.fonts.primary};
@@ -95,10 +96,10 @@ const StyledHomePage = styled.section`
       height: 50px;
       background-color: ${({ theme }) => theme.colors.primary};
       border-radius: 10px;
-      font-weight: bolder;
       color: ${({ theme }) => theme.colors.secondary};
       cursor: pointer;
       transition: background-color 1000ms ease;
+      letter-spacing: 0.45px;
 
       :hover {
         background-color: ${({ theme }) => theme.colors.green};
