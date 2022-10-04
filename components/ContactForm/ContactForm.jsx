@@ -28,10 +28,20 @@ const ContactForm = () => {
           <div>
             <textarea placeholder='Votre message*' />
           </div>
-          <button type='submit'>Evoyer</button>
+          <div className='rgpd'>
+            <input type='checkbox' />
+            <span>
+              *J'accepte de transmettre ces données à La Table de la Bruyère
+              pour être recontacté(e) à des fins commerciales. Ces données ne
+              seront transmises à personne d'autre que la Table de La Bruyère.
+            </span>
+          </div>
+          <div className='btn'>
+            <button type='submit'>Evoyer</button>
+          </div>
         </form>
       </div>
-      <div className='logo'>hello</div>
+      <div className='logo'></div>
     </StyledContactForm>
   );
 };

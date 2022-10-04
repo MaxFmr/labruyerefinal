@@ -47,20 +47,28 @@ const StyledContactForm = styled.section`
       color: ${({ theme }) => theme.colors.secondary};
     }
   }
-  button {
-    width: 50%;
-    margin: 0 auto;
-    border: solid ${({ theme }) => theme.colors.secondary} 1px;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: ${({ theme }) => theme.colors.green};
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: ${({ theme }) => theme.colors.secondary};
+
+  .btn {
+    display: flex;
+    button {
+      width: 50%;
+      margin: 0 auto;
+      border: solid ${({ theme }) => theme.colors.secondary} 1px;
+      border-radius: 5px;
+      padding: 5px;
+      background-color: ${({ theme }) => theme.colors.green};
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: ${({ theme }) => theme.colors.secondary};
+    }
   }
+
   .logo {
-    background-color: red;
-    height: 650px;
+    background-image: url('/assets/photos/service.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
     overflow: hidden;
     width: 50%;
     position: relative;
@@ -69,6 +77,13 @@ const StyledContactForm = styled.section`
     @media (max-width: 768px) {
       display: none;
     }
+  }
+  .rgpd {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: smaller;
+    text-align: justify;
   }
 `;
 export default StyledContactForm;
