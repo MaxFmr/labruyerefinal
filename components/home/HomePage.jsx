@@ -35,10 +35,10 @@ const HomePage = () => {
                 <a href='/traiteur'>Traiteur </a>
               </li>
               <li>
-                <a href='/'>Cours de cuisine</a>
+                <a href='/cours'>Cours de cuisine</a>
               </li>
               <li>
-                <a href='/'>Chef à domicile</a>
+                <a href='/chef'>Chef à domicile</a>
               </li>
             </ul>
             <div className='contactbtn'>
