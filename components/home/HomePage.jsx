@@ -42,7 +42,7 @@ const HomePage = () => {
               </li>
             </ul>
             <div className='contactbtn'>
-              <a href='/'>CONTACTEZ - NOUS</a>
+              <a href='/contact'>CONTACTEZ - NOUS</a>
             </div>
           </nav>
 

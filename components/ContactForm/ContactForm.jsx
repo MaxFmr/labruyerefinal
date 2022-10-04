@@ -9,6 +9,13 @@ const ContactForm = () => {
         <span>06 06 06 06 06</span>
         <h2>Via ce formulaire : </h2>
         <form>
+          <label for='pet-select'>Sujet de votre message : </label>
+          <select name='subject' id='pet-select'>
+            <option value=''>Sectionnez un type de prestation*</option>
+            <option value='Traiteur évènentiel'>Traiteur évènentiel</option>
+            <option value='Cours de cuisine'>Cours de cuisine</option>
+            <option value='Chef à domicile'>Chef à domicile</option>
+          </select>
           <div>
             <input type='text' placeholder='Votre nom*' required />
           </div>
@@ -30,6 +37,7 @@ const ContactForm = () => {
           </div>
           <div className='rgpd'>
             <input type='checkbox' />
+
             <span>
               *J'accepte de transmettre ces données à La Table de la Bruyère
               pour être recontacté(e) à des fins commerciales. Ces données ne

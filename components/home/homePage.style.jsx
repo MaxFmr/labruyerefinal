@@ -16,10 +16,8 @@ const StyledHomePage = styled.section`
 
   .items {
     position: fixed;
-    top: 7%;
-    @media (min-width: 768px) {
-      top: 1%;
-    }
+    top: 0.1%;
+
     color: #f1f1f1;
     width: 100%;
     padding: 20px;

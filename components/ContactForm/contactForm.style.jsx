@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 const StyledContactForm = styled.section`
-  font-family: 'Familjen Grotesk', sans-serif;
+  font-family: 'Abhaya Libre' h2, h3 {
+    font-weight: lighter;
+  }
 
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: solid blue 2px;
   @media (min-width: 768px) {
     flex-direction: row;
   }
@@ -16,18 +17,25 @@ const StyledContactForm = styled.section`
     @media (min-width: 768px) {
       width: 50%;
     }
+    select {
+      border: none;
+      border-bottom: solid ${({ theme }) => theme.colors.secondary} 1px;
+      padding: 5px;
+      background-color: ${({ theme }) => theme.colors.green};
+      margin-bottom: 5px;
+      color: ${({ theme }) => theme.colors.secondary};
+    }
   }
   input {
     width: 100%;
     height: 40px;
-    border: solid ${({ theme }) => theme.colors.secondary} 1px;
-    border-radius: 5px;
+    border: none;
+    border-bottom: solid ${({ theme }) => theme.colors.secondary} 1px;
     padding: 5px;
     background-color: ${({ theme }) => theme.colors.green};
     margin-bottom: 5px;
 
     ::placeholder {
-      font-weight: bold;
       color: ${({ theme }) => theme.colors.secondary};
     }
     color: wheat;
@@ -40,10 +48,11 @@ const StyledContactForm = styled.section`
     padding: 5px;
     background-color: ${({ theme }) => theme.colors.green};
     margin-bottom: 5px;
+    border: none;
+    border-bottom: solid ${({ theme }) => theme.colors.secondary} 1px;
     ::placeholder {
       font-family: 'Familjen Grotesk', sans-serif;
 
-      font-weight: bold;
       color: ${({ theme }) => theme.colors.secondary};
     }
   }
@@ -51,13 +60,14 @@ const StyledContactForm = styled.section`
   .btn {
     display: flex;
     button {
-      width: 50%;
+      border: none;
+      border-bottom: solid ${({ theme }) => theme.colors.secondary} 1px;
+      width: 30%;
       margin: 0 auto;
-      border: solid ${({ theme }) => theme.colors.secondary} 1px;
-      border-radius: 5px;
       padding: 5px;
       background-color: ${({ theme }) => theme.colors.green};
       margin-bottom: 5px;
+      margin-top: 10px;
       font-weight: bold;
       color: ${({ theme }) => theme.colors.secondary};
     }
@@ -79,11 +89,16 @@ const StyledContactForm = styled.section`
     }
   }
   .rgpd {
+    width: 50%;
     display: flex;
     align-items: center;
     padding: 5px;
     font-size: smaller;
     text-align: justify;
+    input {
+      margin: inherit;
+      height: 20px;
+    }
   }
 `;
 export default StyledContactForm;
