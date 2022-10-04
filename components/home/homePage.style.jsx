@@ -12,6 +12,7 @@ const StyledHomePage = styled.section`
     display: flex;
     width: 100%;
     justify-content: center;
+    margin-bottom: -20px;
   }
 
   .items {
@@ -24,6 +25,10 @@ const StyledHomePage = styled.section`
 
     .nav {
       margin-left: 10%;
+      @media (min-width: 768px) {
+        margin-left: 17%;
+        margin-top: 5%;
+      }
     }
 
     h1 {
@@ -50,7 +55,7 @@ const StyledHomePage = styled.section`
       list-style-type: none;
       font-size: 2rem;
       @media (min-width: 768px) {
-        font-size: 3rem;
+        font-size: 2.5rem;
       }
       margin-left: -40px;
       animation-duration: 1s;

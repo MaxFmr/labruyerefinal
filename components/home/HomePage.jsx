@@ -23,8 +23,8 @@ const HomePage = () => {
         <div className='logo'>
           <Image
             src='/assets/logo.svg'
-            height={220}
-            width={300}
+            height={180}
+            width={200}
             objectFit='cover'
           />
         </div>
@@ -39,6 +39,9 @@ const HomePage = () => {
               </li>
               <li>
                 <a href='/chef'>Chef à domicile</a>
+              </li>
+              <li>
+                <a href='/actus'>Nos actualités</a>
               </li>
             </ul>
             <div className='contactbtn'>
