@@ -1,5 +1,5 @@
-import connectMongo from '../../utils/connectMongo';
-import Article from '../../models/article';
+import connectMongo from '../../../utils/connectMongo';
+import Article from '../../../models/article';
 
 const CrudArticleRoute = async (req, res) => {
   await connectMongo();
@@ -18,8 +18,8 @@ const CrudArticleRoute = async (req, res) => {
     //read
 
     try {
-      const products = await Article.find();
-      res.json(products);
+      const articles = await Article.find();
+      res.json(articles);
     } catch (error) {
       res.send(error);
     }
@@ -31,7 +31,15 @@ const CrudArticleRoute = async (req, res) => {
     //modify/Update
   }
   if (req.method === 'DELETE') {
-    //Delete
+    try {
+      const articleToDelete = await Article.findByIdAndDelete(req.query.id);
+      res.json(
+        { message: `Article "${articleToDelete.title}" supprimé.` },
+        articleToDelete
+      );
+    } catch (error) {
+      res.send(error);
+    }
   }
 };
 

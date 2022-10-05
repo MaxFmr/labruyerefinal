@@ -1,25 +1,24 @@
 import { Schema, model, models } from 'mongoose';
 
 const ArticleSchema = new Schema({
-  title: { type: String, required: true },
+  title: { type: String, required: true, unique: false },
   text: {
     type: String,
     required: true,
-    unique: true,
+    unique: false,
   },
   photos: {
     type: Array,
     required: true,
-    unique: true,
+    unique: false,
   },
   date: {
     type: String,
     required: true,
-    unique: true,
+    unique: false,
   },
-  links: [],
 });
 
-const Article = models.Cart || model('Article', ArticleSchema);
+const Article = models.Article || model('Article', ArticleSchema);
 
 export default Article;
