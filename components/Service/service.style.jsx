@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 const StyledService = styled.section`
   border: solid 2px red;
   display: flex;
@@ -11,7 +12,7 @@ const StyledService = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('/assets/photos/service.webp');
+    background-image: url(${(props) => props.bg.path});
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -25,6 +26,9 @@ const StyledService = styled.section`
     justify-content: center;
     padding: 5%;
     font-size: smaller;
+    color: ${(props) => props.bg.textColor};
+
+    background-color: ${(props) => props.bg.color};
   }
 `;
 export default StyledService;

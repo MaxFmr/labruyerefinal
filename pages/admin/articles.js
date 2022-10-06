@@ -69,12 +69,9 @@ const Articles = () => {
   };
 
   return (
-    <>
+    <div style={{ display: 'flex', margin: '20px' }}>
       {isAuth ? (
         <div>
-          <div>
-            <h3>Les articles diffusés</h3>
-          </div>
           <div>
             <h3>Ajouter un article</h3>
             <form onSubmit={handleSubmit}>
@@ -83,40 +80,44 @@ const Articles = () => {
                 placeholder='titre'
                 onChange={(e) => setTitle(e.target.value)}
               />
+              <h3>Date</h3>
               <input type='date' onChange={(e) => setDate(e.target.value)} />
-
+              <h3>Texte</h3>
               <div>
                 <textarea
                   type='text'
-                  placeholder='votre text'
+                  placeholder='votre texte'
                   onChange={(e) => setText(e.target.value)}
                   cols={50}
                   rows={20}
                 />
               </div>
 
-              <h2>URL photo1</h2>
+              <h3>URL photo1</h3>
               <input type='text' onChange={(e) => setPhoto1(e.target.value)} />
-              <h2>URL photo2</h2>
+              <h3>URL photo2</h3>
               <input type='text' onChange={(e) => setPhoto2(e.target.value)} />
-              <h2>URL photo3</h2>
+              <h3>URL photo3</h3>
               <input type='text' onChange={(e) => setPhoto3(e.target.value)} />
               <p>{photo3}</p>
               <button type='submit'>valider</button>
             </form>
+            <div>
+              <h3>Les articles diffusés</h3>
+            </div>
             {articles.length > 0 &&
               articles.map((art) => {
                 return (
                   <div key={art._id}>
-                    <span>
-                      {art._id}{' '}
-                      <button
-                        onClick={() => {
-                          removeArticle(art._id);
-                        }}>
-                        X
-                      </button>
-                    </span>
+                    <span>{art._id + ' '}</span>
+                    <span>{art.title + ' '}</span>
+                    <span>{art.date + ' '}</span>
+                    <button
+                      onClick={() => {
+                        removeArticle(art._id);
+                      }}>
+                      X
+                    </button>
                   </div>
                 );
               })}
@@ -138,7 +139,7 @@ const Articles = () => {
           </button>
         </>
       )}
-    </>
+    </div>
   );
 };
 

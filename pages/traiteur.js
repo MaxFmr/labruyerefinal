@@ -5,8 +5,20 @@ import Service from '../components/Service/Service';
 const TraiteurPage = () => {
   return (
     <>
-      <Hero />
+      <Hero
+        bgPath={'/assets/photos/service.webp'}
+        logoPath={'/assets/logo.svg'}
+        title={'Traiteur'}
+        text='l Lorem ipsum dolor sit amet consectetur adipisicing elit
+        Eaque officiis illo dolores, quidem, facilis iure odio omnis ipsa
+        repellendus aspernatur et excepturi saepe incidunt voluptate
+        laborum provident illum! Dignissimos, soluta! Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Adipisci, minima quasi?
+    !'
+      />
       <Service
+        textColor={''}
+        bgColor={''}
         photoPath={'/assets/photos/service.webp'}
         title={'Vos évenements'}
         ImageSide='left'
@@ -18,6 +30,8 @@ const TraiteurPage = () => {
 !'
       />
       <Service
+        textColor={''}
+        bgColor={''}
         photoPath={'/assets/photos/service.webp'}
         title={'Vos évenements'}
         ImageSide=''
@@ -28,6 +42,8 @@ const TraiteurPage = () => {
     sit amet con'
       />
       <Service
+        textColor={''}
+        bgColor={''}
         photoPath={'/assets/photos/service.webp'}
         title={'Vos évenements'}
         ImageSide='left'
