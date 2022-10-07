@@ -10,12 +10,7 @@ body {
   color: #fbf3e0;
   padding: 0;
   margin: 0;
-  background: rgb(37, 118, 118);
-  background: linear-gradient(
-    90deg,
-    rgba(37, 118, 118, 1) 0%,
-    rgba(37, 118, 118, 1) 52%,
-    rgba(37, 118, 118, 0.774969362745098) 100%
-  );
+  background: #fbf3e0;
+
   -webkit-font-smoothing: antialiased;
 }

@@ -11,18 +11,16 @@ const StyledService = styled.section`
     height: 40vh;
   }
   .photo {
-    box-shadow: -11px -5px 15px -5px #2f4858;
-
-    height: 80%;
-    width: 45%;
+    /* box-shadow: -11px -5px 15px -5px #2f4858; */
+    overflow: hidden;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(${(props) => props.bg.path});
+    /* background-image: url(${(props) => props.bg.path});
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    border-radius: 10px;
+    background-size: cover; */
     position: relative;
     @media (min-width: 1000px) {
       margin-left: 10%;
@@ -31,8 +29,8 @@ const StyledService = styled.section`
     }
   }
   .text {
-    box-shadow: -11px -5px 15px -5px #2f4858;
-
+    /* box-shadow: -11px -5px 15px -5px #2f4858; */
+    margin: 4%;
     overflow: hidden;
     width: 50%;
     display: flex;
@@ -42,6 +40,7 @@ const StyledService = styled.section`
     padding: 4%;
     font-size: 13px;
     color: ${(props) => props.bg.textColor};
+    text-align: justify;
 
     background-color: ${(props) => props.bg.color};
     @media (min-width: 1000px) {

@@ -5,6 +5,13 @@ const StyledContactForm = styled.section`
   h3 {
     font-weight: lighter;
   }
+  background: rgb(37, 118, 118);
+  background: linear-gradient(
+    90deg,
+    rgba(37, 118, 118, 1) 0%,
+    rgba(37, 118, 118, 1) 52%,
+    rgba(37, 118, 118, 0.774969362745098) 100%
+  );
 
   width: 100%;
   display: flex;
