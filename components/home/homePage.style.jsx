@@ -2,6 +2,11 @@ import styled from 'styled-components';
 const StyledHomePage = styled.section`
   position: fixed;
 
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.secondary};
+  }
+
   right: 0;
   bottom: 0;
   min-width: 100%;

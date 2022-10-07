@@ -12,7 +12,6 @@ const StyledContactForm = styled.section`
   }
 
   .form {
-    border: solid;
     padding: 15px;
     @media (min-width: 768px) {
       width: 50%;
@@ -78,7 +77,7 @@ const StyledContactForm = styled.section`
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 800px;
+    height: 1000px;
     overflow: hidden;
     width: 50%;
     position: relative;

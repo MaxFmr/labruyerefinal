@@ -9,7 +9,17 @@ const ActusPage = ({ posts }) => {
 
   return (
     <>
-      <Hero />
+      <Hero
+        bgPath={'/assets/photos/service.webp'}
+        logoPath={'/assets/logo.svg'}
+        title={'Nos actualités'}
+        text='l Lorem ipsum dolor sit amet consectetur adipisicing elit
+        Eaque officiis illo dolores, quidem, facilis iure odio omnis ipsa
+        repellendus aspernatur et excepturi saepe incidunt voluptate
+        laborum provident illum! Dignissimos, soluta! Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Adipisci, minima quasi?
+    !'
+      />
       {posts.map((art) => {
         return (
           <div onClick={() => router.push(`/article/${art.title}`)}>

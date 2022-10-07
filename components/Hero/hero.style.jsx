@@ -8,10 +8,17 @@ const StyledHero = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+  }
   .logo {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     display: flex;
+    margin-top: -4%;
   }
   .text {
     width: 60%;
@@ -21,6 +28,14 @@ const StyledHero = styled.section`
     font-size: 16px;
     @media (min-width: 768px) {
       font-size: larger;
+    }
+  }
+  .menuIcon {
+    position: absolute;
+    left: 85%;
+    top: 10%;
+    @media (min-width: 750px) {
+      display: none;
     }
   }
 `;

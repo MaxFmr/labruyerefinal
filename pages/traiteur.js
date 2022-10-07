@@ -1,10 +1,12 @@
 import Hero from '../components/Hero/Hero';
 import ContactForm from '../components/ContactForm/ContactForm';
 import Service from '../components/Service/Service';
+import Header from '../components/Header/Header';
 
 const TraiteurPage = () => {
   return (
     <>
+      <Header />
       <Hero
         bgPath={'/assets/photos/service.webp'}
         logoPath={'/assets/logo.svg'}

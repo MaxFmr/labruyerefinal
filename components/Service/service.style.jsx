@@ -1,14 +1,12 @@
 import styled from 'styled-components';
 
 const StyledService = styled.section`
-  border: solid 2px red;
   display: flex;
   height: 50vh;
   align-items: center;
   .photo {
     height: 100%;
     width: 50%;
-    border: solid;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +16,6 @@ const StyledService = styled.section`
     background-size: cover;
   }
   .text {
-    border: solid pink 2px;
     height: 100%;
     width: 50%;
     display: flex;

@@ -9,7 +9,7 @@ const ContactForm = () => {
         <span>06 06 06 06 06</span>
         <h2>Via ce formulaire : </h2>
         <form>
-          <label for='pet-select'>Sujet de votre message : </label>
+          <label>Sujet de votre message : </label>
           <select name='subject' id='pet-select'>
             <option value=''>Sectionnez un type de prestation*</option>
             <option value='Traiteur évènentiel'>Traiteur évènentiel</option>
@@ -39,7 +39,7 @@ const ContactForm = () => {
             <input type='checkbox' />
 
             <span>
-              *J'accepte de transmettre ces données à La Table de la Bruyère
+              *J’accepte de transmettre ces données à La Table de la Bruyère
               pour être recontacté(e) à des fins commerciales. Ces données ne
               seront transmises à personne d'autre que la Table de La Bruyère.
             </span>
