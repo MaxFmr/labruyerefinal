@@ -1,5 +1,6 @@
 import ArticlePreview from '../components/ArticlePreview/ArticePreview';
 import Hero from '../components/Hero/Hero';
+import Header from '../components/Header/Header';
 import { useRouter } from 'next/router';
 
 import axios from 'axios';
@@ -9,6 +10,7 @@ const ActusPage = ({ posts }) => {
 
   return (
     <>
+      <Header />
       <Hero
         bgPath={'/assets/photos/service.webp'}
         logoPath={'/assets/logo.svg'}

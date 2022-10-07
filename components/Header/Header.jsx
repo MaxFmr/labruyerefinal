@@ -6,12 +6,12 @@ const Header = () => {
   return (
     <StyledHeader>
       <div className='title' onClick={() => router.push('/')}>
-        <Image src={'/assets/logo.webp'} height={30} width={30} />
+        <Image src={'/assets/logo.webp'} height={40} width={40} />
       </div>
       <div className='buttons'>
         <nav>
           <button onClick={() => router.push('/contact')}>✷ Contact</button>
-          <button onClick={() => router.push('/tariteur')}>✷ Traiteur</button>
+          <button onClick={() => router.push('/traiteur')}>✷ Traiteur</button>
           <button onClick={() => router.push('/cours')}>
             ✷ Cours de cuisine
           </button>

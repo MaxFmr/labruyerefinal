@@ -81,7 +81,6 @@ const StyledContactForm = styled.section`
     overflow: hidden;
     width: 50%;
     position: relative;
-    border: solid green 2px;
 
     @media (max-width: 768px) {
       display: none;
