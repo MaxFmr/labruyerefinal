@@ -15,25 +15,21 @@ const CoursPage = () => {
         Eaque officiis illo dolores, quidem, facilis iure odio omnis ipsa
         repellendus aspernatur et excepturi saepe incidunt voluptate
         laborum provident illum! Dignissimos, soluta! Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Adipisci, minima quasi?
-    !'
+        sit amet consectetur adipisicing elit. Adipisci, minima quasi?!'
       />
       <Service
-        textColor={''}
-        bgColor={''}
+        textColor={'#2F4858'}
+        bgColor={'#fbf3e0'}
         photoPath={'/assets/photos/service.webp'}
         title={'Vos évenements'}
         ImageSide='left'
         text='l Lorem ipsum dolor sit amet consectetur adipisicing elit
     Eaque officiis illo dolores, quidem, facilis iure odio omnis ipsa
-    repellendus aspernatur et excepturi saepe incidunt voluptate
-    laborum provident illum! Dignissimos, soluta! Lorem ipsum dolor
-    sit amet consectetur adipisicing elit. Adipisci, minima quasi?
 !'
       />
       <Service
         textColor={''}
-        bgColor={''}
+        bgColor={'#2d8e8e'}
         photoPath={'/assets/photos/service.webp'}
         title={'Vos évenements'}
         text='l Lorem ipsum dolor sit amet consectetur adipisicing elit
@@ -44,8 +40,8 @@ const CoursPage = () => {
 !'
       />
       <Service
-        textColor={''}
-        bgColor={''}
+        textColor={'#2F4858'}
+        bgColor={'#fbf3e0'}
         photoPath={'/assets/photos/service.webp'}
         title={'Vos évenements'}
         ImageSide='left'
@@ -53,7 +49,6 @@ const CoursPage = () => {
     Eaque officiis illo dolores, quidem, facilis iure odio omnis ipsa
     repellendus aspernatur et excepturi saepe incidunt voluptate
     laborum provident illum! Dignissimos, soluta! Lorem ipsum dolor
-    sit amet consectetur adipisicing elit. Adipisci, minima quasi?
 !'
       />
       <ContactForm photoPath={'/assets/photos/service.webp'} />

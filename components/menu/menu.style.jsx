@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 const StyledMenu = styled.section`
   opacity: 0.95;
-  height: 30vh;
+  height: 35vh;
   position: fixed;
   left: 0.1px;
   background-color: #fbf3e0;
@@ -11,6 +11,7 @@ const StyledMenu = styled.section`
   display: flex;
   align-items: center;
   border-radius: 10px;
+  padding: 5px;
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.green};

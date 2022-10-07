@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 
 import { ThemeProvider, DefaultTheme } from 'styled-components';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const theme = {
   colors: {
@@ -19,9 +20,11 @@ const theme = {
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <ParallaxProvider>
+        <ThemeProvider theme={theme}>
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </ParallaxProvider>
     </>
   );
 }

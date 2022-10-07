@@ -1,4 +1,5 @@
 import StyledContactForm from './contactForm.style';
+import Link from 'next/link';
 
 const ContactForm = () => {
   return (
@@ -6,7 +7,9 @@ const ContactForm = () => {
       <div className='form'>
         <h2>Contactez-nous : </h2>
         <h3>Par téléphone au :</h3>
-        <span>06 06 06 06 06</span>
+        <Link href='tel:+33672597863'>
+          <a>06 72 59 78 63</a>
+        </Link>{' '}
         <h2>Via ce formulaire : </h2>
         <form>
           <label>Sujet de votre message : </label>

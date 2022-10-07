@@ -1,10 +1,6 @@
 import styled from 'styled-components';
 const StyledHero = styled.section`
   height: 95vh;
-  background-image: url(${(props) => props.bg.path});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,6 +9,7 @@ const StyledHero = styled.section`
   h1 {
     font-size: 40px;
     text-transform: uppercase;
+    position: relative;
   }
   .logo {
     width: 200px;
@@ -26,8 +23,9 @@ const StyledHero = styled.section`
     text-align: center;
     text-transform: capitalize;
     font-size: 16px;
+    position: relative;
     @media (min-width: 768px) {
-      font-size: larger;
+      font-size: 20px;
     }
   }
   .menuIcon {

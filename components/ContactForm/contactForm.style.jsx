@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 const StyledContactForm = styled.section`
-  font-family: 'Abhaya Libre' h2, h3 {
+  font-family: 'Abhaya Libre';
+  h2,
+  h3 {
     font-weight: lighter;
   }
 
@@ -73,11 +75,9 @@ const StyledContactForm = styled.section`
   }
 
   .logo {
-    background-image: url('/assets/photos/service.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 1000px;
     overflow: hidden;
     width: 50%;
     position: relative;
@@ -97,6 +97,10 @@ const StyledContactForm = styled.section`
       margin: inherit;
       height: 20px;
     }
+  }
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.secondary};
   }
 `;
 export default StyledContactForm;
