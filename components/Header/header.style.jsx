@@ -35,7 +35,7 @@ const StyledHeader = styled.header`
     }
   }
   .buttons {
-    width: 50%;
+    width: 55%;
     display: flex;
     justify-content: space-between;
     font-size: 20px;
@@ -53,6 +53,7 @@ const StyledHeader = styled.header`
       display: inline-block;
       font-family: 'Abhaya Libre', serif;
       font-size: 100%;
+      margin-left: 13px;
 
       background: none;
       border: none;

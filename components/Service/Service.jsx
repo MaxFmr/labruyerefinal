@@ -9,7 +9,7 @@ const Service = ({ photoPath, title, text, ImageSide, bgColor, textColor }) => {
       {ImageSide === 'left' ? (
         <>
           <div className='photo'>
-            <Parallax speed={4}>
+            <Parallax speed={2}>
               <Image
                 src={photoPath}
                 height={600}
@@ -30,7 +30,7 @@ const Service = ({ photoPath, title, text, ImageSide, bgColor, textColor }) => {
             <p>{text}</p>
           </div>
           <div className='photo'>
-            <Parallax speed={-4}>
+            <Parallax speed={-2}>
               <Image
                 src={photoPath}
                 height={500}

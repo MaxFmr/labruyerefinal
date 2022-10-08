@@ -1,5 +1,6 @@
 import StyledContactForm from './contactForm.style';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const ContactForm = () => {
   return (
@@ -52,7 +53,9 @@ const ContactForm = () => {
           </div>
         </form>
       </div>
-      <div className='logo'></div>
+      <div className='logo'>
+        <Image src='/assets/logo.svg' height={500} width={500} />
+      </div>
     </StyledContactForm>
   );
 };

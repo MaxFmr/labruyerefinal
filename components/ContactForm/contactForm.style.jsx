@@ -82,9 +82,9 @@ const StyledContactForm = styled.section`
   }
 
   .logo {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     width: 50%;
     position: relative;
