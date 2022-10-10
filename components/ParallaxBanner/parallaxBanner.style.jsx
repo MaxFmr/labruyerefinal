@@ -4,16 +4,19 @@ const StyledParallaxBanner = styled.section`
   border: solid black 2px;
   display: flex;
   justify-content: center;
+  align-items: center;
   @media (min-width: 768px) {
     height: 50vh;
   }
   .text {
     position: relative;
-    font-size: larger;
     margin-top: 5%;
     font-style: italic;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5em;
+    @media (min-width: 768px) {
+      font-size: 2em;
+    }
   }
 `;
 export default StyledParallaxBanner;

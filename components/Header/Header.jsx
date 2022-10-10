@@ -6,7 +6,12 @@ const Header = () => {
   return (
     <StyledHeader>
       <div className='title' onClick={() => router.push('/')}>
-        <Image src={'/assets/logo.webp'} height={40} width={40} />
+        <Image
+          src={'/assets/logo.webp'}
+          height={40}
+          width={40}
+          alt="logo de l'entreprise traiteur la table de la Bruyère Valenciennes"
+        />
       </div>
       <div className='buttons'>
         <nav>

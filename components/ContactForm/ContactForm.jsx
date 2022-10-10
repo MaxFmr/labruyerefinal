@@ -45,7 +45,7 @@ const ContactForm = () => {
             <span>
               *J’accepte de transmettre ces données à La Table de la Bruyère
               pour être recontacté(e) à des fins commerciales. Ces données ne
-              seront transmises à personne d'autre que la Table de La Bruyère.
+              seront transmises à personne d’autre que la Table de La Bruyère.
             </span>
           </div>
           <div className='btn'>
@@ -54,7 +54,12 @@ const ContactForm = () => {
         </form>
       </div>
       <div className='logo'>
-        <Image src='/assets/logo.svg' height={500} width={500} />
+        <Image
+          src='/assets/logo.svg'
+          height={500}
+          width={500}
+          alt="logo de l'entreprise traiteur la table de la Bruyère Valenciennes"
+        />
       </div>
     </StyledContactForm>
   );

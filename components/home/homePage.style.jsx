@@ -2,9 +2,10 @@ import styled from 'styled-components';
 const StyledHomePage = styled.section`
   position: fixed;
 
-  a {
+  li {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.secondary};
+    cursor: pointer;
   }
 
   right: 0;
@@ -96,6 +97,9 @@ const StyledHomePage = styled.section`
       }
     }
     .contactbtn {
+      ≈ span {
+        text-decoration: none;
+      }
       margin-top: 65px;
       display: flex;
       align-items: center;

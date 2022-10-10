@@ -26,26 +26,29 @@ const HomePage = () => {
             height={180}
             width={200}
             objectFit='cover'
+            alt='logo entreprise traiteur la table de la bruyère'
           />
         </div>
         <div className='nav'>
           <nav>
             <ul>
+              <Link href={'/traiteur'}>
+                <li>Traiteur</li>
+              </Link>
               <li>
-                <a href='/traiteur'>Traiteur </a>
+                <Link href='/cours'> Cours de cuisine</Link>
               </li>
               <li>
-                <a href='/cours'>Cours de cuisine</a>
+                <Link href='/chef'> Chef à domicile</Link>
               </li>
               <li>
-                <a href='/chef'>Chef à domicile</a>
-              </li>
-              <li>
-                <a href='/actus'>Nos actualités</a>
+                <Link href='/actus'> Nos actualités</Link>
               </li>
             </ul>
             <div className='contactbtn'>
-              <a href='/contact'>CONTACTEZ - NOUS</a>
+              <Link href={'/contact'}>
+                <span> CONTACTEZ - NOUS</span>
+              </Link>
             </div>
           </nav>
 

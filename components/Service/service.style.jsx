@@ -5,7 +5,7 @@ const StyledService = styled.section`
   height: 35vh;
   align-items: center;
   justify-content: center;
-  margin: 4%;
+  margin: 6% 4% 6% 4%;
   @media (min-width: 1000px) {
     font-size: 25px;
     height: 40vh;

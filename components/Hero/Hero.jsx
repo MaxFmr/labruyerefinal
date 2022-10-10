@@ -19,7 +19,12 @@ const Hero = ({ bgPath, logoPath, title, text }) => {
       ]}>
       <StyledHero bg={{ path: bgPath }}>
         <div className='logo'>
-          <Image src={logoPath} height={400} width={400} />
+          <Image
+            src={logoPath}
+            height={400}
+            width={400}
+            alt="logo de l'entreprise traiteur la table de la Bruyère Valenciennes"
+          />
         </div>
         <div>
           <h1>{title}</h1>

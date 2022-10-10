@@ -22,9 +22,9 @@ const ActusPage = ({ posts }) => {
         sit amet consectetur adipisicing elit. Adipisci, minima quasi?
     !'
       />
-      {posts.map((art) => {
+      {posts.map((art, index) => {
         return (
-          <div onClick={() => router.push(`/article/${art.title}`)}>
+          <div key={index} onClick={() => router.push(`/article/${art.title}`)}>
             <ArticlePreview article={art} />
           </div>
         );

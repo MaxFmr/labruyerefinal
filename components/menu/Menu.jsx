@@ -1,5 +1,6 @@
 import StyledMenu from './menu.style';
 import { GrFormClose } from 'react-icons/gr';
+import Link from 'next/link';
 
 const Menu = ({ setDisplayMenu }) => {
   return (
@@ -11,23 +12,23 @@ const Menu = ({ setDisplayMenu }) => {
       <nav>
         <ul>
           <li>
-            <a href='/traiteur'>✷ Traiteur</a>
+            <Link href={'/traiteur'}> ✷ Traiteur</Link>
           </li>
 
           <li>
-            <a href='/cours'>✷ Cours de cuisine</a>
+            <Link href='/cours'>✷ Cours de cuisine</Link>
           </li>
           <li>
-            <a href='/chef'>✷ Chef à domicile</a>
+            <Link href='/chef'>✷ Chef à domicile</Link>
           </li>
           <li>
-            <a href='/contact'>✷ Contact</a>
+            <Link href='/contact'>✷ Contact</Link>
           </li>
           <li>
-            <a href='/actus'>✷ Actus</a>
+            <Link href='/actus'>✷ Actus</Link>
           </li>
           <li>
-            <a href='/'>✷ Accueil</a>
+            <Link href='/'>✷ Accueil</Link>
           </li>
         </ul>
       </nav>

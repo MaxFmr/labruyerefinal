@@ -9,12 +9,13 @@ const Service = ({ photoPath, title, text, ImageSide, bgColor, textColor }) => {
       {ImageSide === 'left' ? (
         <>
           <div className='photo'>
-            <Parallax speed={3}>
+            <Parallax speed={2}>
               <Image
                 src={photoPath}
                 height={600}
                 width={720}
                 objectFit='cover'
+                alt='photo traiteur le table de la bruyère valenciennes'
               />
             </Parallax>
           </div>
@@ -30,12 +31,13 @@ const Service = ({ photoPath, title, text, ImageSide, bgColor, textColor }) => {
             <p>{text}</p>
           </div>
           <div className='photo'>
-            <Parallax speed={-3}>
+            <Parallax speed={-2}>
               <Image
                 src={photoPath}
                 height={700}
                 width={720}
                 objectFit='cover'
+                alt='photo traiteur le table de la bruyère valenciennes'
               />
             </Parallax>
           </div>
