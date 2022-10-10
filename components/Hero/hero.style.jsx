@@ -7,13 +7,14 @@ const StyledHero = styled.section`
   justify-content: center;
 
   h1 {
-    font-size: 40px;
+    font-size: 50px;
     text-transform: uppercase;
     position: relative;
+    margin-top: -4%;
   }
   .logo {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     display: flex;
     margin-top: -4%;
   }

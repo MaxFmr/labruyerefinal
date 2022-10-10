@@ -3,6 +3,7 @@ import ContactForm from '../components/ContactForm/ContactForm';
 import Service from '../components/Service/Service';
 import Header from '../components/Header/Header';
 import Banner1 from '../components/Banner1/Banner1';
+import ParalaxBanner from '../components/ParallaxBanner/ParallaxBanner';
 
 const TraiteurPage = () => {
   return (
@@ -23,7 +24,7 @@ const TraiteurPage = () => {
       <Service
         textColor={'#2F4858'}
         bgColor={'#fbf3e0'}
-        photoPath={'/assets/photos/service.webp'}
+        photoPath={'/assets/photos/culi3.jpg'}
         title={'Vos évenements'}
         ImageSide='left'
         text='l Lorem ipsum dolor sit amet consectetur adipisicing elit
@@ -31,10 +32,12 @@ const TraiteurPage = () => {
     repellendus aspernatur et excepturi saepe incidunt voluptate
 '
       />
+      <ParalaxBanner />
+
       <Service
         textColor={''}
         bgColor={'#2d8e8e'}
-        photoPath={'/assets/photos/service.webp'}
+        photoPath={'/assets/photos/vic.webp'}
         title={'Vos évenements'}
         ImageSide=''
         text='l Lorem ipsum dolor sit amet consectetur adipisicing elit
@@ -45,7 +48,7 @@ const TraiteurPage = () => {
       <Service
         textColor={'#2F4858'}
         bgColor={'#fbf3e0'}
-        photoPath={'/assets/photos/service.webp'}
+        photoPath={'/assets/photos/culi12.jpg'}
         title={'Vos évenements'}
         ImageSide='left'
         text='l Lorem ipsum dolor sit amet consectetur adipisicing elit

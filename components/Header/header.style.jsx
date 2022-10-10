@@ -57,7 +57,7 @@ const StyledHeader = styled.header`
 
       background: none;
       border: none;
-      color: #ffff;
+      color: #fbf3e0;
       cursor: pointer;
       :after {
         content: '';
