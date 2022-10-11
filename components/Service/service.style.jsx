@@ -5,7 +5,7 @@ const StyledService = styled.section`
   height: 35vh;
   align-items: center;
   justify-content: center;
-  margin: 15% 4% 15% 4%;
+  margin: 10% 4% 10% 4%;
   @media (min-width: 1000px) {
     font-size: 25px;
     height: 40vh;
@@ -13,7 +13,7 @@ const StyledService = styled.section`
   .photo {
     /* box-shadow: -11px -5px 15px -5px #2f4858; */
     overflow: hidden;
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,7 +35,7 @@ const StyledService = styled.section`
 
     margin: 4%;
     overflow: hidden;
-    width: 50%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,7 +47,7 @@ const StyledService = styled.section`
 
     background-color: ${(props) => props.bg.color};
     @media (min-width: 1000px) {
-      font-size: 20px;
+      font-size: 25px;
       width: 60%;
       margin-left: 15px;
     }
@@ -56,7 +56,7 @@ const StyledService = styled.section`
       padding: 2%;
     }
     .title {
-      font-size: 16px;
+      font-size: 22px;
       font-weight: bold;
     }
   }

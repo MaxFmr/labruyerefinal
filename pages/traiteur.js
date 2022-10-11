@@ -23,7 +23,7 @@ const TraiteurPage = () => {
         photoPath={'/assets/photos/oeuf.webp'}
         title={'Notre cuisine'}
         ImageSide='left'
-        text='Forts de notre passion et de notre expérience nous sublimons des produits frais et de qualité, en accord avec la saisonalité.
+        text='Forts de notre passion et de notre expérience, nous sublimons des produits frais et de grande qualité, en accord avec la saisonalité. Notre cuisine rassemble tradition, tendance et plaisir de la table. 
 '
       />
 
@@ -58,7 +58,7 @@ const TraiteurPage = () => {
       />
       <ParalaxBanner
         photoPath={
-          'https://res.cloudinary.com/amenitiz/image/upload/w_480,dpr_auto,c_scale,q_auto:best/v1636706053/vadbnrua0bvxva4tmvaj.jpg'
+          'https://res.cloudinary.com/amenitiz/image/upload/w_2000,dpr_auto,c_scale,q_auto:best/v1636706053/vadbnrua0bvxva4tmvaj.jpg'
         }
         text={''}
         logo={
@@ -66,16 +66,20 @@ const TraiteurPage = () => {
         }></ParalaxBanner>
 
       <p
+        className='reveil'
         style={{
           color: '#2F4858',
-          padding: '5%',
-          margin: '15% 0% 15% 0%',
+          padding: '3%',
+          margin: '3vh 0% 10vh 0%',
           textAlign: 'justify',
+          fontSize: '18px',
+          textAlign: 'center',
         }}>
-        Nous sommes aussi traiteur exclusif du domaine : Le Réveil de la
-        Bruyère, ouvert depuis octobre 2021. Nous bénéficions d’un cadre de
-        rêve, au coeur de l’Avesnois, à proximité de Valenciennes, dans une
-        ancienne maison de famille, niché au milieu d’un parc.
+        Nous sommes aussi le traiteur exclusif du domaine : Le Réveil de la
+        Bruyère, ouvert depuis octobre 2021.
+        <br /> Nous bénéficions d’un cadre de rêve, au coeur de l’Avesnois, à
+        proximité de Valenciennes, dans une ancienne maison de famille, niché au
+        milieu d’un parc.
         <br />
         <Link href='https://www.lereveildelabruyere.com/fr'>
           Infos et réservations
