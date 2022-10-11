@@ -1,9 +1,11 @@
 import StyledHero from './hero.style';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
-import Menu from '../menu/menu';
+
 import Image from 'next/image';
+
 import { ParallaxBanner } from 'react-scroll-parallax';
+import Menu1 from '../menu1/Menu1';
 
 const Hero = ({ bgPath, logoPath, title, text }) => {
   const [displayMenu, setDisplayMenu] = useState(false);
@@ -35,7 +37,7 @@ const Hero = ({ bgPath, logoPath, title, text }) => {
         <div className='menuIcon' onClick={() => setDisplayMenu(!displayMenu)}>
           <GiHamburgerMenu size={30} color={'#fbf3e0'} />
         </div>
-        {displayMenu && <Menu setDisplayMenu={setDisplayMenu} />}
+        {displayMenu && <Menu1 setDisplayMenu={setDisplayMenu} />}
       </StyledHero>
     </ParallaxBanner>
   );

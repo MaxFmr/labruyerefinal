@@ -2,7 +2,7 @@ import StyledMenu from './menu.style';
 import { GrFormClose } from 'react-icons/gr';
 import Link from 'next/link';
 
-const Menu = ({ setDisplayMenu }) => {
+const Menu1 = ({ setDisplayMenu }) => {
   return (
     <StyledMenu>
       <div className='closeIcon' onClick={() => setDisplayMenu(false)}>
@@ -35,4 +35,4 @@ const Menu = ({ setDisplayMenu }) => {
     </StyledMenu>
   );
 };
-export default Menu;
+export default Menu1;
