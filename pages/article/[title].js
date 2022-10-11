@@ -5,7 +5,11 @@ import { findOneArticle } from '../api/article/[title]';
 const articlePage = ({ post }) => {
   const article = JSON.parse(post);
 
-  return <div>{article.title}</div>;
+  return (
+    <div>
+      <p style={{ color: 'black' }}> {article.title}</p>
+    </div>
+  );
 };
 export async function getStaticPaths() {
   const posts = await findPosts();
@@ -19,9 +23,9 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const param = params.title;
-  const post = findOneArticle(param);
-  const article = JSON.stringify(post);
 
+  const post = await findOneArticle(param);
+  const article = JSON.stringify(post);
   return { props: { post: article } };
 }
 
