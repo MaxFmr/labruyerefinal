@@ -9,7 +9,7 @@ const Service = ({ photoPath, title, text, ImageSide, bgColor, textColor }) => {
       {ImageSide === 'left' ? (
         <>
           <div className='photo'>
-            <Parallax speed={2}>
+            <Parallax speed={2} translateY={[-10, 10]}>
               <Image
                 src={photoPath}
                 height={800}
@@ -31,10 +31,10 @@ const Service = ({ photoPath, title, text, ImageSide, bgColor, textColor }) => {
             <p>{text}</p>
           </div>
           <div className='photo'>
-            <Parallax speed={-2}>
+            <Parallax speed={-2} translateY={[-10, 10]}>
               <Image
                 src={photoPath}
-                height={700}
+                height={800}
                 width={720}
                 objectFit='cover'
                 alt='photo traiteur le table de la bruyère valenciennes'

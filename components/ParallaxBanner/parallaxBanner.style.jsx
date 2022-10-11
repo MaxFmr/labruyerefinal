@@ -2,7 +2,6 @@ import styled from 'styled-components';
 const StyledParallaxBanner = styled.section`
   padding: 3%;
   height: 30vh;
-  border: solid black 2px;
   display: flex;
   justify-content: center;
   align-items: center;

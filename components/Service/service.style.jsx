@@ -14,14 +14,15 @@ const StyledService = styled.section`
     /* box-shadow: -11px -5px 15px -5px #2f4858; */
     overflow: hidden;
     width: 50%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     /* background-image: url(${(props) => props.bg.path});
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; */
-    position: relative;
+    background-size: cover;
+    position: relative; */
     @media (min-width: 1000px) {
       margin-left: 10%;
       height: 120%;
@@ -33,14 +34,14 @@ const StyledService = styled.section`
     /* box-shadow: -11px -5px 15px -5px #2f4858; */
     border-radius: 5px;
 
-    margin: 4%;
+    margin: 5%;
     overflow: hidden;
     width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4%;
+    padding: 5%;
     font-size: 15px;
     color: ${(props) => props.bg.textColor};
     text-align: justify;
@@ -56,7 +57,7 @@ const StyledService = styled.section`
       padding: 2%;
     }
     .title {
-      font-size: 22px;
+      font-size: 21px;
       font-weight: bold;
     }
   }
