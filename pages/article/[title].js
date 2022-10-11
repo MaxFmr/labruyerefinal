@@ -1,8 +1,8 @@
-// import axios from 'axios';
+import axios from 'axios';
 
-// const articlePage = ({ post }) => {
-//   return <div>{post.title}</div>;
-// };
+const articlePage = ({}) => {
+  return <div>article</div>;
+};
 
 // export async function getStaticPaths() {
 //   const res = await axios.get(process.env.NEXT_PUBLIC_HOST + '/api/article');
@@ -24,4 +24,4 @@
 //   return { props: { post } };
 // }
 
-// export default articlePage;
+export default articlePage;
