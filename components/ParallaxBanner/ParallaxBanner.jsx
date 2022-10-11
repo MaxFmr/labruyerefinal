@@ -1,25 +1,27 @@
 import StyledParallaxBanner from './parallaxBanner.style';
-import Image from 'next/image';
 import { ParallaxBanner } from 'react-scroll-parallax';
+import Image from 'next/image';
 
-const ParalaxBanner = () => {
+const ParalaxBanner = ({ photoPath, text, logo }) => {
   return (
     <ParallaxBanner
       className='parallax'
       layers={[
         {
-          image: '/assets/photos/macro.jpg',
+          image: photoPath,
           speed: -10,
-          opacity: [0.9, 1],
+          opacity: [0.7, 0.8],
         },
       ]}>
       <div className='photo'></div>
       <StyledParallaxBanner>
+        {logo && (
+          <div className='logo'>
+            <Image src={logo} height={200} width={200} />
+          </div>
+        )}
         <div className='text'>
-          <p>
-            Lorem ipsum dolor sit amet Pariatur soluta quam quia eaque et omnis
-            non delectus ...
-          </p>
+          <span>{text}</span>
         </div>
       </StyledParallaxBanner>
     </ParallaxBanner>

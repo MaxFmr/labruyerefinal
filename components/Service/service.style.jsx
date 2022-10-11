@@ -5,7 +5,7 @@ const StyledService = styled.section`
   height: 35vh;
   align-items: center;
   justify-content: center;
-  margin: 6% 4% 6% 4%;
+  margin: 15% 4% 15% 4%;
   @media (min-width: 1000px) {
     font-size: 25px;
     height: 40vh;
@@ -28,8 +28,11 @@ const StyledService = styled.section`
       width: 60%;
     }
   }
+
   .text {
     /* box-shadow: -11px -5px 15px -5px #2f4858; */
+    border-radius: 5px;
+
     margin: 4%;
     overflow: hidden;
     width: 50%;
@@ -38,7 +41,7 @@ const StyledService = styled.section`
     justify-content: center;
     align-items: center;
     padding: 4%;
-    font-size: 13px;
+    font-size: 15px;
     color: ${(props) => props.bg.textColor};
     text-align: justify;
 
@@ -49,8 +52,12 @@ const StyledService = styled.section`
       margin-left: 15px;
     }
     @media (min-width: 768px) {
-      font-size: 18px;
+      font-size: 20px;
       padding: 2%;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: bold;
     }
   }
 `;

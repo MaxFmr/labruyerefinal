@@ -12,7 +12,7 @@ const Service = ({ photoPath, title, text, ImageSide, bgColor, textColor }) => {
             <Parallax speed={2}>
               <Image
                 src={photoPath}
-                height={600}
+                height={800}
                 width={720}
                 objectFit='cover'
                 alt='photo traiteur le table de la bruyère valenciennes'
@@ -20,14 +20,14 @@ const Service = ({ photoPath, title, text, ImageSide, bgColor, textColor }) => {
             </Parallax>
           </div>
           <div className='text'>
-            <h1>{title}</h1>
+            <span className='title'>{title}</span>
             <p>{text}</p>
           </div>
         </>
       ) : (
         <>
           <div className='text'>
-            <h1>{title}</h1>
+            <span className='title'>{title}</span>
             <p>{text}</p>
           </div>
           <div className='photo'>

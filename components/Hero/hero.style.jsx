@@ -22,8 +22,7 @@ const StyledHero = styled.section`
     width: 60%;
     font-style: italic;
     text-align: center;
-    text-transform: capitalize;
-    font-size: 16px;
+    font-size: 18px;
     position: relative;
     @media (min-width: 768px) {
       font-size: 20px;
