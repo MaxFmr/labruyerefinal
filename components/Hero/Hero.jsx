@@ -1,11 +1,10 @@
 import StyledHero from './hero.style';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
-
+import Menu1 from '../menu1/Menu1';
 import Image from 'next/image';
 
 import { ParallaxBanner } from 'react-scroll-parallax';
-import Menu1 from '../menu1/Menu1';
 
 const Hero = ({ bgPath, logoPath, title, text }) => {
   const [displayMenu, setDisplayMenu] = useState(false);
