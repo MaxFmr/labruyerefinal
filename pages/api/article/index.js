@@ -1,6 +1,14 @@
 import connectMongo from '../../../utils/connectMongo';
 import Article from '../../../models/article';
 
+export async function findPosts() {
+  await connectMongo();
+
+  const posts = await Article.find();
+
+  return posts;
+}
+
 const CrudArticleRoute = async (req, res) => {
   await connectMongo();
 
@@ -16,7 +24,6 @@ const CrudArticleRoute = async (req, res) => {
   }
   if (req.method === 'GET') {
     //read
-    console.log('ok');
     try {
       const articles = await Article.find();
       res.json(articles);

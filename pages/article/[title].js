@@ -1,27 +1,28 @@
 import axios from 'axios';
+import { findPosts } from '../api/article';
+import { findOneArticle } from '../api/article/[title]';
 
-const articlePage = ({}) => {
-  return <div>article</div>;
+const articlePage = ({ post }) => {
+  const article = JSON.parse(post);
+
+  return <div>{article.title}</div>;
 };
+export async function getStaticPaths() {
+  const posts = await findPosts();
 
-// export async function getStaticPaths() {
-//   const res = await axios.get(process.env.NEXT_PUBLIC_HOST + '/api/article');
-//   const posts = res.data;
+  const paths = posts.map((post) => ({
+    params: { title: post.title },
+  }));
 
-//   const paths = posts.map((post) => ({
-//     params: { title: post.title },
-//   }));
+  return { paths, fallback: false };
+}
 
-//   return { paths, fallback: false };
-// }
+export async function getStaticProps({ params }) {
+  const param = params.title;
+  const post = findOneArticle(param);
+  const article = JSON.stringify(post);
 
-// export async function getStaticProps({ params }) {
-//   const res = await axios.get(
-//     process.env.NEXT_PUBLIC_HOST + '/api/article/' + params.title
-//   );
-//   const post = res.data;
-
-//   return { props: { post } };
-// }
+  return { props: { post: article } };
+}
 
 export default articlePage;

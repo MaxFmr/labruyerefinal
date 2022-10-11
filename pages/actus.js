@@ -2,27 +2,14 @@ import ArticlePreview from '../components/ArticlePreview/ArticePreview';
 import Hero from '../components/Hero/Hero';
 import Header from '../components/Header/Header';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-
-import axios from 'axios';
+import { findPosts } from './api/article';
 
 const ActusPage = ({ posts }) => {
-  // const router = useRouter();
-
-  // const [articles, setarticles] = useState(initialState);
-
-  // useEffect(() => {
-  //   const fetchArticles = async () => {
-  //     const data = await axios.get('/api/article');
-
-  //     setarticles(data.data);
-  //   };
-  //   fetchArticles();
-  // }, []);
-
+  const router = useRouter();
+  const articles = JSON.parse(posts);
   return (
     <>
-      {/* <Header />
+      <Header />
       <Hero
         bgPath={'/assets/photos/service.webp'}
         logoPath={'/assets/logo.svg'}
@@ -36,13 +23,19 @@ const ActusPage = ({ posts }) => {
       />
       {articles.map((art, index) => {
         return (
-          <div key={index}>
+          <div key={index} onClick={() => router.push(`/article/${art.title}`)}>
             <ArticlePreview article={art} />
           </div>
         );
-      })} */}
+      })}
     </>
   );
 };
+
+export async function getStaticProps() {
+  const posts = await findPosts();
+  const articles = JSON.stringify(posts);
+  return { props: { posts: articles } };
+}
 
 export default ActusPage;
