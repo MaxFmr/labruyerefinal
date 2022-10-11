@@ -7,22 +7,22 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const ActusPage = ({ posts }) => {
-  const router = useRouter();
+  // const router = useRouter();
 
-  const [articles, setarticles] = useState(initialState);
+  // const [articles, setarticles] = useState(initialState);
 
-  useEffect(() => {
-    const fetchArticles = async () => {
-      const data = await axios.get('/api/article');
+  // useEffect(() => {
+  //   const fetchArticles = async () => {
+  //     const data = await axios.get('/api/article');
 
-      setarticles(data.data);
-    };
-    fetchArticles();
-  }, []);
+  //     setarticles(data.data);
+  //   };
+  //   fetchArticles();
+  // }, []);
 
   return (
     <>
-      <Header />
+      {/* <Header />
       <Hero
         bgPath={'/assets/photos/service.webp'}
         logoPath={'/assets/logo.svg'}
@@ -40,7 +40,7 @@ const ActusPage = ({ posts }) => {
             <ArticlePreview article={art} />
           </div>
         );
-      })}
+      })} */}
     </>
   );
 };
