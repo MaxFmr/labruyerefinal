@@ -5,7 +5,7 @@ const articlePage = ({ post }) => {
 };
 
 export async function getStaticPaths() {
-  const res = await axios.get(process.env.NEXT_PUBLIC_HOST + '/api/article');
+  const res = await axios.get('/api/article');
   const posts = res.data;
 
   const paths = posts.map((post) => ({
