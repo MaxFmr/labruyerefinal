@@ -15,10 +15,7 @@ const Articles = () => {
   const [password, setPassword] = useState('');
 
   const LogIn = async () => {
-    const response = await axios.post(
-      process.env.NEXT_PUBLIC_HOST + '/api/admin',
-      { password: password }
-    );
+    const response = await axios.post('/api/admin', { password: password });
     if (response.data.login === 'ok') {
       setIsAuth(true);
     } else {
@@ -28,9 +25,7 @@ const Articles = () => {
 
   useEffect(() => {
     const fetchArticles = async () => {
-      const data = await axios.get(
-        process.env.NEXT_PUBLIC_HOST + '/api/article'
-      );
+      const data = await axios.get('/api/article');
 
       setArticles(data.data);
     };
