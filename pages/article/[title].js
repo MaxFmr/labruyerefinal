@@ -1,27 +1,27 @@
-import axios from 'axios';
+// import axios from 'axios';
 
-const articlePage = ({ post }) => {
-  return <div>{post.title}</div>;
-};
+// const articlePage = ({ post }) => {
+//   return <div>{post.title}</div>;
+// };
 
-export async function getStaticPaths() {
-  const res = await axios.get(process.env.NEXT_PUBLIC_HOST + '/api/article');
-  const posts = res.data;
+// export async function getStaticPaths() {
+//   const res = await axios.get(process.env.NEXT_PUBLIC_HOST + '/api/article');
+//   const posts = res.data;
 
-  const paths = posts.map((post) => ({
-    params: { title: post.title },
-  }));
+//   const paths = posts.map((post) => ({
+//     params: { title: post.title },
+//   }));
 
-  return { paths, fallback: false };
-}
+//   return { paths, fallback: false };
+// }
 
-export async function getStaticProps({ params }) {
-  const res = await axios.get(
-    process.env.NEXT_PUBLIC_HOST + '/api/article/' + params.title
-  );
-  const post = res.data;
+// export async function getStaticProps({ params }) {
+//   const res = await axios.get(
+//     process.env.NEXT_PUBLIC_HOST + '/api/article/' + params.title
+//   );
+//   const post = res.data;
 
-  return { props: { post } };
-}
+//   return { props: { post } };
+// }
 
-export default articlePage;
+// export default articlePage;

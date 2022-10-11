@@ -2,11 +2,23 @@ import ArticlePreview from '../components/ArticlePreview/ArticePreview';
 import Hero from '../components/Hero/Hero';
 import Header from '../components/Header/Header';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 import axios from 'axios';
 
 const ActusPage = ({ posts }) => {
   const router = useRouter();
+
+  const [articles, setarticles] = useState(initialState);
+
+  useEffect(() => {
+    const fetchArticles = async () => {
+      const data = await axios.get('/api/article');
+
+      setarticles(data.data);
+    };
+    fetchArticles();
+  }, []);
 
   return (
     <>
@@ -22,9 +34,9 @@ const ActusPage = ({ posts }) => {
         sit amet consectetur adipisicing elit. Adipisci, minima quasi?
     !'
       />
-      {posts.map((art, index) => {
+      {articles.map((art, index) => {
         return (
-          <div key={index} onClick={() => router.push(`/article/${art.title}`)}>
+          <div key={index}>
             <ArticlePreview article={art} />
           </div>
         );
@@ -32,12 +44,5 @@ const ActusPage = ({ posts }) => {
     </>
   );
 };
-
-export async function getStaticProps() {
-  const res = await axios.get(process.env.NEXT_PUBLIC_HOST + '/api/article');
-  const posts = res.data;
-
-  return { props: { posts } };
-}
 
 export default ActusPage;
