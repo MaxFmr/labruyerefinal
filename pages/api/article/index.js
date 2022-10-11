@@ -16,12 +16,12 @@ const CrudArticleRoute = async (req, res) => {
   }
   if (req.method === 'GET') {
     //read
-
+    console.log('ok');
     try {
       const articles = await Article.find();
       res.json(articles);
     } catch (error) {
-      res.send(error);
+      res.send(error.message);
     }
   }
   if (req.method === 'PUT') {

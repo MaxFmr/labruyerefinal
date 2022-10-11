@@ -44,7 +44,7 @@ const Articles = () => {
       };
 
       const reponse = await axios.post(
-        process.env.NEXT_PUBLIC_HOST + '/api/article',
+        '/api/article',
 
         post
       );
