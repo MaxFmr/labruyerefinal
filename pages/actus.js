@@ -34,7 +34,7 @@ const ActusPage = ({ posts }) => {
 };
 
 export async function getStaticProps() {
-  const res = await axios.get(process.env.NEXT_PUBLIC_HOST + '/api/article');
+  const res = await axios.get('/api/article');
   const posts = res.data;
 
   return { props: { posts } };

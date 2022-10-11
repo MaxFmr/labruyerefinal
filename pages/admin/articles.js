@@ -56,9 +56,7 @@ const Articles = () => {
   };
 
   const removeArticle = async (id) => {
-    const articleToDelete = await axios.delete(
-      process.env.NEXT_PUBLIC_HOST + '/api/article' + `?id=${id}`
-    );
+    const articleToDelete = await axios.delete('/api/article' + `?id=${id}`);
     alert(articleToDelete.data.message);
     return setArticlMod(!articleMod);
   };
