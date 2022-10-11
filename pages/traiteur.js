@@ -72,8 +72,8 @@ const TraiteurPage = () => {
           margin: '15% 0% 15% 0%',
           textAlign: 'justify',
         }}>
-        Nous sommes aussi traiteur exclusif du domaine : "Le Réveil de la
-        Bruyère", ouvert depuis octobre 2021. Nous bénéficions d’un cadre de
+        Nous sommes aussi traiteur exclusif du domaine : Le Réveil de la
+        Bruyère, ouvert depuis octobre 2021. Nous bénéficions d’un cadre de
         rêve, au coeur de l’Avesnois, à proximité de Valenciennes, dans une
         ancienne maison de famille, niché au milieu d’un parc.
         <br />
