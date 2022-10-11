@@ -52,7 +52,7 @@ const TraiteurPage = () => {
 
       <Service
         bgColor={'#2d8e8e'}
-        photoPath={'/assets/photos/culi12.jpg'}
+        photoPath={'/assets/photos/foie.webp'}
         title={'Vos évenements'}
         text='Un mariage, un anniversaire, une fête de famille, un séminaire... Nos vous rejoignons à l’endroit de votre choix pour concrétiser votre projet et en faire un moment unique.'
       />
