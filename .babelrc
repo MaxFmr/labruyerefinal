@@ -1,17 +1,7 @@
 {
   "env": {
     "development": {
-      "presets": [
-        [
-          "next/babel",
-          {
-            "preset-env": {
-              "loose": true,
-              "modules": false
-            }
-          }
-        ]
-      ],
+      "presets": ["next/babel"],
       "plugins": [
         [
           "babel-plugin-styled-components",
