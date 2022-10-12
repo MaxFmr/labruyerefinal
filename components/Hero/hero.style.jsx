@@ -5,6 +5,7 @@ const StyledHero = styled.section`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 
   h1 {
     font-size: 45px;

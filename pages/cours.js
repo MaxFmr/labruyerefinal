@@ -2,6 +2,7 @@ import Hero from '../components/Hero/Hero';
 import Service from '../components/Service/Service';
 import ContactForm from '../components/ContactForm/ContactForm';
 import Header from '../components/Header/Header';
+import ParalaxBanner from '../components/ParallaxBanner/ParallaxBanner';
 
 const CoursPage = () => {
   return (
@@ -10,42 +11,50 @@ const CoursPage = () => {
       <Hero
         bgPath={'/assets/photos/service.webp'}
         logoPath={'/assets/logo.svg'}
-        title={'Cours de cuisine'}
-        text='l Lorem ipsum dolor sit amet consectetur adipisicing elit
-        Eaque officiis illo dolores, quidem, facilis iure odio omnis ipsa
-        sit amet consectetur adipisicing elit. Adipisci, minima quasi?!'
+        title={'École de la table'}
+        text='Un moment convivial autour de l’apprentissage de la cuisine.'
       />
+
       <Service
         textColor={'#2F4858'}
         bgColor={'#fbf3e0'}
         photoPath={'/assets/photos/service.webp'}
-        title={'Vos évenements'}
+        title={'Une École'}
         ImageSide='left'
-        text='l Lorem ipsum dolor sit amet consectetur adipisicing elit
-    Eaque officiis illo dolores, quidem, facilis iure odio omnis ipsa
-!'
+        text=' Vivez, seul(e) ou en groupe, à la demi-journée, une expérience unique qui vous transporte dans une école de la table inspirée des plus grandes institutions gastronomiques Française.   
+'
+        link={'/cours#form'}
+        textLink='Reserver'
       />
       <Service
         textColor={''}
         bgColor={'#2d8e8e'}
         photoPath={'/assets/photos/service.webp'}
-        title={'Vos évenements'}
-        text='l Lorem ipsum dolor sit amet consectetur adipisicing elit
-    Eaque officiis illo dolores, quidem, facilis iure odio omnis ipsa
-    sit amet consectetur adipisicing elit. Adipisci, minima quasi?
+        title={'Des compétences'}
+        text='Vous serez en mesure de surprendre vos convives, avec une cuisine de restaurant
 !'
+        link={'/cours#form'}
+        textLink='Reserver'
+      />
+      <ParalaxBanner
+        photoPath={
+          'https://media.istockphoto.com/photos/cooking-master-class-pasta-preparing-hands-picture-id1268900953'
+        }
+        text='Le cours de cuisine est un moment convivial, idéal pour générer de la cohésion sur des évenemnts de type team building ou encore créer un temps collectif pendant un enterrement de vie de célibataire !'
       />
       <Service
         textColor={'#2F4858'}
         bgColor={'#fbf3e0'}
         photoPath={'/assets/photos/service.webp'}
-        title={'Vos évenements'}
+        title={'Réservations'}
+        text='Prenez contact avec nous par téléphone ou via le formulaire ci-dessous pour réserver un cours, pour un groupe ou connaître les ateliers orgnisés afin de vous y joindre.'
         ImageSide='left'
-        text='l Lorem ipsum dolor sit amet consectetur adipisicing elit
-    laborum provident illum! Dignissimos, soluta! Lorem ipsum dolor
-!'
+        link={'/cours#form'}
+        textLink='Reserver'
       />
-      <ContactForm photoPath={'/assets/photos/service.webp'} />
+      <div id='form'>
+        <ContactForm photoPath={'/assets/photos/service.webp'} />
+      </div>
     </>
   );
 };

@@ -18,7 +18,7 @@ const Header = () => {
           <button onClick={() => router.push('/contact')}>✷ Contact</button>
           <button onClick={() => router.push('/traiteur')}>✷ Traiteur</button>
           <button onClick={() => router.push('/cours')}>
-            ✷ Cours de cuisine
+            ✷ École de la table
           </button>
           <button onClick={() => router.push('/chef')}>
             ✷ Chef à domicile

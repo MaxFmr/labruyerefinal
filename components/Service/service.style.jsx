@@ -10,6 +10,7 @@ const StyledService = styled.section`
     font-size: 25px;
     height: 40vh;
   }
+
   .photo {
     /* box-shadow: -11px -5px 15px -5px #2f4858; */
     overflow: hidden;
@@ -47,6 +48,9 @@ const StyledService = styled.section`
     text-align: justify;
 
     background-color: ${(props) => props.bg.color};
+    @media (max-width: 376px) {
+      font-size: 13px;
+    }
     @media (min-width: 1000px) {
       font-size: 25px;
       width: 60%;

@@ -4,7 +4,7 @@ const StyledBanner1 = styled.section`
   @media (min-width: 768px) {
     height: 40vh;
   }
-  margin: 15% 0px 3% 0px;
+  margin: 5% 0px 3% 0px;
   background-image: url(${(props) => props.bg.path});
   background-repeat: no-repeat;
   background-position: center;

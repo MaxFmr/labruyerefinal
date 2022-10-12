@@ -1,8 +1,10 @@
 import StyledContactForm from './contactForm.style';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 const ContactForm = () => {
+  const router = useRouter();
   return (
     <StyledContactForm>
       <div className='form'>
@@ -16,9 +18,21 @@ const ContactForm = () => {
           <label>Sujet de votre message : </label>
           <select name='subject' id='pet-select'>
             <option value=''>Sectionnez un type de prestation*</option>
-            <option value='Traiteur évènentiel'>Traiteur évènentiel</option>
-            <option value='Cours de cuisine'>Cours de cuisine</option>
-            <option value='Chef à domicile'>Chef à domicile</option>
+            <option
+              value='Traiteur évènentiel'
+              selected={router.asPath === '/traiteur' ? 'true' : false}>
+              Traiteur évènentiel
+            </option>
+            <option
+              value='Cours de cuisine'
+              selected={router.asPath === '/cours' ? 'true' : false}>
+              Cours de cuisine
+            </option>
+            <option
+              value='Chef à domicile'
+              selected={router.asPath === '/chef' ? 'true' : false}>
+              Chef à domicile
+            </option>
           </select>
           <div>
             <input type='text' placeholder='Votre nom*' required />

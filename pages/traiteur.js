@@ -25,6 +25,8 @@ const TraiteurPage = () => {
         ImageSide='left'
         text='Forts de notre passion et de notre expérience, nous sublimons des produits frais et de grande qualité, en accord avec la saisonalité. Notre cuisine rassemble tradition, tendance et plaisir de la table. 
 '
+        link={'/traiteur#form'}
+        textLink='Reserver'
       />
 
       <Service
@@ -33,6 +35,8 @@ const TraiteurPage = () => {
         photoPath={'/assets/photos/vic.webp'}
         title={'Accompagnement'}
         text='Faire confiance à la Table de la Bruyère, c’est l’assurance d’être suivi et guidé. C’est l’association de notre expertise et de vos envies pour construire ensemble l’évenement qui vous ressemble.'
+        link={'/traiteur#form'}
+        textLink='Reserver'
       />
       <ParalaxBanner
         photoPath={'/assets/photos/macro.jpg'}
@@ -46,8 +50,10 @@ const TraiteurPage = () => {
         photoPath={'/assets/photos/guinb.webp'}
         title={'Notre Chef'}
         ImageSide='left'
-        text='Guillaume STILE, a exercé en tant que chef dans des restaurants réputés, dont La Gentilhommière.
+        text='Guillaume STILE, a exercé dans des restaurants réputés, dont La Gentilhommière.
         Il s’est perfectionné au cours de rencontres avec des grands noms de la cuisine française notamment les Chefs Yann Morel, Marc Meurin, Emmanuel Hernandez, Philippe Mille et Hervé Raphanel.'
+        link={'/traiteur#form'}
+        textLink='Reserver'
       />
 
       <Service
@@ -55,6 +61,8 @@ const TraiteurPage = () => {
         photoPath={'/assets/photos/foie.webp'}
         title={'Vos évenements'}
         text='Un mariage, un anniversaire, une fête de famille, un séminaire... Nos vous rejoignons à l’endroit de votre choix pour concrétiser votre projet et en faire un moment unique.'
+        link={'/traiteur#form'}
+        textLink='Reserver'
       />
       <ParalaxBanner
         photoPath={
@@ -72,7 +80,7 @@ const TraiteurPage = () => {
           padding: '3%',
           margin: '3vh 0% 10vh 0%',
           textAlign: 'justify',
-          fontSize: '18px',
+          fontSize: '1em',
           textAlign: 'center',
         }}>
         Nous sommes aussi le traiteur exclusif du domaine Le Réveil de la
@@ -85,8 +93,9 @@ const TraiteurPage = () => {
           Infos et réservations
         </Link>
       </p>
-
-      <ContactForm />
+      <div id='form'>
+        <ContactForm />
+      </div>
     </>
   );
 };

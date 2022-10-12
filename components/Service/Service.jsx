@@ -1,8 +1,18 @@
 import StyledService from './service.style';
 import { Parallax } from 'react-scroll-parallax';
+import Link from 'next/link';
 import Image from 'next/image';
 
-const Service = ({ photoPath, title, text, ImageSide, bgColor, textColor }) => {
+const Service = ({
+  photoPath,
+  title,
+  text,
+  ImageSide,
+  bgColor,
+  textColor,
+  link,
+  textLink,
+}) => {
   return (
     <StyledService
       bg={{ path: photoPath, color: bgColor, textColor: textColor }}>
@@ -22,6 +32,7 @@ const Service = ({ photoPath, title, text, ImageSide, bgColor, textColor }) => {
           <div className='text'>
             <span className='title'>{title}</span>
             <p>{text}</p>
+            {link && <Link href={link}>{textLink}</Link>}
           </div>
         </>
       ) : (
@@ -29,6 +40,7 @@ const Service = ({ photoPath, title, text, ImageSide, bgColor, textColor }) => {
           <div className='text'>
             <span className='title'>{title}</span>
             <p>{text}</p>
+            {link && <Link href={link}>{textLink}</Link>}
           </div>
           <div className='photo'>
             <Parallax speed={-2} translateY={[-10, 10]}>
