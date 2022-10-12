@@ -9,7 +9,7 @@ const HomePage = () => {
       <div></div>
       <video
         playsInline
-        src='https://ak.picdn.net/shutterstock/videos/1061926687/preview/stock-footage-close-up-professional-chef-at-restaurant-kitchen-serves-dish-adding-final-ingredient-by-hand.webm'
+        src='https://www.maximekerlidou.fr/videos/videobanner.mp4'
         muted
         loop
         autoPlay

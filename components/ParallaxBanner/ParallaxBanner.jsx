@@ -19,8 +19,8 @@ const ParalaxBanner = ({ photoPath, text, logo }) => {
           <div className='logo'>
             <Image
               src={logo}
-              height={200}
-              width={200}
+              height={150}
+              width={150}
               alt="logo de l'entreprise le réveil de la bruyère gite salle de réception"
             />
           </div>
