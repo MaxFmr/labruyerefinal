@@ -44,6 +44,7 @@ const TraiteurPage = () => {
           '"Classique ou moderne, il n’y a qu’une seule cuisine... La bonne." Paul Bocuse'
         }
       />
+      <div style={{ height: '45px' }}></div>
       <Service
         textColor={'#2F4858'}
         bgColor={'#fbf3e0'}
