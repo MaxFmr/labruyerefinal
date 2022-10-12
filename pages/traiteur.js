@@ -33,7 +33,7 @@ const TraiteurPage = () => {
         textColor={''}
         bgColor={'#2d8e8e'}
         photoPath={'/assets/photos/vic.webp'}
-        title={'Accompagnement'}
+        title={'Conseil'}
         text='Faire confiance à la Table de la Bruyère, c’est l’assurance d’être suivi et guidé. C’est l’association de notre expertise et de vos envies pour construire ensemble l’évenement qui vous ressemble.'
         link={'/traiteur#form'}
         textLink='Reserver'

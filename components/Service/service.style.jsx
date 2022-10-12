@@ -42,7 +42,6 @@ const StyledService = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5%;
     font-size: 15px;
     color: ${(props) => props.bg.textColor};
     text-align: justify;

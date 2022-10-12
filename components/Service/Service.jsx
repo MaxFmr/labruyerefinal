@@ -37,7 +37,7 @@ const Service = ({
         </>
       ) : (
         <>
-          <div className='text'>
+          <div style={{ padding: '4%' }} className='text'>
             <span className='title'>{title}</span>
             <p>{text}</p>
             {link && <Link href={link}>{textLink}</Link>}
