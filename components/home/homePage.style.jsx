@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 const StyledHomePage = styled.section`
-  position: fixed;
   text-decoration: none;
-
+  height: 100vh;
   li {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.secondary};
@@ -79,7 +78,7 @@ const StyledHomePage = styled.section`
       }
     }
     li {
-      margin-bottom: 2rem;
+      margin-bottom: 3%;
       background: linear-gradient(
         to right,
         ${({ theme }) => theme.colors.primary},

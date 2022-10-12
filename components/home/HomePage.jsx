@@ -6,7 +6,6 @@ import { FaInstagram, FaFacebook } from 'react-icons/fa';
 const HomePage = () => {
   return (
     <StyledHomePage>
-      <div></div>
       <video
         playsInline
         src='https://www.maximekerlidou.fr/videos/videobanner.mp4'
@@ -33,18 +32,18 @@ const HomePage = () => {
           <nav>
             <ul>
               <Link href={'/traiteur'}>
-                <li>Traiteur</li>
+                <li> ❃ Traiteur</li>
               </Link>
               <Link href='/cours'>
-                <li>Cours de cuisine</li>
+                <li> ❃ Cours de cuisine</li>
               </Link>
 
               <Link href='/chef'>
-                <li> Chef à domicile</li>
+                <li> ❃ Chef à domicile</li>
               </Link>
 
               <Link href='/actus'>
-                <li> Nos actualités</li>
+                <li> ❃ Nos actualités</li>
               </Link>
             </ul>
             <div className='contactbtn'>
