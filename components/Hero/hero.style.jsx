@@ -12,6 +12,7 @@ const StyledHero = styled.section`
     text-transform: uppercase;
     position: relative;
     margin-top: -4%;
+    text-align: center;
   }
   .logo {
     width: 300px;

@@ -11,12 +11,15 @@ const StyledParallaxBanner = styled.section`
     height: 50vh;
   }
   .text {
+    span {
+      text-align: center;
+    }
     color: #fbf3e0;
     position: relative;
     margin-top: 5%;
     font-style: italic;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.1em;
     @media (min-width: 768px) {
       font-size: 2em;
     }

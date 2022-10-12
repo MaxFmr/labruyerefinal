@@ -31,7 +31,7 @@ const CoursPage = () => {
         bgColor={'#2d8e8e'}
         photoPath={'/assets/photos/service.webp'}
         title={'Des compétences'}
-        text='Vous serez en mesure de surprendre vos convives, avec une cuisine de restaurant
+        text='Vous serez en mesure de surprendre vos convives, avec une cuisine de restaurant. Les techniques professionnelles et astuces du chef vous permettrons d’améliorer vos recettes
 !'
         link={'/cours#form'}
         textLink='Reserver'
@@ -40,7 +40,7 @@ const CoursPage = () => {
         photoPath={
           'https://media.istockphoto.com/photos/cooking-master-class-pasta-preparing-hands-picture-id1268900953'
         }
-        text='Le cours de cuisine est un moment convivial, idéal pour générer de la cohésion sur des évenemnts de type team building ou encore créer un temps collectif pendant un enterrement de vie de célibataire !'
+        text='Le cours de cuisine est un moment convivial, idéal pour générer de la cohésion sur des évenemnts de type "team building" ou encore créer un temps collectif pendant un enterrement de vie de célibataire !'
       />
       <Service
         textColor={'#2F4858'}

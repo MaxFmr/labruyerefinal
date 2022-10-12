@@ -18,6 +18,8 @@ const TraiteurPage = () => {
     '
       />
       <Banner1 bgPath={'/assets/photos/equipe.jpeg'} />
+      <div style={{ height: '10px' }}></div>
+
       <Service
         textColor={'#2F4858'}
         photoPath={'/assets/photos/oeuf.webp'}
