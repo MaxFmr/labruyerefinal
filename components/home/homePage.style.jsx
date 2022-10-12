@@ -78,6 +78,7 @@ const StyledHomePage = styled.section`
       }
     }
     li {
+      font-size: 25px;
       margin-bottom: 3%;
       background: linear-gradient(
         to right,
