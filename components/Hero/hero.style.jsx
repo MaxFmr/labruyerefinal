@@ -8,7 +8,7 @@ const StyledHero = styled.section`
   text-decoration: none;
 
   h1 {
-    font-size: 45px;
+    font-size: 40px;
     text-transform: uppercase;
     position: relative;
     margin-top: -4%;

@@ -11,48 +11,47 @@ const Chef = () => {
         bgPath={'/assets/photos/service.webp'}
         logoPath={'/assets/logo.svg'}
         title={'Chef à domicile'}
-        text='l Lorem ipsum dolor sit amet consectetur adipisicing elit
-        Eaque officiis illo dolores, quidem, facilis iure odio omnis ipsa
-        repellendus aspernatur et excepturi saepe incidunt voluptate
-        laborum provident illum! Dignissimos, soluta! Lorem ipsum dolor
-        sit amet consectetur adipisicing elit. Adipisci, minima quasi?
-    !'
+        text='Le Chef à domicile permet d’organiser un repas chez soi, sans aucune contrainte organisationnelle. Il vous laisse ainsi profiter de la compagnie de ses invités, famille, amis ou relations professionnelles. '
+        link={'/chef#form'}
+        textLink='Reserver'
       />
-      <Service
-        textColor={''}
-        bgColor={'#2d8e8e'}
-        photoPath={'/assets/photos/service.webp'}
-        title={'Vos évenements'}
-        text='l Lorem ipsum dolor sit amet consectetur adipisicing elit
-    Eaque officiis illo dolores, quidem, facilis iure odio omnis ipsa
-    repellendus aspernatur et excepturi 
-!'
-      />
+      <div style={{ height: '40px' }}></div>
+
       <Service
         textColor={'#2F4858'}
         bgColor={'#fbf3e0'}
         photoPath={'/assets/photos/service.webp'}
-        title={'Vos évenements'}
+        title={'Un service exclusif'}
         ImageSide='left'
-        text='l Lorem ipsum dolor sit amet consectetur adipisicing elit
-    Eaque officiis illo dolores, quidem, facilis iure odio omnis ipsa
-    repellendus aspernatur et excepturi saepe incidunt voluptate
-    laborum provident illum! Dignissimos, soluta! Lorem ipsum dolor
-    sit amet consectetur adipisicing elit. Adipisci, minima quasi?
-!'
+        text='Le Chef s’occupe de : l’achat des ingrédients, la préparation du repas sur place, du service à l’assiette puis range la cuisine avant de s’éclipser. Recevoir chez soi n’a jamais été aussi simple, plaisant et gourmand.'
+        link={'/chef#form'}
+        textLink='Reserver'
       />
+
       <Service
         textColor={''}
         bgColor={'#2d8e8e'}
         photoPath={'/assets/photos/service.webp'}
-        title={'Vos évenements'}
-        text='l Lorem ipsum dolor sit amet consectetur adipisicing elit
-    Eaque officiis illo dolores, quidem, facilis iure odio omnis ipsa
-    repellendus aspernatur et excepturi saepe incidunt voluptate
-    laborum provident illum! Dignissimos, soluta! Lorem ipsum dolor
-!'
+        title={'Pour vous ou avec vous'}
+        text='La prestation Chef à domicile vous libère mais si vous désirez intervenir dans la préparation de votre repas, c’est possible !'
+        link={'/chef#form'}
+        textLink='Reserver'
       />
-      <ContactForm />
+
+      <Service
+        textColor={'#2F4858'}
+        bgColor={'#fbf3e0'}
+        photoPath={'/assets/photos/service.webp'}
+        title={'Sur mesure'}
+        ImageSide='left'
+        text='Reservez une prestation sur mersure. Nous procédons à la création d’un menu qui correspond précisément à vos attentes, contrairement à d’autres maisons où la prestation est prédifinie par un menu existant'
+        link={'/chef#form'}
+        textLink='Reserver'
+      />
+      <div id='form'>
+        {' '}
+        <ContactForm />
+      </div>
     </>
   );
 };

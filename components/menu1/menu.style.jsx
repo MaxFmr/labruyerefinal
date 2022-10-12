@@ -30,7 +30,7 @@ const StyledMenu = styled.section`
   .closeIcon {
     position: absolute;
     top: 10%;
-    left: 80%;
+    left: 70%;
     color: #257676;
   }
 `;

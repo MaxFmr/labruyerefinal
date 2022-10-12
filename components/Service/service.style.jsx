@@ -13,7 +13,7 @@ const StyledService = styled.section`
   }
 
   .photo {
-    /* box-shadow: -11px -5px 15px -5px #2f4858; */
+    /* box-shadow: -11px -5px 15px -5px #7fcdfd; */
     overflow: hidden;
     width: 50%;
     height: 50%;
@@ -63,6 +63,7 @@ const StyledService = styled.section`
     .title {
       font-size: 21px;
       font-weight: bold;
+      text-align: center;
     }
   }
 `;

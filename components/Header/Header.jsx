@@ -15,13 +15,13 @@ const Header = () => {
       </div>
       <div className='buttons'>
         <nav>
-          <button onClick={() => router.push('/contact')}>✷ Contact</button>
-          <button onClick={() => router.push('/traiteur')}>✷ Traiteur</button>
+          <button onClick={() => router.push('/contact')}> ❃ Contact</button>
+          <button onClick={() => router.push('/traiteur')}> ❃ Traiteur</button>
           <button onClick={() => router.push('/cours')}>
-            ✷ École de la table
+            ❃ École de la table
           </button>
           <button onClick={() => router.push('/chef')}>
-            ✷ Chef à domicile
+            ❃ Chef à domicile
           </button>
           <button onClick={() => router.push('/actus')}>✷ Actus</button>
         </nav>

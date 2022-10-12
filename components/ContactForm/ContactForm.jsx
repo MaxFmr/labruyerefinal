@@ -14,6 +14,11 @@ const ContactForm = () => {
           <a>06 72 59 78 63</a>
         </Link>{' '}
         <h2>Via ce formulaire : </h2>
+        <span>
+          A la réception de votre message, nous vous recontacterons par
+          téléphone au plus vite.
+        </span>
+        <div style={{ height: '10px' }}></div>
         <form>
           <label>Sujet de votre message : </label>
           <select name='subject' id='pet-select'>
@@ -51,7 +56,12 @@ const ContactForm = () => {
             <input type='email' placeholder='Votre Email*' required />
           </div>
           <div>
-            <textarea placeholder='Votre message*' />
+            <span>Quelle date de prestation désirez-vous ?</span>
+            <input type='date' />
+          </div>
+
+          <div>
+            <textarea placeholder='Votre message* (n’hésitez pas à préciser un maximum d’éléments tels que le nombre de personnes attendus etc.)' />
           </div>
           <div className='rgpd'>
             <input type='checkbox' />
