@@ -14,11 +14,11 @@ const TraiteurPage = () => {
         bgPath={'/assets/photos/service.webp'}
         logoPath={'/assets/logo.svg'}
         title={'Traiteur'}
-        text='Qualité, saisonalité, expertise et accompagnement.
+        text='Qualité, saisonalité, expertise et conseil.
     '
       />
       <Banner1 bgPath={'/assets/photos/equipe.jpeg'} />
-      <div style={{ height: '10px' }}></div>
+      <div style={{ height: '20px' }}></div>
 
       <Service
         textColor={'#2F4858'}
@@ -83,8 +83,9 @@ const TraiteurPage = () => {
           padding: '3%',
           margin: '3vh 0% 10vh 0%',
           textAlign: 'justify',
-          fontSize: '1em',
+          fontSize: '1.2em',
           textAlign: 'center',
+          fontWeight: 'bold',
         }}>
         Nous sommes aussi le traiteur exclusif du domaine Le Réveil de la
         Bruyère, ouvert depuis octobre 2021.

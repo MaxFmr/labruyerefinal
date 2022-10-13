@@ -23,7 +23,7 @@ const HomePage = () => {
           <Image
             src='/assets/logo.svg'
             height={180}
-            width={200}
+            width={280}
             objectFit='cover'
             alt='logo entreprise traiteur la table de la bruyère'
           />
@@ -54,11 +54,17 @@ const HomePage = () => {
           </nav>
 
           <div className='social'>
-            <Link href=''>
+            <Link
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://instagram.com/latabledelabruyere?igshid=YmMyMTA2M2Y='>
               <FaInstagram size={35} style={{ cursor: 'pointer' }} />
             </Link>
 
-            <Link href=''>
+            <Link
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://www.facebook.com/La-Table-De-La-Bruyere-102142975538310/'>
               <FaFacebook size={35} style={{ cursor: 'pointer' }} />
             </Link>
           </div>

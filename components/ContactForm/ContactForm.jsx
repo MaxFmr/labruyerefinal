@@ -2,11 +2,47 @@ import StyledContactForm from './contactForm.style';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+import { useState } from 'react';
+import { ColorRing } from 'react-loader-spinner';
+import Modale from '../Modale/Modale';
 
 const ContactForm = () => {
   const router = useRouter();
+  const form = useRef();
+
+  const [loader, setLoader] = useState(false);
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  const OpenModal = () => setIsOpen(true);
+  const onCloseModal = () => setIsOpen(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE,
+        form.current,
+        process.env.NEXT_PUBLIC_EMAILJS_APIKEY
+      )
+      .then(setLoader(true))
+      .then(
+        (result) => {
+          setLoader(false);
+          OpenModal();
+        },
+        (error) => {
+          alert(error.text);
+        }
+      );
+  };
+
   return (
     <StyledContactForm>
+      {modalIsOpen && <Modale onCloseModal={onCloseModal} />}
       <div className='form'>
         <h2>Contactez-nous : </h2>
         <h3>Par téléphone au :</h3>
@@ -15,67 +51,103 @@ const ContactForm = () => {
         </Link>{' '}
         <h2>Via ce formulaire : </h2>
         <span>
-          A la réception de votre message, nous vous recontacterons par
-          téléphone au plus vite.
+          A la réception de votre message, nous vous recontacterons au plus
+          vite.
         </span>
         <div style={{ height: '10px' }}></div>
-        <form>
-          <label>Sujet de votre message : </label>
-          <select name='subject' id='pet-select'>
-            <option value=''>Sectionnez un type de prestation*</option>
-            <option
-              value='Traiteur évènentiel'
-              selected={router.asPath === '/traiteur' ? 'true' : false}>
-              Traiteur évènentiel
-            </option>
-            <option
-              value='Cours de cuisine'
-              selected={router.asPath === '/cours' ? 'true' : false}>
-              Cours de cuisine
-            </option>
-            <option
-              value='Chef à domicile'
-              selected={router.asPath === '/chef' ? 'true' : false}>
-              Chef à domicile
-            </option>
-          </select>
-          <div>
-            <input type='text' placeholder='Votre nom*' required />
-          </div>
-          <div>
-            <input type='text' placeholder='Votre Prénom*' required />
-          </div>
-          <div>
-            <input
-              type='text'
-              placeholder='Votre numéro de téléphone*'
-              required
-            />
-          </div>
-          <div>
-            <input type='email' placeholder='Votre Email*' required />
-          </div>
-          <div>
-            <span>Quelle date de prestation désirez-vous ?</span>
-            <input type='date' />
-          </div>
+        {!loader ? (
+          <form ref={form} onSubmit={sendEmail}>
+            <label>Sujet de votre message : </label>
+            <select name='service' id='service'>
+              <option value=''>Sectionnez un type de prestation*</option>
+              <option
+                value='Traiteur évènentiel'
+                selected={router.asPath === '/traiteur' ? 'true' : false}>
+                Traiteur évènentiel
+              </option>
+              <option
+                value='Cours de cuisine'
+                selected={router.asPath === '/cours' ? 'true' : false}>
+                Cours de cuisine
+              </option>
+              <option
+                value='Chef à domicile'
+                selected={router.asPath === '/chef' ? 'true' : false}>
+                Chef à domicile
+              </option>
+            </select>
+            <div>
+              <input
+                type='text'
+                placeholder='Votre nom*'
+                required
+                id='name'
+                name='user_name'
+              />
+            </div>
+            <div>
+              <input
+                type='text'
+                placeholder='Votre Prénom*'
+                required
+                id='firstname'
+                name='user_firstname'
+              />
+            </div>
+            <div>
+              <input
+                type='text'
+                placeholder='Votre numéro de téléphone*'
+                required
+                id='phone'
+                name='user_phone'
+              />
+            </div>
+            <div>
+              <input
+                type='email'
+                placeholder='Votre Email*'
+                required
+                id='email'
+                name='user_email'
+              />
+            </div>
+            <div>
+              <span>Quelle date de prestation désirez-vous ?</span>
+              <input type='date' id='date' name='date' />
+            </div>
 
-          <div>
-            <textarea placeholder='Votre message* (n’hésitez pas à préciser un maximum d’éléments tels que le nombre de personnes attendus etc.)' />
-          </div>
-          <div className='rgpd'>
-            <input type='checkbox' />
+            <div>
+              <textarea
+                id='message'
+                name='user_message'
+                placeholder='Votre message* (n’hésitez pas à préciser un maximum d’éléments tels que le nombre de personnes attendus etc.)'
+              />
+            </div>
+            <div className='rgpd'>
+              <input type='checkbox' required />
 
-            <span>
-              *J’accepte de transmettre ces données à La Table de la Bruyère
-              pour être recontacté(e) à des fins commerciales. Ces données ne
-              seront transmises à personne d’autre que la Table de La Bruyère.
-            </span>
-          </div>
-          <div className='btn'>
-            <button type='submit'>Evoyer</button>
-          </div>
-        </form>
+              <span>
+                *J’accepte de transmettre ces données à La Table de la Bruyère
+                pour être recontacté(e) à des fins commerciales. Ces données ne
+                seront transmises à personne d’autre que la Table de La Bruyère.
+              </span>
+            </div>
+            <div className='btn'>
+              <button type='submit'>Evoyer</button>
+            </div>
+          </form>
+        ) : (
+          <ColorRing
+            visible={true}
+            height='80'
+            width='80'
+            ariaLabel='blocks-loading'
+            wrapperStyle={{}}
+            wrapperClass='blocks-wrapper'
+            colors={['#257676', '#fbf3e0', '#2d8e8e', '#efc33c', '#2F4858']}
+          />
+        )}
       </div>
       <div className='logo'>
         <Image

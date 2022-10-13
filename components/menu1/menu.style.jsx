@@ -32,6 +32,7 @@ const StyledMenu = styled.section`
     top: 10%;
     left: 70%;
     color: #257676;
+    font-weight: bold;
   }
 `;
 export default StyledMenu;

@@ -18,7 +18,8 @@ const StyledHomePage = styled.section`
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-bottom: -20px;
+    height: 220px;
+    margin-bottom: -15px;
   }
 
   .items {
@@ -60,48 +61,30 @@ const StyledHomePage = styled.section`
     ul {
       list-style-type: none;
       font-size: 2rem;
-      @media (min-width: 768px) {
-        font-size: 2.5rem;
-      }
-      margin-left: -40px;
-      animation-duration: 1s;
-      animation-name: slideleft;
-      margin-bottom: 20px;
-      @keyframes slideleft {
-        from {
-          margin-left: -1000px;
-        }
+      display: flex;
+      flex-direction: column;
+      width: 300px;
 
-        to {
-          margin-left: -40px;
-        }
-      }
+      margin-left: -40px;
     }
     li {
       font-size: 25px;
-      margin-bottom: 3%;
-      background: linear-gradient(
-        to right,
-        ${({ theme }) => theme.colors.primary},
-        ${({ theme }) => theme.colors.primary} 50%,
-        ${({ theme }) => theme.colors.secondary} 50%
-      );
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-size: 200% 100%;
-      background-position: 100%;
-      transition: background-position 1500ms ease;
+      font-weight: bold;
+      margin-bottom: 8%;
+      width: auto;
+      @media (min-width: 768px) {
+        font-size: 1em;
+      }
 
       :hover {
-        background-position: 0 100%;
+        color: ${({ theme }) => theme.colors.primary};
       }
     }
     .contactbtn {
       ≈ span {
         text-decoration: none;
       }
-      margin-top: 65px;
+      margin-top: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
