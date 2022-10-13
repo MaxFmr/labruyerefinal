@@ -9,7 +9,7 @@ const ParalaxBanner = ({ photoPath, text, logo }) => {
       layers={[
         {
           image: photoPath,
-          speed: -10,
+          speed: -5,
           opacity: [0.7, 0.8],
         },
       ]}>

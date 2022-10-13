@@ -1,4 +1,4 @@
-import StyledModale from './madale.stye';
+import StyledModale from './modale.style';
 import Image from 'next/image';
 
 const Modale = ({ onCloseModal }) => {

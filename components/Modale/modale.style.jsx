@@ -23,6 +23,7 @@ const StyledModale = styled.section`
     margin-bottom: 1%;
     font-size: larger;
     font-weight: bold;
+    cursor: pointer;
   }
   p {
     text-align: center;

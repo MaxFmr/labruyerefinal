@@ -3,8 +3,13 @@ import axios from 'axios';
 import { useEffect } from 'react';
 
 const Articles = () => {
-  const [title, setTitle] = useState('');
-  const [text, setText] = useState('');
+  const [title1, setTitle1] = useState('');
+  const [postTitle, setPostTitle] = useState('');
+  const [title2, setTitle2] = useState('');
+  const [title3, setTitle3] = useState('');
+  const [text1, setText1] = useState('');
+  const [text2, setText2] = useState('');
+  const [text3, setText3] = useState('');
   const [date, setDate] = useState('');
   const [photo1, setPhoto1] = useState('');
   const [photo2, setPhoto2] = useState('');
@@ -37,8 +42,14 @@ const Articles = () => {
 
     try {
       const post = {
-        title,
-        text,
+        postTitle,
+        title1,
+        text1,
+        title2,
+        text2,
+        title3,
+        text3,
+
         date,
         photos: [photo1, photo2, photo3],
       };
@@ -57,39 +68,93 @@ const Articles = () => {
 
   const removeArticle = async (id) => {
     const articleToDelete = await axios.delete('/api/article' + `?id=${id}`);
-    alert(articleToDelete.data.message);
+    alert('article suprimé');
     return setArticlMod(!articleMod);
   };
 
   return (
     <div style={{ display: 'flex', margin: '20px' }}>
       {isAuth ? (
-        <div>
+        <div style={{ color: 'black' }}>
           <div>
             <h3>Ajouter un article</h3>
             <form onSubmit={handleSubmit}>
+              <h3>Date</h3>
+              <input
+                type='date'
+                onChange={(e) => setDate(e.target.value)}
+                required
+              />
+              <h3>Texte</h3>
+              <h4>Titre du post</h4>
               <input
                 type='text'
-                placeholder='titre'
-                onChange={(e) => setTitle(e.target.value)}
+                onChange={(e) => setPostTitle(e.target.value)}
+                required
               />
-              <h3>Date</h3>
-              <input type='date' onChange={(e) => setDate(e.target.value)} />
-              <h3>Texte</h3>
+
+              <h4>Paragraphe1</h4>
+              <input
+                type='text'
+                placeholder='titre1'
+                onChange={(e) => setTitle1(e.target.value)}
+                required
+              />
               <div>
                 <textarea
                   type='text'
                   placeholder='votre texte'
-                  onChange={(e) => setText(e.target.value)}
+                  onChange={(e) => setText1(e.target.value)}
+                  cols={50}
+                  rows={20}
+                  required
+                />
+              </div>
+
+              <h4>URL photo1</h4>
+              <input
+                type='text'
+                onChange={(e) => setPhoto1(e.target.value)}
+                required
+              />
+              <p>{photo1}</p>
+
+              <h4>Paragraphe2</h4>
+
+              <input
+                type='text'
+                placeholder='titre2'
+                onChange={(e) => setTitle2(e.target.value)}
+              />
+              <div>
+                <textarea
+                  type='text'
+                  placeholder='votre texte'
+                  onChange={(e) => setText2(e.target.value)}
                   cols={50}
                   rows={20}
                 />
               </div>
-
-              <h3>URL photo1</h3>
-              <input type='text' onChange={(e) => setPhoto1(e.target.value)} />
               <h3>URL photo2</h3>
+
               <input type='text' onChange={(e) => setPhoto2(e.target.value)} />
+              <p>{photo2}</p>
+
+              <h4>Paragraphe3</h4>
+              <input
+                type='text'
+                placeholder='titre3'
+                onChange={(e) => setTitle3(e.target.value)}
+              />
+              <div>
+                <textarea
+                  type='text'
+                  placeholder='votre texte'
+                  onChange={(e) => setText3(e.target.value)}
+                  cols={50}
+                  rows={20}
+                />
+              </div>
               <h3>URL photo3</h3>
               <input type='text' onChange={(e) => setPhoto3(e.target.value)} />
               <p>{photo3}</p>
@@ -102,9 +167,11 @@ const Articles = () => {
               articles.map((art) => {
                 return (
                   <div key={art._id}>
-                    <span>{art._id + ' '}</span>
-                    <span>{art.title + ' '}</span>
-                    <span>{art.date + ' '}</span>
+                    <div>
+                      {' '}
+                      <span>{art._id}</span>
+                    </div>
+
                     <button
                       onClick={() => {
                         removeArticle(art._id);

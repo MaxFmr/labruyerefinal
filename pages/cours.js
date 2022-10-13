@@ -14,6 +14,7 @@ const CoursPage = () => {
         title={'École de la table'}
         text='Un moment convivial autour de l’apprentissage de la cuisine.'
       />
+      <div style={{ height: '5vh' }}></div>
 
       <Service
         textColor={'#2F4858'}
@@ -42,6 +43,8 @@ const CoursPage = () => {
         }
         text='Le cours de cuisine est un moment convivial, idéal pour générer de la cohésion sur des évenemnts de type "team building" ou encore créer un temps collectif pendant un enterrement de vie de célibataire !'
       />
+      <div style={{ height: '5vh' }}></div>
+
       <Service
         textColor={'#2F4858'}
         bgColor={'#fbf3e0'}

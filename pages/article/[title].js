@@ -1,21 +1,30 @@
-import axios from 'axios';
 import { findPosts } from '../api/article';
 import { findOneArticle } from '../api/article/[title]';
+import Header from '../../components/Header/Header';
+import Post from '../../components/Post/Post';
+import Hero from '../../components/Hero/Hero';
 
 const articlePage = ({ post }) => {
   const article = JSON.parse(post);
 
   return (
-    <div>
-      <p style={{ color: 'black' }}> {article.title}</p>
-    </div>
+    <>
+      <Header />
+      <Hero
+        bgPath={'/assets/photos/service.webp'}
+        logoPath={'/assets/logo.svg'}
+        title={article.postTitle}
+        text={article.date}
+      />
+      <Post post={article} />
+    </>
   );
 };
 export async function getStaticPaths() {
   const posts = await findPosts();
 
   const paths = posts.map((post) => ({
-    params: { title: post.title },
+    params: { title: post.postTitle },
   }));
 
   return { paths, fallback: false };
