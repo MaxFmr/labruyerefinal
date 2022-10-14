@@ -1,76 +1,76 @@
 import StyledHomePage from './homePage.style';
 import Image from 'next/image';
 import Link from 'next/link';
+import Header from '../Header/Header';
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import Menu1 from '../menu1/Menu1';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
 
 const HomePage = () => {
+  const [displayMenu, setDisplayMenu] = useState(false);
+  const router = useRouter();
   return (
-    <StyledHomePage>
-      <video
-        playsInline
-        src='https://www.maximekerlidou.fr/videos/videobanner.mp4'
-        muted
-        loop
-        autoPlay
-        style={{
-          height: '100%',
-          objectFit: 'cover',
-          width: '100%',
-        }}></video>
-
-      <div className='items'>
-        <div className='logo'>
-          <Image
-            src='/assets/logo.svg'
-            height={180}
-            width={280}
-            objectFit='cover'
-            alt='logo entreprise traiteur la table de la bruyère'
-          />
+    <>
+      <StyledHomePage>
+        <video
+          playsInline
+          src='https://www.maximekerlidou.fr/videos/videobanner.mp4'
+          muted
+          loop
+          autoPlay
+          style={{
+            height: '100%',
+            objectFit: 'cover',
+            width: '100vw',
+            position: 'absolute',
+          }}></video>
+        <div className='header'>
+          <Image src={'/assets/logo.svg'} height={90} width={80} />
         </div>
-        <div className='nav'>
-          <nav>
-            <ul>
-              <Link href={'/traiteur'}>
-                <li> ❃ Traiteur</li>
-              </Link>
-              <Link href='/cours'>
-                <li> ❃ Cours de cuisine</li>
-              </Link>
-
-              <Link href='/chef'>
-                <li> ❃ Chef à domicile</li>
-              </Link>
-
-              <Link href='/actus'>
-                <li> ❃ Nos actualités</li>
-              </Link>
-            </ul>
-            <div className='contactbtn'>
-              <Link href={'/contact'}>
-                <span> CONTACTEZ - NOUS</span>
-              </Link>
-            </div>
-          </nav>
-
-          <div className='social'>
-            <Link
-              target='_blank'
-              rel='noopener noreferrer'
-              href='https://instagram.com/latabledelabruyere?igshid=YmMyMTA2M2Y='>
-              <FaInstagram size={35} style={{ cursor: 'pointer' }} />
-            </Link>
-
-            <Link
-              target='_blank'
-              rel='noopener noreferrer'
-              href='https://www.facebook.com/La-Table-De-La-Bruyere-102142975538310/'>
-              <FaFacebook size={35} style={{ cursor: 'pointer' }} />
-            </Link>
-          </div>
+        <div className='items'>
+          <h1>
+            <Link href={'/traiteur'}>Traiteur </Link>
+          </h1>
+          <h2>
+            <Link href={'/chef'}>Chef à Domicile </Link>
+          </h2>
+          <h2>
+            <Link href={'/cours'}>Cours de cuisine </Link>
+          </h2>
+          <button
+            onClick={() => {
+              router.push('/traiteur#form');
+            }}>
+            Reserver
+          </button>
         </div>
-      </div>
-    </StyledHomePage>
+        <div className='social'>
+          <Link
+            href={
+              'https://instagram.com/latabledelabruyere?igshid=YmMyMTA2M2Y='
+            }>
+            <FaInstagram
+              size={50}
+              color='#2d8e8e'
+              style={{ cursor: 'pointer', marginBottom: '10px' }}
+            />
+          </Link>
+
+          <Link
+            href={
+              'https://www.facebook.com/La-Table-De-La-Bruyere-102142975538310/'
+            }>
+            <FaFacebook
+              size={50}
+              color='#257676'
+              style={{ cursor: 'pointer' }}
+            />
+          </Link>
+        </div>
+      </StyledHomePage>
+    </>
   );
 };
 export default HomePage;
