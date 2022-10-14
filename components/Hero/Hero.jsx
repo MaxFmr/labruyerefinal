@@ -27,11 +27,9 @@ const Hero = ({ bgPath, logoPath, title, text }) => {
             alt="logo de l'entreprise traiteur la table de la Bruyère Valenciennes"
           />
         </div>
-        <div>
-          <h1>{title}</h1>
-        </div>
         <div className='text'>
-          <p>{text}</p>
+          <h1>{title}</h1>
+          <span>{text}</span>
         </div>
         <div className='menuIcon' onClick={() => setDisplayMenu(!displayMenu)}>
           <GiHamburgerMenu size={30} color={'#fbf3e0'} />

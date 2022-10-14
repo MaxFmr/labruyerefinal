@@ -18,11 +18,16 @@ const StyledHero = styled.section`
     width: 300px;
     height: 300px;
     display: flex;
-    margin-top: -4%;
+    margin-top: -10%;
   }
   .text {
     width: 60%;
-    font-style: italic;
+    h1 {
+      margin-bottom: 0px;
+    }
+    span {
+      font-style: italic;
+    }
     text-align: center;
     font-size: 18px;
     position: relative;

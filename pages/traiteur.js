@@ -5,6 +5,7 @@ import Header from '../components/Header/Header';
 import Banner1 from '../components/Banner1/Banner1';
 import Link from 'next/link';
 import ParalaxBanner from '../components/ParallaxBanner/ParallaxBanner';
+import Footer from '../components/footer/Footer';
 
 const TraiteurPage = () => {
   return (
@@ -100,6 +101,7 @@ const TraiteurPage = () => {
       <div id='form'>
         <ContactForm />
       </div>
+      <Footer />
     </>
   );
 };

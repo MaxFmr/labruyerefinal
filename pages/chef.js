@@ -11,7 +11,7 @@ const Chef = () => {
         bgPath={'/assets/photos/service.webp'}
         logoPath={'/assets/logo.svg'}
         title={'Chef à domicile'}
-        text='Le Chef à domicile permet d’organiser un repas chez soi, sans aucune contrainte organisationnelle. Il vous laisse ainsi profiter de la compagnie de ses invités, famille, amis ou relations professionnelles. '
+        text='Le Chef à domicile permet d’organiser un repas chez soi. Il vous laisse ainsi profiter de la compagnie de ses invités. '
         link={'/chef#form'}
         textLink='Reserver'
       />
@@ -44,7 +44,7 @@ const Chef = () => {
         photoPath={'/assets/photos/service.webp'}
         title={'Sur mesure'}
         ImageSide='left'
-        text='Reservez une prestation sur mersure. Nous procédons à la création d’un menu qui correspond précisément à vos attentes, contrairement à d’autres maisons où la prestation est prédifinie par un menu existant'
+        text='Reservez une prestation sur mersure. Nous procédons à la création d’un menu qui correspond précisément à vos attentes, contrairement à d’autres maisons où la prestation est prédifinie par un menu existant.'
         link={'/chef#form'}
         textLink='Reserver'
       />
