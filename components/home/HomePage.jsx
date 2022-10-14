@@ -27,7 +27,12 @@ const HomePage = () => {
             position: 'absolute',
           }}></video>
         <div className='header'>
-          <Image src={'/assets/logo.svg'} height={90} width={80} />
+          <Image
+            src={'/assets/logo.svg'}
+            height={90}
+            width={80}
+            alt='logo entreprise traiteur, chef à domicile, école cours de cuisine La tabel de la bruyère valenciennes'
+          />
         </div>
         <div className='items'>
           <h1>
