@@ -4,6 +4,7 @@ import Header from '../components/Header/Header';
 import { useRouter } from 'next/router';
 import { findPosts } from './api/article';
 import PostsPreview from '../components/PostsPreview/PostsPreview';
+import Footer from '../components/footer/Footer';
 
 const ActusPage = ({ posts }) => {
   const router = useRouter();
@@ -19,6 +20,7 @@ const ActusPage = ({ posts }) => {
     !'
       />
       <PostsPreview articles={articles} />
+      <Footer />
     </>
   );
 };

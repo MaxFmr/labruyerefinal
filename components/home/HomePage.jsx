@@ -1,15 +1,10 @@
 import StyledHomePage from './homePage.style';
 import Image from 'next/image';
 import Link from 'next/link';
-import Header from '../Header/Header';
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import Menu1 from '../menu1/Menu1';
 import { useRouter } from 'next/router';
-import { useState } from 'react';
 
 const HomePage = () => {
-  const [displayMenu, setDisplayMenu] = useState(false);
   const router = useRouter();
   return (
     <>
@@ -29,8 +24,8 @@ const HomePage = () => {
         <div className='header'>
           <Image
             src={'/assets/logo.svg'}
-            height={90}
-            width={80}
+            height={200}
+            width={300}
             alt='logo entreprise traiteur, chef à domicile, école cours de cuisine La tabel de la bruyère valenciennes'
           />
         </div>

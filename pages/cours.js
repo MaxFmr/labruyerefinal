@@ -3,6 +3,7 @@ import Service from '../components/Service/Service';
 import ContactForm from '../components/ContactForm/ContactForm';
 import Header from '../components/Header/Header';
 import ParalaxBanner from '../components/ParallaxBanner/ParallaxBanner';
+import Footer from '../components/footer/Footer';
 
 const CoursPage = () => {
   return (
@@ -58,6 +59,7 @@ const CoursPage = () => {
       <div id='form'>
         <ContactForm photoPath={'/assets/photos/service.webp'} />
       </div>
+      <Footer />
     </>
   );
 };

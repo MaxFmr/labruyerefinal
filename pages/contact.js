@@ -1,6 +1,7 @@
 import Hero from '../components/Hero/Hero';
 import ContactForm from '../components/ContactForm/ContactForm';
 import Header from '../components/Header/Header';
+import Footer from '../components/footer/Footer';
 
 const ContactPage = () => {
   return (
@@ -12,6 +13,7 @@ const ContactPage = () => {
         title={'Contactez-nous'}
       />
       <ContactForm />
+      <Footer />
     </>
   );
 };

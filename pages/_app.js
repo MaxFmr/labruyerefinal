@@ -2,6 +2,7 @@ import '../styles/globals.css';
 
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Head from 'next/head';
 
 const theme = {
   colors: {
@@ -20,6 +21,10 @@ const theme = {
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel='shortcut icon' href='../public/assets/logo.webp' />
+      </Head>
       <ParallaxProvider>
         <ThemeProvider theme={theme}>
           <Component {...pageProps} />

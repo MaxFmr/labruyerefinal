@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 const StyledHomePage = styled.section`
-  height: 100%;
+  height: 100vh;
   text-decoration: none;
   box-sizing: border-box;
   video {
@@ -8,24 +8,30 @@ const StyledHomePage = styled.section`
   }
 
   .header {
-    height: 20%;
+    height: 30%;
     padding-left: 5%;
     width: 100vw;
     position: absolute;
     opacity: 0.9;
     display: flex;
+    justify-content: center;
     .menuIcon {
       margin-left: 80%;
     }
-    background-color: #2d8e8e;
   }
   .items {
     margin-right: 5%;
+    margin-top: -20px;
+
     position: absolute;
     left: 40%;
     top: 30%;
-    @media (max-height: 300px) {
-      top: 17%;
+    font-family: 'Inknut Antiqua', serif;
+    font-weight: lighter;
+
+    h1,
+    h2 {
+      margin-bottom: -10%;
     }
 
     a {
@@ -39,10 +45,14 @@ const StyledHomePage = styled.section`
         color: #2d8e8e;
       }
     }
+    font-size: 14px;
     @media (min-width: 768px) {
-      font-size: 20px;
-      left: 30%;
-      top: 35%;
+      font-size: 30px;
+      left: 25%;
+      top: 30%;
+    }
+    @media (max-height: 600px) {
+      font-size: 18px;
     }
     button {
       width: 100%;
@@ -53,6 +63,8 @@ const StyledHomePage = styled.section`
       font-family: 'Abhaya Libre', serif;
       color: #fbf3e0;
       cursor: pointer;
+      margin-top: 20%;
+      font-weight: bolder;
 
       :hover {
         background-color: #257676;
@@ -66,6 +78,17 @@ const StyledHomePage = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  .scroll {
+    position: absolute;
+    top: 75%;
+    left: 75%;
+    height: 30px;
+    width: 30px;
+    border: solid;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
   }
 `;
 export default StyledHomePage;
