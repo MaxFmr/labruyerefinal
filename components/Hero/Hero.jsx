@@ -32,7 +32,7 @@ const Hero = ({ bgPath, logoPath, title, text }) => {
           <span>{text}</span>
         </div>
         <div className='menuIcon' onClick={() => setDisplayMenu(!displayMenu)}>
-          <GiHamburgerMenu size={30} color={'#fbf3e0'} />
+          <GiHamburgerMenu size={40} color={'#2F4858'} />
         </div>
         {displayMenu && <Menu1 setDisplayMenu={setDisplayMenu} />}
       </StyledHero>

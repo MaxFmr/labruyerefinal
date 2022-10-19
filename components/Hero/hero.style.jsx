@@ -36,9 +36,10 @@ const StyledHero = styled.section`
     }
   }
   .menuIcon {
-    position: absolute;
-    left: 85%;
-    top: 10%;
+    position: fixed;
+    right: 10%;
+    bottom: 90%;
+    z-index: 10;
     @media (min-width: 750px) {
       display: none;
     }

@@ -12,17 +12,21 @@ const StyledMenu = styled.section`
   align-items: center;
   border-radius: 10px;
   padding: 5px;
+  z-index: 100;
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.green};
-    font-size: larger;
+    font-size: 24px;
     cursor: pointer;
+    @media (max-width: 400px) {
+      font-size: 18px;
+    }
   }
   li {
-    margin-bottom: 5px;
     color: ${({ theme }) => theme.colors.green};
     text-decoration: none;
     cursor: pointer;
+    margin-bottom: 7%;
   }
   ul {
     list-style-type: none;

@@ -6,15 +6,11 @@ const StyledHeader = styled.header`
   display: flex;
   align-items: center;
 
-  height: 50px;
+  height: 80px;
   position: fixed;
   width: 100vw;
   background-color: ${({ theme }) => theme.colors.primary};
   z-index: 10;
-
-  @media (max-width: 600px) {
-    height: 50px;
-  }
 
   @media (max-width: 750px) {
     display: none;
