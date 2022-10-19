@@ -6,6 +6,9 @@ const StyledService = styled.section`
   align-items: center;
   justify-content: center;
   margin: 30px 2% 10% 2%;
+  @media (max-width: 400px) {
+    margin-bottom: -20px;
+  }
   @media (min-width: 1000px) {
     font-size: 25px;
     height: 40vh;

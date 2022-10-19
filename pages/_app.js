@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 
-import { ThemeProvider, DefaultTheme } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Head from 'next/head';
 

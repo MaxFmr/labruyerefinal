@@ -27,7 +27,6 @@ const StyledHomePage = styled.section`
     left: 40%;
     top: 30%;
     font-family: 'Inknut Antiqua', serif;
-    font-weight: lighter;
 
     h1,
     h2 {
@@ -44,19 +43,21 @@ const StyledHomePage = styled.section`
       :hover {
         color: #2d8e8e;
       }
+      font-weight: 300;
     }
     font-size: 14px;
+
     @media (min-width: 768px) {
       font-size: 30px;
       left: 25%;
-      top: 30%;
+      top: 25%;
     }
     @media (max-height: 600px) {
       font-size: 18px;
     }
     button {
       width: 100%;
-      background-color: #2d8e8e;
+      background-color: #257676;
       border: none;
       padding: 10px;
       font-size: larger;
@@ -65,9 +66,12 @@ const StyledHomePage = styled.section`
       cursor: pointer;
       margin-top: 20%;
       font-weight: bolder;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       :hover {
-        background-color: #257676;
+        background-color: #2d8e8e;
       }
     }
   }
@@ -81,14 +85,12 @@ const StyledHomePage = styled.section`
   }
   .scroll {
     position: absolute;
-    top: 75%;
-    left: 75%;
-    height: 30px;
-    width: 30px;
-    border: solid;
-    border-radius: 50%;
+    bottom: 10%;
+    right: 10%;
+
     height: 40px;
     width: 40px;
+    z-index: 10;
   }
 `;
 export default StyledHomePage;

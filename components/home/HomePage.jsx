@@ -2,6 +2,7 @@ import StyledHomePage from './homePage.style';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
+import { AiFillDownCircle } from 'react-icons/ai';
 import { useRouter } from 'next/router';
 
 const HomePage = () => {
@@ -11,7 +12,7 @@ const HomePage = () => {
       <StyledHomePage>
         <video
           playsInline
-          src='https://www.maximekerlidou.fr/videos/videobanner.mp4'
+          src='https://www.maximekerlidou.fr/videos/bruyere.mp4'
           muted
           loop
           autoPlay
@@ -68,6 +69,9 @@ const HomePage = () => {
               style={{ cursor: 'pointer' }}
             />
           </Link>
+        </div>
+        <div className='scroll'>
+          <AiFillDownCircle size={60} color={'#257676'} />{' '}
         </div>
       </StyledHomePage>
     </>
