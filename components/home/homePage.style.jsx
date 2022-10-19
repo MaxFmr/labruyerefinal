@@ -86,6 +86,9 @@ const StyledHomePage = styled.section`
     justify-content: space-between;
   }
   .scroll {
+    @media (max-height: 600px) {
+      display: none;
+    }
     position: absolute;
     bottom: 5%;
     right: 10%;
