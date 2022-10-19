@@ -71,7 +71,7 @@ const HomePage = () => {
           </Link>
         </div>
         <div className='scroll'>
-          <AiFillDownCircle size={60} color={'#257676'} />{' '}
+          <AiFillDownCircle size={40} color={'#257676'} />{' '}
         </div>
       </StyledHomePage>
     </>

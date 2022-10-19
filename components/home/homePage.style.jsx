@@ -21,7 +21,7 @@ const StyledHomePage = styled.section`
   }
   .items {
     margin-right: 5%;
-    margin-top: -20px;
+    margin-top: 10%;
 
     position: absolute;
     left: 40%;
@@ -31,6 +31,8 @@ const StyledHomePage = styled.section`
     h1,
     h2 {
       margin-bottom: -10%;
+      line-height: 30px;
+      margin-bottom: 15px;
     }
 
     a {
@@ -48,12 +50,12 @@ const StyledHomePage = styled.section`
     font-size: 14px;
 
     @media (min-width: 768px) {
-      font-size: 30px;
+      font-size: 25px;
       left: 25%;
       top: 25%;
     }
     @media (max-height: 600px) {
-      font-size: 18px;
+      font-size: 14px;
     }
     button {
       width: 100%;
@@ -85,7 +87,7 @@ const StyledHomePage = styled.section`
   }
   .scroll {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     right: 10%;
 
     height: 40px;

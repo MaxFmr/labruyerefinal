@@ -19,7 +19,6 @@ const TraiteurPage = () => {
     '
       />
       <Banner1 bgPath={'/assets/photos/equipe.jpeg'} />
-      <div style={{ height: '20px' }}></div>
 
       <Service
         textColor={'#2F4858'}
@@ -41,13 +40,14 @@ const TraiteurPage = () => {
         link={'/traiteur#form'}
         textLink='Reserver'
       />
+      <div style={{ height: '45px' }}></div>
+
       <ParalaxBanner
         photoPath={'/assets/photos/macro.jpg'}
         text={
           '"Classique ou moderne, il n’y a qu’une seule cuisine... La bonne." Paul Bocuse'
         }
       />
-      <div style={{ height: '45px' }}></div>
       <Service
         textColor={'#2F4858'}
         bgColor={'#fbf3e0'}
@@ -68,6 +68,8 @@ const TraiteurPage = () => {
         link={'/traiteur#form'}
         textLink='Reserver'
       />
+      <div style={{ height: '45px' }}></div>
+
       <ParalaxBanner
         photoPath={
           'https://res.cloudinary.com/amenitiz/image/upload/w_2000,dpr_auto,c_scale,q_auto:best/v1636706053/vadbnrua0bvxva4tmvaj.jpg'

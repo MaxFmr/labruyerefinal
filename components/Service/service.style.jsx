@@ -5,7 +5,7 @@ const StyledService = styled.section`
   height: 35vh;
   align-items: center;
   justify-content: center;
-  margin: 30px 2% 10% 2%;
+  margin: 15% 2% 15% 2%;
   @media (max-width: 400px) {
     margin-bottom: -20px;
   }
