@@ -52,22 +52,28 @@ const HomePage = () => {
             href={
               'https://instagram.com/latabledelabruyere?igshid=YmMyMTA2M2Y='
             }>
-            <FaInstagram
-              size={50}
-              color='#2d8e8e'
-              style={{ cursor: 'pointer', marginBottom: '10px' }}
-            />
+            <div>
+              {' '}
+              <FaInstagram
+                size={50}
+                color='#2d8e8e'
+                style={{ cursor: 'pointer', marginBottom: '10px' }}
+              />
+            </div>
           </Link>
 
           <Link
             href={
               'https://www.facebook.com/La-Table-De-La-Bruyere-102142975538310/'
             }>
-            <FaFacebook
-              size={50}
-              color='#257676'
-              style={{ cursor: 'pointer' }}
-            />
+            <div>
+              {' '}
+              <FaFacebook
+                size={50}
+                color='#257676'
+                style={{ cursor: 'pointer' }}
+              />
+            </div>
           </Link>
         </div>
         <div className='scroll'>

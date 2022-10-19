@@ -31,7 +31,7 @@ const StyledHomePage = styled.section`
     h1,
     h2 {
       margin-bottom: -10%;
-      line-height: 30px;
+      line-height: 35px;
       margin-bottom: 15px;
     }
 

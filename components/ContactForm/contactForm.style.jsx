@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 const StyledContactForm = styled.section`
-  margin-top: 10%;
+  margin-top: ${(props) => (props.path === '/' ? '0' : '10%')};
   font-family: 'Abhaya Libre';
   h2,
   h3 {

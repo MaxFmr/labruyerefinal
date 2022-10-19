@@ -4,13 +4,37 @@ import Header from '../components/Header/Header';
 import { useRouter } from 'next/router';
 import { findPosts } from './api/article';
 import PostsPreview from '../components/PostsPreview/PostsPreview';
+import Head from 'next/head';
 import Footer from '../components/footer/Footer';
+import ContactForm from '../components/ContactForm/ContactForm';
 
 const ActusPage = ({ posts }) => {
   const router = useRouter();
   const articles = JSON.parse(posts);
   return (
     <>
+      <Head>
+        <title>La Table de la Bruyère - Blog, Actualités</title>
+
+        <meta
+          name='description'
+          content='Dans sa volonté de transmission, La table de la Bruyère traiteur partage son actualité, ses savoirs, ses conseils. Retrouvez ici les artcles de notre blog'
+        />
+        <meta
+          property='og:url'
+          content='https://www.latabledelabruyere.com/actus'
+        />
+
+        <meta property='og:video' content='' />
+
+        <meta
+          property='url'
+          content='https://www.latabledelabruyere.com/actus'
+        />
+        <meta property='video' content='' />
+        <meta property='video' content='' />
+        <meta property='video' content='' />
+      </Head>
       <Header />
       <Hero
         bgPath={'/assets/photos/service.webp'}
@@ -20,6 +44,7 @@ const ActusPage = ({ posts }) => {
     !'
       />
       <PostsPreview articles={articles} />
+      <ContactForm />
       <Footer />
     </>
   );

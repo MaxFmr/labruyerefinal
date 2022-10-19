@@ -5,11 +5,43 @@ import Header from '../components/Header/Header';
 import Banner1 from '../components/Banner1/Banner1';
 import Link from 'next/link';
 import ParalaxBanner from '../components/ParallaxBanner/ParallaxBanner';
+import Head from 'next/head';
 import Footer from '../components/footer/Footer';
 
 const TraiteurPage = () => {
   return (
     <>
+      <Head>
+        <title>La Table de La Bruyère - Traiteur</title>
+
+        <meta
+          name='description'
+          content='Faites appel à un traiteur d’exception, La Table de La Bruyère, Traiteur évenementiel, chef à domicile, évenements, mariages, baptèmes, séminaires etc., cours de cuisine, à Valenciennes, Wargnies, dans le Valenciennois et l’Avesnois. Notre chef Guillaume STILE, a exercé dans des restaurants réputés, dont La Gentilhommière.
+          Il s’est perfectionné au cours de rencontres avec des grands noms de la cuisine française notamment les Chefs Yann Morel, Marc Meurin, Emmanuel Hernandez, Philippe Mille et Hervé Raphanel.'
+        />
+        <meta
+          property='og:url'
+          content='https://www.latabledelabruyere.com/traiteur'
+        />
+
+        <meta property='og:video' content='' />
+
+        <meta
+          property='url'
+          content='https://www.latabledelabruyere.com/traiteur'
+        />
+        <meta property='og:title' content='La Table de La Bruyère - Traiteur' />
+        <meta property='og:type' content='video.movie' />
+        <meta property='og:image' content='/assets/photos/service.webp' />
+        <meta
+          property='video'
+          content='https://www.maximekerlidou.fr/videos/bruyere.mp4'
+        />
+        <meta
+          property='og:video'
+          content='https://www.maximekerlidou.fr/videos/bruyere.mp4'
+        />
+      </Head>
       <Header />
       <Hero
         bgPath={'/assets/photos/service.webp'}

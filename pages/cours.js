@@ -3,11 +3,42 @@ import Service from '../components/Service/Service';
 import ContactForm from '../components/ContactForm/ContactForm';
 import Header from '../components/Header/Header';
 import ParalaxBanner from '../components/ParallaxBanner/ParallaxBanner';
+import Head from 'next/head';
 import Footer from '../components/footer/Footer';
 
 const CoursPage = () => {
   return (
     <>
+      <Head>
+        <title>École de la Table de La Bruyère - Cours de cuisine</title>
+
+        <meta
+          name='description'
+          content='École de la Table de La Bruyère à Valenciennes, vivez, seul(e) ou en groupe, à la demi-journée, une expérience unique qui vous transporte dans une école de la table inspirée des plus grandes institutions gastronomiques Française. Vous serez en mesure de surprendre vos convives, avec une cuisine de restaurant. Les techniques professionnelles et astuces du chef vous permettrons d’améliorer vos recettes. Le cours de cuisine est un moment convivial, idéal pour générer de la cohésion sur des évenemnts de type "team building" ou encore créer un temps collectif pendant un enterrement de vie de célibataire !'
+        />
+        <meta
+          property='og:url'
+          content='https://www.latabledelabruyere.com/cours'
+        />
+
+        <meta property='og:video' content='' />
+
+        <meta
+          property='url'
+          content='https://www.latabledelabruyere.com/cours'
+        />
+        <meta
+          property='og:url'
+          content='https://www.latabledelabruyere.com/cours'
+        />
+        <meta property='video' content='' />
+        <meta
+          property='og:title'
+          content='École de la Table de La Bruyère - Cours de cuisine'
+        />
+        <meta property='og:type' content='video.movie' />
+        <meta property='og:image' content='/assets/photos/service.webp' />
+      </Head>
       <Header />
       <Hero
         bgPath={'/assets/photos/service.webp'}
@@ -38,13 +69,14 @@ const CoursPage = () => {
         link={'/cours#form'}
         textLink='Reserver'
       />
+      <div style={{ height: '15vh' }}></div>
+
       <ParalaxBanner
         photoPath={
           'https://media.istockphoto.com/photos/cooking-master-class-pasta-preparing-hands-picture-id1268900953'
         }
         text='Le cours de cuisine est un moment convivial, idéal pour générer de la cohésion sur des évenemnts de type "team building" ou encore créer un temps collectif pendant un enterrement de vie de célibataire !'
       />
-      <div style={{ height: '5vh' }}></div>
 
       <Service
         textColor={'#2F4858'}

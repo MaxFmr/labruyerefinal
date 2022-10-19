@@ -40,8 +40,23 @@ const ContactForm = () => {
       );
   };
 
+  let defaultValue = '';
+  switch (router.asPath) {
+    case '/traiteur':
+      defaultValue = 'Traiteur évènentiel';
+      break;
+    case '/chef':
+      defaultValue = 'Chef à domicile';
+      break;
+    case '/cours':
+      defaultValue = 'Cours de cuisine';
+      break;
+    default:
+      defaultValue = '';
+  }
+
   return (
-    <StyledContactForm>
+    <StyledContactForm path={router.asPath}>
       {modalIsOpen && <Modale onCloseModal={onCloseModal} />}
       <div className='form'>
         <h2>Contactez-nous : </h2>
@@ -58,23 +73,11 @@ const ContactForm = () => {
         {!loader ? (
           <form ref={form} onSubmit={sendEmail}>
             <label>Sujet de votre message : </label>
-            <select name='service' id='service'>
+            <select name='service' id='service' defaultValue={defaultValue}>
               <option value=''>Sectionnez un type de prestation*</option>
-              <option
-                value='Traiteur évènentiel'
-                selected={router.asPath === '/traiteur' ? 'true' : false}>
-                Traiteur évènentiel
-              </option>
-              <option
-                value='Cours de cuisine'
-                selected={router.asPath === '/cours' ? 'true' : false}>
-                Cours de cuisine
-              </option>
-              <option
-                value='Chef à domicile'
-                selected={router.asPath === '/chef' ? 'true' : false}>
-                Chef à domicile
-              </option>
+              <option value='Traiteur évènentiel'>Traiteur évènentiel</option>
+              <option value='Cours de cuisine'>Cours de cuisine</option>
+              <option value='Chef à domicile'>Chef à domicile</option>
             </select>
             <div>
               <input

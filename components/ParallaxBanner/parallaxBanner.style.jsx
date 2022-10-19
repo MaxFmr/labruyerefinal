@@ -4,7 +4,6 @@ const StyledParallaxBanner = styled.section`
   height: 30vh;
   display: flex;
   justify-content: center;
-  /* margin: 15% 2% 15% 2%; */
   align-items: center;
   background-color: ${({ theme }) => theme.colors.dark};
 
