@@ -41,7 +41,7 @@ const CoursPage = () => {
       </Head>
       <Header />
       <Hero
-        bgPath={'/assets/photos/service.webp'}
+        bgPath={'/assets/photos/cours/1.jpg'}
         logoPath={'/assets/logo.svg'}
         title={'École de la table'}
         text='Un moment convivial autour de l’apprentissage de la cuisine.'
@@ -51,7 +51,7 @@ const CoursPage = () => {
       <Service
         textColor={'#2F4858'}
         bgColor={'#fbf3e0'}
-        photoPath={'/assets/photos/service.webp'}
+        photoPath={'/assets/photos/cours/1.jpg'}
         title={'Une École'}
         ImageSide='left'
         text=' Vivez, seul(e) ou en groupe, à la demi-journée, une expérience unique qui vous transporte dans une école de la table inspirée des plus grandes institutions gastronomiques Française.   
@@ -62,7 +62,7 @@ const CoursPage = () => {
       <Service
         textColor={''}
         bgColor={'#2d8e8e'}
-        photoPath={'/assets/photos/service.webp'}
+        photoPath={'/assets/photos/cours/2.jpg'}
         title={'Des compétences'}
         text='Vous serez en mesure de surprendre vos convives, avec une cuisine de restaurant. Les techniques professionnelles et astuces du chef vous permettrons d’améliorer vos recettes
 !'
@@ -72,16 +72,14 @@ const CoursPage = () => {
       <div style={{ height: '15vh' }}></div>
 
       <ParalaxBanner
-        photoPath={
-          'https://media.istockphoto.com/photos/cooking-master-class-pasta-preparing-hands-picture-id1268900953'
-        }
+        photoPath={'/assets/photos/cours/3.jpg'}
         text='Le cours de cuisine est un moment convivial, idéal pour générer de la cohésion sur des évenemnts de type "team building" ou encore créer un temps collectif pendant un enterrement de vie de célibataire !'
       />
 
       <Service
         textColor={'#2F4858'}
         bgColor={'#fbf3e0'}
-        photoPath={'/assets/photos/service.webp'}
+        photoPath={'/assets/photos/cours/4.jpg'}
         title={'Réservations'}
         text='Prenez contact avec nous par téléphone ou via le formulaire ci-dessous pour réserver un cours, pour un groupe ou connaître les ateliers orgnisés afin de vous y joindre.'
         ImageSide='left'
