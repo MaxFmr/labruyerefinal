@@ -5,6 +5,7 @@ import Header from '../components/Header/Header';
 import ParalaxBanner from '../components/ParallaxBanner/ParallaxBanner';
 import Head from 'next/head';
 import Footer from '../components/footer/Footer';
+import HeroVideo from '../components/HeroVideo/Herovideo';
 
 const CoursPage = () => {
   return (
@@ -40,8 +41,14 @@ const CoursPage = () => {
         <meta property='og:image' content='/assets/photos/service.webp' />
       </Head>
       <Header />
-      <Hero
+      {/* <Hero
         bgPath={'/assets/photos/cours/1.jpg'}
+        logoPath={'/assets/logo.svg'}
+        title={'École de la table'}
+        text='Un moment convivial autour de l’apprentissage de la cuisine.'
+      /> */}
+      <HeroVideo
+        bgPath={'https://www.maximekerlidou.fr/videos/cours.mp4'}
         logoPath={'/assets/logo.svg'}
         title={'École de la table'}
         text='Un moment convivial autour de l’apprentissage de la cuisine.'

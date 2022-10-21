@@ -37,7 +37,7 @@ const ActusPage = ({ posts }) => {
       </Head>
       <Header />
       <Hero
-        bgPath={'/assets/photos/service.webp'}
+        bgPath={'/assets/photos/actus/1.jpg'}
         logoPath={'/assets/logo.svg'}
         title={'Nos actualités'}
         text='Nos activités, nos conseils pour vous

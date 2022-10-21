@@ -34,7 +34,7 @@ const Chef = () => {
       </Head>
       <Header />
       <Hero
-        bgPath={'/assets/photos/service.webp'}
+        bgPath={'/assets/photos/chef/1.jpg'}
         logoPath={'/assets/logo.svg'}
         title={'Chef à domicile'}
         text='Le Chef à domicile permet d’organiser un repas chez soi. Il vous laisse ainsi profiter de la compagnie de ses invités. '
@@ -46,7 +46,7 @@ const Chef = () => {
       <Service
         textColor={'#2F4858'}
         bgColor={'#fbf3e0'}
-        photoPath={'/assets/photos/service.webp'}
+        photoPath={'/assets/photos/chef/2.jpg'}
         title={'Un service exclusif'}
         ImageSide='left'
         text='Le Chef s’occupe de : l’achat des ingrédients, la préparation du repas sur place, du service à l’assiette puis range la cuisine avant de s’éclipser. Recevoir chez soi n’a jamais été aussi simple, plaisant et gourmand.'
@@ -57,7 +57,7 @@ const Chef = () => {
       <Service
         textColor={''}
         bgColor={'#2d8e8e'}
-        photoPath={'/assets/photos/service.webp'}
+        photoPath={'/assets/photos/chef/3.jpg'}
         title={'Pour vous ou avec vous'}
         text='La prestation Chef à domicile vous libère mais si vous désirez intervenir dans la préparation de votre repas, c’est possible !'
         link={'/chef#form'}
@@ -67,7 +67,7 @@ const Chef = () => {
       <Service
         textColor={'#2F4858'}
         bgColor={'#fbf3e0'}
-        photoPath={'/assets/photos/service.webp'}
+        photoPath={'/assets/photos/chef/4.jpg'}
         title={'Sur mesure'}
         ImageSide='left'
         text='Reservez une prestation sur mersure. Nous procédons à la création d’un menu qui correspond précisément à vos attentes, contrairement à d’autres maisons où la prestation est prédifinie par un menu existant.'

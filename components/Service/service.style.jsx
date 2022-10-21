@@ -68,5 +68,17 @@ const StyledService = styled.section`
       text-align: center;
     }
   }
+  .link {
+    a {
+      text-decoration: none;
+      color: #257676;
+    }
+  }
+  .link2 {
+    a {
+      text-decoration: none;
+      color: #fbf3e0;
+    }
+  }
 `;
 export default StyledService;

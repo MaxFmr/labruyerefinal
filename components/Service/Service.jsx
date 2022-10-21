@@ -32,7 +32,9 @@ const Service = ({
           <div className='text'>
             <span className='title'>{title}</span>
             <p>{text}</p>
-            {link && <Link href={link}>{textLink}</Link>}
+            <span className='link'>
+              {link && <Link href={link}>{textLink}</Link>}
+            </span>
           </div>
         </>
       ) : (
@@ -40,7 +42,9 @@ const Service = ({
           <div style={{ padding: '4%' }} className='text'>
             <span className='title'>{title}</span>
             <p>{text}</p>
-            {link && <Link href={link}>{textLink}</Link>}
+            <span className='link2'>
+              {link && <Link href={link}>{textLink}</Link>}
+            </span>
           </div>
           <div className='photo'>
             <Parallax speed={-2} translateY={[-10, 10]}>
