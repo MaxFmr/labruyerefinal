@@ -116,7 +116,7 @@ const ContactForm = () => {
               />
             </div>
             <div>
-              <span>Quelle date de prestation désirez-vous ?</span>
+              <span>Quelle date de prestation désirez-vous ? (facultatif)</span>
               <input type='date' id='date' name='date' />
             </div>
 
