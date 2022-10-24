@@ -70,6 +70,7 @@ const StyledContactForm = styled.section`
   .btn {
     display: flex;
     button {
+      cursor: pointer;
       border: none;
       border-bottom: solid ${({ theme }) => theme.colors.secondary} 1px;
       width: 30%;
