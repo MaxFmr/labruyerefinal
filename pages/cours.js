@@ -61,7 +61,7 @@ const CoursPage = () => {
         photoPath={'/assets/photos/cours/1.jpg'}
         title={'Une École'}
         ImageSide='left'
-        text=' Vivez, seul(e) ou en groupe, à la demi-journée, une expérience unique qui vous transporte dans une école de la table inspirée des plus grandes institutions gastronomiques Française.   
+        text=' Vivez, seul(e) ou en groupe, à la demi-journée, une expérience unique qui vous transporte dans une école de la table inspirée des plus grandes institutions gastronomiques Françaises.   
 '
         link={'/cours#form'}
         textLink='Reserver'
@@ -80,7 +80,7 @@ const CoursPage = () => {
 
       <ParalaxBanner
         photoPath={'/assets/photos/cours/3.jpg'}
-        text='Le cours de cuisine est un moment convivial, idéal pour générer de la cohésion sur des évenemnts de type "team building" ou encore créer un temps collectif pendant un enterrement de vie de célibataire !'
+        text='Le cours de cuisine est un moment convivial, idéal pour générer de la cohésion sur des évenements de type "team building" ou encore créer un temps collectif pendant un enterrement de vie de célibataire !'
       />
 
       <Service

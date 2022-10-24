@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 const StyledContactForm = styled.section`
-  margin-top: ${(props) => (props.path === '/' ? '0' : '10%')};
+  margin-top: ${(props) =>
+    props.path === '/' || props.path === '/contact' ? '0' : '10%'};
   font-family: 'Abhaya Libre';
   h2,
   h3 {
@@ -17,13 +18,13 @@ const StyledContactForm = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     flex-direction: row;
   }
 
   .form {
     padding: 15px;
-    @media (min-width: 768px) {
+    @media (min-width: 767px) {
       width: 50%;
     }
     select {

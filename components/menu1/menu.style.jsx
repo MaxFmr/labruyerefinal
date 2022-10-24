@@ -6,6 +6,12 @@ const StyledMenu = styled.section`
   left: 0.1px;
   background-color: #fbf3e0;
   width: 70vw;
+  @media (min-width: 700px) {
+    width: 40vw;
+  }
+  @media (min-width: 1300px) {
+    width: 30vw;
+  }
   margin: 2%;
   top: 2%;
   display: flex;

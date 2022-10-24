@@ -44,7 +44,7 @@ const HomePage = () => {
             onClick={() => {
               router.push('/traiteur#form');
             }}>
-            Reserver
+            Réserver
           </button>
         </div>
         <div className='social'>
