@@ -70,7 +70,7 @@ const Chef = () => {
         photoPath={'/assets/photos/chef/4.jpg'}
         title={'Sur mesure'}
         ImageSide='left'
-        text='Reservez une prestation sur mersure. Nous procédons à la création d’un menu qui correspond précisément à vos attentes, contrairement à d’autres maisons où la prestation est prédifinie par un menu existant.'
+        text='Reservez une prestation sur mersure. Nous procédons à la création d’un menu qui correspond précisément à vos attentes.'
         link={'/chef#form'}
         textLink='Réserver'
       />
