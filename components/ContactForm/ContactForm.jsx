@@ -8,7 +8,6 @@ import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 import { ColorRing } from 'react-loader-spinner';
 import Modale from '../Modale/Modale';
-
 const ContactForm = () => {
   const router = useRouter();
   const form = useRef();
@@ -54,7 +53,7 @@ const ContactForm = () => {
     default:
       defaultValue = '';
   }
-
+  // note
   return (
     <StyledContactForm path={router.asPath}>
       {modalIsOpen && <Modale onCloseModal={onCloseModal} />}
