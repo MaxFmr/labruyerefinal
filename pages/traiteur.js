@@ -60,7 +60,7 @@ const TraiteurPage = () => {
         text='Forts de notre passion et de notre expérience, nous sublimons des produits frais et de grande qualité, en accord avec la saisonalité. Notre cuisine rassemble tradition, tendance et plaisir de la table. 
 '
         link={'/traiteur#form'}
-        textLink='Reserver'
+        textLink='Réserver'
       />
 
       <Service
@@ -70,7 +70,7 @@ const TraiteurPage = () => {
         title={'Conseil'}
         text='Faire confiance à la Table de la Bruyère, c’est l’assurance d’être suivi et guidé. C’est l’association de notre expertise et de vos envies pour construire ensemble l’évenement qui vous ressemble.'
         link={'/traiteur#form'}
-        textLink='Reserver'
+        textLink='Réserver'
       />
       <div style={{ height: '45px' }}></div>
 
@@ -89,7 +89,7 @@ const TraiteurPage = () => {
         text='Guillaume STILE, a exercé dans des restaurants réputés, dont La Gentilhommière.
         Il s’est perfectionné au cours de rencontres avec des grands noms de la cuisine française notamment les Chefs Yann Morel, Marc Meurin, Emmanuel Hernandez, Philippe Mille et Hervé Raphanel.'
         link={'/traiteur#form'}
-        textLink='Reserver'
+        textLink='Réserver'
       />
 
       <Service
@@ -98,7 +98,7 @@ const TraiteurPage = () => {
         title={'Vos évenements'}
         text='Un mariage, un anniversaire, une fête de famille, un séminaire... Nos vous rejoignons à l’endroit de votre choix pour concrétiser votre projet et en faire un moment unique.'
         link={'/traiteur#form'}
-        textLink='Reserver'
+        textLink='Réserver'
       />
       <div style={{ height: '45px' }}></div>
 

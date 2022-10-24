@@ -64,7 +64,7 @@ const CoursPage = () => {
         text=' Vivez, seul(e) ou en groupe, à la demi-journée, une expérience unique qui vous transporte dans une école de la table inspirée des plus grandes institutions gastronomiques Françaises.   
 '
         link={'/cours#form'}
-        textLink='Reserver'
+        textLink='Réserver'
       />
       <Service
         textColor={''}
@@ -74,7 +74,7 @@ const CoursPage = () => {
         text='Vous serez en mesure de surprendre vos convives, avec une cuisine de restaurant. Les techniques professionnelles et astuces du chef vous permettrons d’améliorer vos recettes
 !'
         link={'/cours#form'}
-        textLink='Reserver'
+        textLink='Réserver'
       />
       <div style={{ height: '15vh' }}></div>
 
@@ -91,7 +91,7 @@ const CoursPage = () => {
         text='Prenez contact avec nous par téléphone ou via le formulaire ci-dessous pour réserver un cours, pour un groupe ou connaître les ateliers orgnisés afin de vous y joindre.'
         ImageSide='left'
         link={'/cours#form'}
-        textLink='Reserver'
+        textLink='Réserver'
       />
       <div id='form'>
         <ContactForm photoPath={'/assets/photos/service.webp'} />

@@ -39,7 +39,7 @@ const Chef = () => {
         title={'Chef à domicile'}
         text='Le Chef à domicile permet d’organiser un repas chez soi. Il vous laisse ainsi profiter de la compagnie de ses invités. '
         link={'/chef#form'}
-        textLink='Reserver'
+        textLink='Réserver'
       />
       <div style={{ height: '40px' }}></div>
 
@@ -51,7 +51,7 @@ const Chef = () => {
         ImageSide='left'
         text='Le Chef s’occupe de : l’achat des ingrédients, la préparation du repas sur place, du service à l’assiette puis range la cuisine avant de s’éclipser. Recevoir chez soi n’a jamais été aussi simple, plaisant et gourmand.'
         link={'/chef#form'}
-        textLink='Reserver'
+        textLink='Réserver'
       />
 
       <Service
@@ -61,7 +61,7 @@ const Chef = () => {
         title={'Pour vous ou avec vous'}
         text='La prestation Chef à domicile vous libère mais si vous désirez intervenir dans la préparation de votre repas, c’est possible !'
         link={'/chef#form'}
-        textLink='Reserver'
+        textLink='Réserver'
       />
 
       <Service
@@ -72,7 +72,7 @@ const Chef = () => {
         ImageSide='left'
         text='Reservez une prestation sur mersure. Nous procédons à la création d’un menu qui correspond précisément à vos attentes, contrairement à d’autres maisons où la prestation est prédifinie par un menu existant.'
         link={'/chef#form'}
-        textLink='Reserver'
+        textLink='Réserver'
       />
       <div id='form'>
         <ContactForm />
