@@ -13,6 +13,7 @@ module.exports = {
       'www.maximekerlidou.fr',
       'www.istockphoto.com',
       'media.istockphoto.com',
+      'www.latabledelabruyere.com',
     ],
   },
 };
