@@ -86,7 +86,7 @@ const TraiteurPage = () => {
         photoPath={'/assets/photos/guinb.webp'}
         title={'Notre Chef'}
         ImageSide='left'
-        text='Guillaume STILE, a exercé dans des restaurants réputés, dont La Gentilhommière.
+        text='Guillaume Stile a exercé dans des restaurants réputés, dont La Gentilhommière.
         Il s’est perfectionné au cours de rencontres avec des grands noms de la cuisine française notamment les Chefs Yann Morel, Marc Meurin, Emmanuel Hernandez, Philippe Mille et Hervé Raphanel.'
         link={'/traiteur#form'}
         textLink='Réserver'
