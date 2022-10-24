@@ -24,6 +24,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='shortcut icon' href='../public/assets/logo.webp' />
+        <link rel='shortcut icon' href='/favicon.ico' />
       </Head>
       <ParallaxProvider>
         <ThemeProvider theme={theme}>
