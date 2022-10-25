@@ -3,6 +3,7 @@ import '../styles/globals.css';
 import { ThemeProvider } from 'styled-components';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Head from 'next/head';
+import { GoogleAnalytics } from 'nextjs-google-analytics';
 
 const theme = {
   colors: {
@@ -21,6 +22,7 @@ const theme = {
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <GoogleAnalytics trackPageViews />
       <Head>
         <meta
           name='google-site-verification'
