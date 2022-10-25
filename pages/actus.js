@@ -18,7 +18,7 @@ const ActusPage = ({ posts }) => {
 
         <meta
           name='description'
-          content='Dans sa volonté de transmission, La table de la Bruyère traiteur partage son actualité, ses savoirs, ses conseils. Retrouvez ici les artcles de notre blog'
+          content='La table de la Bruyère traiteur partage son actualité, ses savoirs, ses conseils. Retrouvez ici les artcles de notre blog. Faites appel à un traiteur d’exception, La Table de La Bruyère, Traiteur évenementiel, Chef à domicile, évenements, mariages, baptèmes, séminaires etc., cours de cuisine, à Valenciennes, Wargnies, dans le Valenciennois et l’Avesnois'
         />
         <meta
           property='og:url'

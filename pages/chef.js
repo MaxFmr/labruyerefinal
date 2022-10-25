@@ -13,7 +13,7 @@ const Chef = () => {
 
         <meta
           name='description'
-          content='A Valenciennes et aux alentours, Le Chef à domicile de la Table de la Bruyère permet d’organiser un repas chez soi. Il vous laisse ainsi profiter de la compagnie de ses invités.
+          content='Votre Chef à domicile à Valenciennes et aux alentours. Le Chef à domicile de la Table de la Bruyère permet d’organiser un repas chez soi. Il vous laisse ainsi profiter de la compagnie de ses invités.
           Le Chef à domicile s’occupe de : l’achat des ingrédients, la préparation du repas sur place, du service à l’assiette puis range la cuisine avant de s’éclipser. Recevoir chez soi n’a jamais été aussi simple, plaisant et gourmand.
           La prestation Chef à domicile vous libère mais si vous désirez intervenir dans la préparation de votre repas, c’est possible !'
         />

@@ -16,7 +16,7 @@ export default function Home() {
 
         <meta
           name='description'
-          content='Faites appel à un traiteur d’exception, La Table de La Bruyère, Traiteur évenementiel, Chef à domicile, évenements, mariages, baptèmes, séminaires etc., cours de cuisine, à Valenciennes, Wargnies, dans le Valenciennois et l’Avesnois '
+          content='Faites appel à un traiteur d’exception, La Table de La Bruyère, Traiteur évenementiel, Chef à domicile, évenements, mariages, baptèmes, séminaires etc., cours de cuisine, à Valenciennes, Wargnies, dans le Valenciennois et l’Avesnois'
         />
         <meta property='og:url' content='https://www.latabledelabruyere.com' />
 
