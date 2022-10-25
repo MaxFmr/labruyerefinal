@@ -57,7 +57,7 @@ const Chef = () => {
       <Service
         textColor={''}
         bgColor={'#2d8e8e'}
-        photoPath={'/assets/photos/chef/3.jpg'}
+        photoPath={'/assets/photos/chef/1.webp'}
         title={'Pour vous ou avec vous'}
         text='La prestation Chef à domicile vous libère mais si vous désirez intervenir dans la préparation de votre repas, c’est possible !'
         link={'/chef#form'}

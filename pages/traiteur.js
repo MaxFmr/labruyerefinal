@@ -44,7 +44,7 @@ const TraiteurPage = () => {
       </Head>
       <Header />
       <Hero
-        bgPath={'/assets/photos/traiteur/1.jpg'}
+        bgPath={'/assets/photos/traiteur/1.webp'}
         logoPath={'/assets/logo.svg'}
         title={'Traiteur'}
         text='Qualité, saisonalité, expertise et conseil.
