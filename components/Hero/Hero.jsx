@@ -41,7 +41,9 @@ const Hero = ({ bgPath, logoPath, title, text }) => {
         <div className='menuIcon' onClick={() => setDisplayMenu(!displayMenu)}>
           <GiHamburgerMenu size={40} color={'#2F4858'} />
         </div>
-        {displayMenu && <Menu1 setDisplayMenu={setDisplayMenu} />}
+        {displayMenu && (
+          <Menu1 setDisplayMenu={setDisplayMenu} displayMenu={displayMenu} />
+        )}
       </StyledHero>
     </ParallaxBanner>
   );

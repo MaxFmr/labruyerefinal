@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 const StyledMenu = styled.section`
-  opacity: 0.95;
-  height: 35vh;
+  opacity: 0.97;
+  height: 50vh;
   position: fixed;
+  line-height: 25px;
   left: 0.1px;
   background-color: #fbf3e0;
   width: 70vw;
@@ -22,10 +23,11 @@ const StyledMenu = styled.section`
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.colors.green};
-    font-size: 24px;
+    font-size: 40px;
     cursor: pointer;
     @media (max-width: 400px) {
-      font-size: 18px;
+      font-size: 22px;
+      line-height: 30px;
     }
   }
   li {
@@ -39,8 +41,8 @@ const StyledMenu = styled.section`
   }
   .closeIcon {
     position: absolute;
-    top: 10%;
-    left: 70%;
+    top: 7%;
+    left: 65%;
     color: #257676;
     font-weight: bold;
   }
