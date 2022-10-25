@@ -22,6 +22,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <meta
+          name='google-site-verification'
+          content='eTvl94KTN6CVkVMX_dD6hOqWSQLv_dNencmVmWoB4O4'
+        />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='shortcut icon' href='../public/assets/logo.webp' />
         <link rel='shortcut icon' href='/favicon.ico' />
