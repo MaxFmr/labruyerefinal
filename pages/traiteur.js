@@ -47,7 +47,7 @@ const TraiteurPage = () => {
         bgPath={'/assets/photos/traiteur/1.webp'}
         logoPath={'/assets/logo.svg'}
         title={'Traiteur'}
-        text='Qualité, saisonalité, expertise et conseil.
+        text='Qualité, saisonnalité, expertise et conseil.
     '
       />
       <Banner1 bgPath={'/assets/photos/equipe.jpeg'} />
@@ -57,7 +57,7 @@ const TraiteurPage = () => {
         photoPath={'/assets/photos/oeuf.webp'}
         title={'Notre cuisine'}
         ImageSide='left'
-        text='Forts de notre passion et de notre expérience, nous sublimons des produits frais et de grande qualité, en accord avec la saisonalité. Notre cuisine rassemble tradition, tendance et plaisir de la table. 
+        text='Forts de notre passion et de notre expérience, nous sublimons des produits frais et de grande qualité, en accord avec la saisonnalité. Notre cuisine rassemble tradition, tendance et plaisir de la table. 
 '
         link={'/traiteur#form'}
         textLink='Réserver'
