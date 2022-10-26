@@ -74,7 +74,7 @@ const ContactForm = () => {
             <label>Sujet de votre message : </label>
             <select name='service' id='service' defaultValue={defaultValue}>
               <option value=''>Sectionnez un type de prestation*</option>
-              <option value='Traiteur évènentiel'>Traiteur évènentiel</option>
+              <option value='Traiteur évènentiel'>Traiteur évènementiel</option>
               <option value='Cours de cuisine'>Cours de cuisine</option>
               <option value='Chef à domicile'>Chef à domicile</option>
             </select>
@@ -121,6 +121,7 @@ const ContactForm = () => {
 
             <div>
               <textarea
+                required
                 id='message'
                 name='user_message'
                 placeholder='Votre message* (n’hésitez pas à préciser un maximum d’éléments tels que le nombre de personnes attendus etc.)'
