@@ -1,5 +1,5 @@
 const config = {
-  siteUrl: 'https://latabledelabruyere.com',
+  siteUrl: 'https://www.latabledelabruyere.com',
   generateRobotsTxt: true, // (Optional parameter for creating robots.txt file)
   // Other available options..
   generateIndexSitemap: false,
