@@ -38,7 +38,7 @@ const Brochure = () => {
       />
       <div className='link'>
         <Link href={'https://www.maximekerlidou.fr/pdf/tarifs.pdf'}>
-          <a target='_blank'>Télécharger notre Brochure au format PDF</a>
+          <a target='_blank'>Télécharger notre brochure au format PDF</a>
         </Link>
       </div>
     </StyledBrochure>
