@@ -7,6 +7,7 @@ import Link from 'next/link';
 import ParalaxBanner from '../components/ParallaxBanner/ParallaxBanner';
 import Head from 'next/head';
 import Footer from '../components/footer/Footer';
+import HeroVideo from '../components/HeroVideo/Herovideo';
 
 const TraiteurPage = () => {
   return (
@@ -43,13 +44,14 @@ const TraiteurPage = () => {
         />
       </Head>
       <Header />
-      <Hero
-        bgPath={'/assets/photos/traiteur/1.webp'}
+
+      <HeroVideo
+        bgPath={'https://www.maximekerlidou.fr/videos/bruyere.mp4'}
         logoPath={'/assets/logo.svg'}
         title={'Traiteur'}
-        text='Qualité, saisonnalité, expertise et conseil.
-    '
+        text='Qualité, saisonnalité, expertise et conseil.'
       />
+
       <Banner1 bgPath={'/assets/photos/equipe.jpeg'} />
 
       <Service
