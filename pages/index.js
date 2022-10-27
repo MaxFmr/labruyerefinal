@@ -37,9 +37,7 @@ export default function Home() {
       </Head>
       <HomePage />
 
-      <div id='form'>
-        <ContactForm />
-      </div>
+      <ContactForm />
       <Footer />
     </>
   );
