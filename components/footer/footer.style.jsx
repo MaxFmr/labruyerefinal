@@ -16,6 +16,9 @@ const StyledFooter = styled.section`
     @media (min-width: 768px) {
       font-size: 14px;
     }
+    a {
+      color: #fbf3e0;
+    }
   }
 `;
 export default StyledFooter;
