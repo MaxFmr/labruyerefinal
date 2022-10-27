@@ -28,6 +28,9 @@ const Menu1 = ({ setDisplayMenu }) => {
             <Link href='/contact'> ❃ Contact</Link>
           </li>
           <li>
+            <Link href='/tarifs'> ❃ Brochure & Tarifs</Link>
+          </li>
+          <li>
             <Link href='/actus'> ❃ Actus</Link>
           </li>
           <li>

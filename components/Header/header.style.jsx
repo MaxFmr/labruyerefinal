@@ -12,19 +12,20 @@ const StyledHeader = styled.header`
   background-color: ${({ theme }) => theme.colors.primary};
   z-index: 10;
 
-  @media (max-width: 750px) {
+  @media (max-width: 960px) {
     display: none;
   }
 
   font-size: 30px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
-  justify-content: space-around;
+  justify-content: space-between;
   .title {
     cursor: pointer;
     border: solid ${({ theme }) => theme.colors.green} 2px;
     border-radius: 10px;
     display: flex;
     overflow: hidden;
+    margin-left: 40px;
     @media (max-width: 600px) {
       font-size: 14px;
       display: none;
@@ -35,7 +36,7 @@ const StyledHeader = styled.header`
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    @media (max-width: 1200px) {
+    @media (max-width: 1520px) {
       width: auto;
       button {
         margin-left: 20px;

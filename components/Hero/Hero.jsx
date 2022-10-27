@@ -31,10 +31,7 @@ const Hero = ({ bgPath, logoPath, title, text }) => {
             />
           </div>
         )}
-        <div
-          className='text'
-          // style={router.asPath === '/chef' ? { color: '#257676' } : ''}
-        >
+        <div className='text'>
           <h1>{title}</h1>
           <span>{text}</span>
         </div>

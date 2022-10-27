@@ -4,6 +4,7 @@ import ContactForm from '../components/ContactForm/ContactForm';
 import Header from '../components/Header/Header';
 import Head from 'next/head';
 import Footer from '../components/footer/Footer';
+import HeroVideo from '../components/HeroVideo/Herovideo';
 
 const Chef = () => {
   return (
@@ -33,8 +34,8 @@ const Chef = () => {
         <meta property='video' content='' />
       </Head>
       <Header />
-      <Hero
-        bgPath={'/assets/photos/chef/1.jpg'}
+      <HeroVideo
+        bgPath={'https://www.maximekerlidou.fr/videos/bruyere.mp4'}
         logoPath={'/assets/logo.svg'}
         title={'Chef à domicile'}
         text='Le Chef à domicile permet d’organiser un repas chez soi. Il vous laisse ainsi profiter de la compagnie de ses invités. '

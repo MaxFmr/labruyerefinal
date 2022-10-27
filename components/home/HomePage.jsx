@@ -21,6 +21,7 @@ const HomePage = () => {
             objectFit: 'cover',
             width: '100vw',
             position: 'absolute',
+            background: 'none',
           }}></video>
         <div className='header'>
           <Image
@@ -42,7 +43,7 @@ const HomePage = () => {
           </h2>
           <button
             onClick={() => {
-              router.push('/traiteur#form');
+              router.push('/contact');
             }}>
             Réserver
           </button>

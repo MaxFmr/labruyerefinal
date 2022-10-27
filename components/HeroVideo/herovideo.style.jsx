@@ -40,7 +40,7 @@ const StyledHeroVideo = styled.section`
     right: 10%;
     bottom: 90%;
     z-index: 10;
-    @media (min-width: 750px) {
+    @media (min-width: 960px) {
       display: none;
     }
   }

@@ -1,6 +1,8 @@
 import Footer from '../components/footer/Footer';
 import Header from '../components/Header/Header';
 import Hero from '../components/Hero/Hero';
+import Link from 'next/link';
+import ContactForm from '../components/ContactForm/ContactForm';
 
 const Legal = () => {
   return (
@@ -11,6 +13,8 @@ const Legal = () => {
         logoPath={'/assets/logo.svg'}
         title={'mentions légales'}
       />
+      <Link href={'/contact'}>retour au formulaire de contact</Link>
+
       <div style={{ margin: '10%', textAlign: 'justify', color: '#257676' }}>
         <p>
           Merci de lire avec attention les différentes modalités d’utilisation
@@ -151,6 +155,7 @@ const Legal = () => {
         dispositions de la loi du 1er juillet 1998 transposant la directive 96/9
         du 11 mars 1996 relative à la protection juridique des bases de données.
       </div>
+      <ContactForm />
       <Footer />
     </>
   );

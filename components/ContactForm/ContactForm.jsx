@@ -126,6 +126,7 @@ const ContactForm = () => {
                 placeholder='Votre message* (n’hésitez pas à préciser un maximum d’éléments tels que le nombre de personnes attendus etc.)'
               />
             </div>
+
             <div className='rgpd'>
               <input type='checkbox' required />
 
@@ -134,6 +135,7 @@ const ContactForm = () => {
                 pour être recontacté(e) à des fins commerciales. Ces données ne
                 seront transmises à personne d’autre que la Table de La Bruyère.
               </span>
+              <Link href={'/legal'}>Mentions légales</Link>
             </div>
             <div className='btn'>
               <button type='submit'>Evoyer</button>

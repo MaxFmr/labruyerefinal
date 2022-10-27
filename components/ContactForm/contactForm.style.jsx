@@ -35,6 +35,10 @@ const StyledContactForm = styled.section`
       margin-bottom: 5px;
       color: ${({ theme }) => theme.colors.secondary};
     }
+    a {
+      text-decoration: underline;
+      color: #fbf3e0;
+    }
   }
   input {
     width: 100%;
@@ -97,20 +101,19 @@ const StyledContactForm = styled.section`
     }
   }
   .rgpd {
-    width: 50%;
+    width: 60%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     padding: 5px;
     font-size: smaller;
     text-align: justify;
     input {
       margin: inherit;
-      height: 20px;
+      height: 30px;
     }
-  }
-  a {
-    text-decoration: none;
-    color: ${({ theme }) => theme.colors.secondary};
+    a {
+      text-decoration: underline;
+    }
   }
 `;
 export default StyledContactForm;

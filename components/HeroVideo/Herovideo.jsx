@@ -25,6 +25,7 @@ const HeroVideo = ({ title, bgPath, text, logoPath }) => {
                 objectFit: 'cover',
                 width: '100vw',
                 position: 'absolute',
+                background: 'none',
               }}></video>
           ),
 

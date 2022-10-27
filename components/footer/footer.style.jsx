@@ -5,7 +5,7 @@ const StyledFooter = styled.section`
   padding: 5px;
   height: 60px;
   background-color: #257676;
-  font-size: 10px;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   justify-content: center;

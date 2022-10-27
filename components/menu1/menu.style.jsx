@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 const StyledMenu = styled.section`
   opacity: 0.95;
-  height: 35vh;
+  height: 55vh;
   position: fixed;
-  left: 0.1px;
+  right: 0.1px;
   background-color: #fbf3e0;
   width: 70vw;
   @media (min-width: 700px) {
@@ -13,7 +13,7 @@ const StyledMenu = styled.section`
     width: 30vw;
   }
   margin: 2%;
-  top: 2%;
+  top: 80px;
   display: flex;
   align-items: center;
   border-radius: 10px;
