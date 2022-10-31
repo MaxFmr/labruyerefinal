@@ -8,8 +8,8 @@ const Header = () => {
       <div className='title' onClick={() => router.push('/')}>
         <Image
           src={'/assets/logo.webp'}
-          height={80}
-          width={80}
+          height={40}
+          width={40}
           alt="logo de l'entreprise traiteur la table de la Bruyère Valenciennes"
         />
       </div>

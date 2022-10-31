@@ -32,7 +32,7 @@ const HomePage = () => {
           />
         </div>
         <div className='items'>
-          <h1>
+          {/* <h1>
             <Link href={'/traiteur'}>Traiteur </Link>
           </h1>
           <h2>
@@ -41,12 +41,16 @@ const HomePage = () => {
           <h2>
             <Link href={'/cours'}>Cours de cuisine </Link>
           </h2>
-          <button
+          <h2>
+            <Link href={'/cours'}>Cours de cuisine </Link>
+          </h2> */}
+          <h2>Site en construction. Bientôt Disponible ! </h2>
+          {/* <button
             onClick={() => {
               router.push('/contact');
             }}>
             Réserver
-          </button>
+          </button> */}
         </div>
         <div className='social'>
           <Link
