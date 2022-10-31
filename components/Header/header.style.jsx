@@ -6,7 +6,7 @@ const StyledHeader = styled.header`
   display: flex;
   align-items: center;
 
-  height: 80px;
+  height: 100px;
   position: fixed;
   width: 100vw;
   background-color: ${({ theme }) => theme.colors.primary};

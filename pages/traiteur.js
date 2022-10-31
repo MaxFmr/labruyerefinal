@@ -53,7 +53,7 @@ const TraiteurPage = () => {
         text='Qualité, saisonnalité, expertise et conseil.'
       />
 
-      <Banner1 bgPath={'/assets/photos/equipe.jpeg'} />
+      {/* <Banner1 bgPath={'/assets/photos/equipe.jpeg'} /> */}
 
       <Service
         textColor={'#2F4858'}
