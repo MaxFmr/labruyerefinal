@@ -45,10 +45,8 @@ const Chef = () => {
       <HeroVideo
         bgPath={'https://www.maximekerlidou.fr/videos/bruyere.mp4'}
         logoPath={'/assets/logo.svg'}
-        title={'Chef à domicile'}
-        text='Le Chef à domicile permet d’organiser un repas chez soi. Il vous laisse ainsi profiter de la compagnie de ses invités. '
-        link={'/chef#form'}
-        textLink='Réserver'
+        title={'Site `bientôt disponible'}
+        text=''
       />
       {/* <div style={{ height: '40px' }}></div>
 
