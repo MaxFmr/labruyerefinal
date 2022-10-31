@@ -2,7 +2,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from 'react';
 import Menu1 from '../menu1/Menu1';
 import Image from 'next/image';
-import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
+import { ParallaxBanner } from 'react-scroll-parallax';
 import StyledHeroVideo from './herovideo.style';
 
 const HeroVideo = ({ title, bgPath, text, logoPath }) => {

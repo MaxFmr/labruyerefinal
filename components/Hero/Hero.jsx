@@ -21,7 +21,7 @@ const Hero = ({ bgPath, logoPath, title, text }) => {
         },
       ]}>
       <StyledHero bg={{ path: bgPath }}>
-        {/* {router.asPath !== '/chef' && (
+        {router.asPath !== '/chef' && (
           <div className='logo'>
             <Image
               src={logoPath}
@@ -30,7 +30,7 @@ const Hero = ({ bgPath, logoPath, title, text }) => {
               alt="logo de l'entreprise traiteur la table de la Bruyère Valenciennes"
             />
           </div>
-        )} */}
+        )}
         <div className='text'>
           <h1>{title}</h1>
           <span>{text}</span>
