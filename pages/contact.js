@@ -31,7 +31,7 @@ const ContactPage = () => {
       </Head>
       <Header />
       <Hero
-        bgPath={'/assets/photos/service.webp'}
+        bgPath={'/assets/photos/cours/1.jpg'}
         logoPath={'/assets/logo.svg'}
         title={'Contactez-nous'}
       />

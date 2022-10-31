@@ -77,12 +77,7 @@ const TraiteurPage = () => {
       />
       <div style={{ height: '45px' }}></div>
 
-      <ParalaxBanner
-        photoPath={'/assets/photos/macro.jpg'}
-        text={
-          '"Classique ou moderne, il n’y a qu’une seule cuisine... La bonne." Paul Bocuse'
-        }
-      />
+      <ParalaxBanner photoPath={'/assets/photos/macro.jpg'} />
       <Service
         textColor={'#2F4858'}
         bgColor={'#fbf3e0'}

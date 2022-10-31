@@ -6,7 +6,7 @@ const Footer = () => {
     <StyledFooter>
       <span>
         Site web, design et développement par
-        <Link href={'https://www.maximekerlidou.fr'}>Maxime KERLIDOU</Link>
+        <Link href={'https://www.maximekerlidou.fr'}> Maxime KERLIDOU</Link>
       </span>
       <span>
         Photos, Videos, Montage par

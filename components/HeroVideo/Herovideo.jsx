@@ -33,14 +33,14 @@ const HeroVideo = ({ title, bgPath, text, logoPath }) => {
         },
       ]}>
       <StyledHeroVideo>
-        <div className='logo'>
+        {/* <div className='logo'>
           <Image
             src={logoPath}
             height={400}
             width={400}
             alt="logo de l'entreprise traiteur la table de la Bruyère Valenciennes"
           />
-        </div>
+        </div> */}
         <div className='text'>
           <h1>{title}</h1>
           <span>{text}</span>
