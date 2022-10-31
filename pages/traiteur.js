@@ -44,18 +44,25 @@ const TraiteurPage = () => {
           content='https://www.maximekerlidou.fr/videos/bruyere.mp4'
         />
       </Head>
-      <Header />
+      {/* <Header /> */}
 
-      <HeroVideo
+      {/* <HeroVideo
         bgPath={'https://www.maximekerlidou.fr/videos/bruyere.mp4'}
         logoPath={'/assets/logo.svg'}
         title={'Traiteur'}
         text='Qualité, saisonnalité, expertise et conseil.'
+      /> */}
+
+      <HeroVideo
+        bgPath={'https://www.maximekerlidou.fr/videos/bruyere.mp4'}
+        logoPath={'/assets/logo.svg'}
+        title={'Site en construction'}
+        text='Bientôt Disponible'
       />
 
       {/* <Banner1 bgPath={'/assets/photos/equipe.jpeg'} /> */}
 
-      <Service
+      {/* <Service
         textColor={'#2F4858'}
         photoPath={'/assets/photos/oeuf.webp'}
         title={'Notre cuisine'}
@@ -102,7 +109,7 @@ const TraiteurPage = () => {
       <Reveil />
       <div id='form'>
         <ContactForm />
-      </div>
+      </div> */}
       <Footer />
     </>
   );

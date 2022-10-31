@@ -33,7 +33,15 @@ const Chef = () => {
         <meta property='video' content='' />
         <meta property='video' content='' />
       </Head>
-      <Header />
+      {/* <Header /> */}
+      {/* <HeroVideo
+        bgPath={'https://www.maximekerlidou.fr/videos/bruyere.mp4'}
+        logoPath={'/assets/logo.svg'}
+        title={'Chef à domicile'}
+        text='Le Chef à domicile permet d’organiser un repas chez soi. Il vous laisse ainsi profiter de la compagnie de ses invités. '
+        link={'/chef#form'}
+        textLink='Réserver'
+      /> */}
       <HeroVideo
         bgPath={'https://www.maximekerlidou.fr/videos/bruyere.mp4'}
         logoPath={'/assets/logo.svg'}
@@ -42,7 +50,7 @@ const Chef = () => {
         link={'/chef#form'}
         textLink='Réserver'
       />
-      <div style={{ height: '40px' }}></div>
+      {/* <div style={{ height: '40px' }}></div>
 
       <Service
         textColor={'#2F4858'}
@@ -77,7 +85,7 @@ const Chef = () => {
       />
       <div id='form'>
         <ContactForm />
-      </div>
+      </div> */}
       <Footer />
     </>
   );

@@ -40,13 +40,20 @@ const CoursPage = () => {
         <meta property='og:image' content='/assets/photos/service.webp' />
       </Head>
       <Header />
-
-      <HeroVideo
+      {/* <HeroVideo
         bgPath={'https://www.maximekerlidou.fr/videos/cours.mp4'}
         logoPath={'/assets/logo.svg'}
         title={'École de la table'}
         text='Un moment convivial autour de l’apprentissage de la cuisine.'
+      /> */}
+      <HeroVideo
+        bgPath={'https://www.maximekerlidou.fr/videos/cours.mp4'}
+        logoPath={'/assets/logo.svg'}
+        title={'Site en construction, Bientôt disponible !'}
+        text=''
       />
+      {/* 
+
       <div style={{ height: '5vh' }}></div>
 
       <Service
@@ -89,7 +96,7 @@ const CoursPage = () => {
       />
       <div id='form'>
         <ContactForm photoPath={'/assets/photos/service.webp'} />
-      </div>
+      </div> */}
       <Footer />
     </>
   );

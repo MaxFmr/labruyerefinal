@@ -32,15 +32,15 @@ const TarifsPage = () => {
           content='https://www.maximekerlidou.fr/videos/bruyere.mp4'
         />
       </Head>
-      <Header />
+      {/* <Header /> */}
       <HeroVideo
         bgPath={'https://www.maximekerlidou.fr/videos/bruyere.mp4'}
         logoPath={'/assets/logo.svg'}
-        title={'Brochure et Tarifs'}
+        title={'Site en construction, Bientôt disponible.'}
       />
       <div style={{ height: '5vh' }}></div>
-      <Brochure />
-      <ContactForm />
+      {/* <Brochure />
+      <ContactForm />*/}
       <Footer />
     </div>
   );
