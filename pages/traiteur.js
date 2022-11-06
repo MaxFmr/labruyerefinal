@@ -89,6 +89,8 @@ const TraiteurPage = () => {
         link={'/traiteur#form'}
         textLink='Réserver'
       />
+      <div style={{ height: '45px' }}></div>
+
       <ParalaxBanner
         photoPath={'/assets/photos/traiteur/salle_edito.webp'}
         text={
