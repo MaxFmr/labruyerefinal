@@ -44,25 +44,18 @@ const TraiteurPage = () => {
           content='https://www.maximekerlidou.fr/videos/bruyere.mp4'
         />
       </Head>
-      {/* <Header /> */}
-
-      {/* <HeroVideo
-        bgPath={'https://www.maximekerlidou.fr/videos/bruyere.mp4'}
-        logoPath={'/assets/logo.svg'}
-        title={'Traiteur'}
-        text='Qualité, saisonnalité, expertise et conseil.'
-      /> */}
+      <Header />
 
       <HeroVideo
         bgPath={'https://www.maximekerlidou.fr/videos/bruyere.mp4'}
-        logoPath={'/assets/logo.svg'}
-        title={'Site en construction'}
-        text='Bientôt Disponible'
+        logoPath={'/assets/cloche.svg'}
+        title={'Traiteur'}
+        text='Qualité, saisonnalité, expertise et conseil.'
       />
 
       {/* <Banner1 bgPath={'/assets/photos/equipe.jpeg'} /> */}
 
-      {/* <Service
+      <Service
         textColor={'#2F4858'}
         photoPath={'/assets/photos/oeuf.webp'}
         title={'Notre cuisine'}
@@ -96,6 +89,12 @@ const TraiteurPage = () => {
         link={'/traiteur#form'}
         textLink='Réserver'
       />
+      <ParalaxBanner
+        photoPath={'/assets/photos/traiteur/salle_edito.webp'}
+        text={
+          'Nous pouvons vous proposer une salle privative de 18 places assises pour vos repas privés ou rencontres professionelles.'
+        }
+      />
 
       <Service
         bgColor={'#2d8e8e'}
@@ -109,7 +108,7 @@ const TraiteurPage = () => {
       <Reveil />
       <div id='form'>
         <ContactForm />
-      </div> */}
+      </div>
       <Footer />
     </>
   );

@@ -15,6 +15,7 @@ const StyledHomePage = styled.section`
     opacity: 0.9;
     display: flex;
     justify-content: center;
+    margin-top: 4%;
     .menuIcon {
       margin-left: 80%;
     }

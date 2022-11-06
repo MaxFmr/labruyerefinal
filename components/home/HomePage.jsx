@@ -25,14 +25,14 @@ const HomePage = () => {
           }}></video>
         <div className='header'>
           <Image
-            src={'/assets/logo.svg'}
+            src={'/assets/g8.svg'}
             height={200}
-            width={300}
+            width={200}
             alt='logo entreprise traiteur, chef à domicile, école cours de cuisine La tabel de la bruyère valenciennes'
           />
         </div>
         <div className='items'>
-          {/* <h1>
+          <h1>
             <Link href={'/traiteur'}>Traiteur </Link>
           </h1>
           <h2>
@@ -41,16 +41,13 @@ const HomePage = () => {
           <h2>
             <Link href={'/cours'}>Cours de cuisine </Link>
           </h2>
-          <h2>
-            <Link href={'/cours'}>Cours de cuisine </Link>
-          </h2> */}
-          <h2>Site en construction. Bientôt Disponible ! </h2>
-          {/* <button
+
+          <button
             onClick={() => {
               router.push('/contact');
             }}>
             Réserver
-          </button> */}
+          </button>
         </div>
         <div className='social'>
           <Link

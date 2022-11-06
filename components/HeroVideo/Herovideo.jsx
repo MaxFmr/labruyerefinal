@@ -30,14 +30,15 @@ const HeroVideo = ({ title, bgPath, text, logoPath }) => {
           ),
 
           speed: -45,
+          opacity: [0.72, 0.72],
         },
       ]}>
       <StyledHeroVideo>
         <div className='logo'>
           <Image
             src={logoPath}
-            height={400}
-            width={400}
+            height={200}
+            width={200}
             alt="logo de l'entreprise traiteur la table de la Bruyère Valenciennes"
           />
         </div>

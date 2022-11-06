@@ -14,7 +14,7 @@ const CoursPage = () => {
 
         <meta
           name='description'
-          content='Cours de cuisine. École de la Table de La Bruyère à Valenciennes, vivez, seul(e) ou en groupe, à la demi-journée, une expérience unique qui vous transporte dans une école de la table inspirée des plus grandes institutions gastronomiques Française. Vous serez en mesure de surprendre vos convives, avec une cuisine de restaurant. Les techniques professionnelles et astuces du chef vous permettrons d’améliorer vos recettes. Le cours de cuisine est un moment convivial, idéal pour générer de la cohésion sur des évenements de type "team building" ou encore créer un temps collectif pendant un enterrement de vie de célibataire !'
+          content='Cours de cuisine. École de la Table de La Bruyère à Valenciennes, vivez, seul(e) ou en groupe, en cuisne ou à domicile, à la demi-journée, une expérience unique qui vous transporte dans une école de la table inspirée des plus grandes institutions gastronomiques Française. Vous serez en mesure de surprendre vos convives, avec une cuisine de restaurant. Les techniques professionnelles et astuces du chef vous permettrons d’améliorer vos recettes. Le cours de cuisine est un moment convivial, idéal pour générer de la cohésion sur des évenements de type "team building" ou encore créer un temps collectif pendant un enterrement de vie de célibataire !'
         />
         <meta
           property='og:url'
@@ -40,19 +40,12 @@ const CoursPage = () => {
         <meta property='og:image' content='/assets/photos/service.webp' />
       </Head>
       <Header />
-      {/* <HeroVideo
-        bgPath={'https://www.maximekerlidou.fr/videos/cours.mp4'}
-        logoPath={'/assets/logo.svg'}
-        title={'École de la table'}
-        text='Un moment convivial autour de l’apprentissage de la cuisine.'
-      /> */}
       <HeroVideo
         bgPath={'https://www.maximekerlidou.fr/videos/cours.mp4'}
-        logoPath={'/assets/logo.svg'}
-        title={'Site en construction, Bientôt disponible !'}
-        text=''
+        logoPath={'/assets/cloche.svg'}
+        title={'École de la table'}
+        text='Un moment convivial autour de l’apprentissage de la cuisine.'
       />
-      {/* 
 
       <div style={{ height: '5vh' }}></div>
 
@@ -94,9 +87,20 @@ const CoursPage = () => {
         link={'/cours#form'}
         textLink='Réserver'
       />
+      <Service
+        textColor={''}
+        bgColor={'#2d8e8e'}
+        photoPath={'/assets/photos/culi12.jpg'}
+        title={'L’école s’invite aussi chez vous !'}
+        text='Pour un cours particulier ou collectif à domicile, idéal pour un moment convivial entre amis ou en famille !'
+        link={'/cours#form'}
+        textLink='Réserver'
+      />
+      <div style={{ height: '5vh' }}></div>
+
       <div id='form'>
         <ContactForm photoPath={'/assets/photos/service.webp'} />
-      </div> */}
+      </div>
       <Footer />
     </>
   );

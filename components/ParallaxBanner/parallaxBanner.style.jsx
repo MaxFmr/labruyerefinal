@@ -5,7 +5,7 @@ const StyledParallaxBanner = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.dark};
+  background-color: black;
 
   @media (min-width: 768px) {
     height: 50vh;

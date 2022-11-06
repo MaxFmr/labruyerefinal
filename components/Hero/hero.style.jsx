@@ -6,6 +6,7 @@ const StyledHero = styled.section`
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  background-color: black;
 
   h1 {
     font-size: 40px;
@@ -15,8 +16,8 @@ const StyledHero = styled.section`
     text-align: center;
   }
   .logo {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     display: flex;
     margin-top: -10%;
   }
@@ -40,7 +41,7 @@ const StyledHero = styled.section`
     right: 10%;
     bottom: 90%;
     z-index: 10;
-    @media (min-width: 960px) {
+    @media (min-width: 1021px) {
       display: none;
     }
   }

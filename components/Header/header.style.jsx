@@ -12,7 +12,7 @@ const StyledHeader = styled.header`
   background-color: ${({ theme }) => theme.colors.primary};
   z-index: 10;
 
-  @media (max-width: 960px) {
+  @media (max-width: 1021px) {
     display: none;
   }
 
@@ -25,7 +25,7 @@ const StyledHeader = styled.header`
     border-radius: 10px;
     display: flex;
     overflow: hidden;
-    margin-left: 40px;
+    margin-left: 80px;
     @media (max-width: 600px) {
       font-size: 14px;
       display: none;
@@ -50,7 +50,6 @@ const StyledHeader = styled.header`
       display: inline-block;
       font-family: 'Abhaya Libre', serif;
       font-size: 100%;
-      margin-left: 13px;
 
       background: none;
       border: none;

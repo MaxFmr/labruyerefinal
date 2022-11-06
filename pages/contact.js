@@ -29,18 +29,14 @@ const ContactPage = () => {
         <meta property='video' content='' />
         <meta property='video' content='' />
       </Head>
-      {/* <Header /> */}
-      {/* <Hero
-        bgPath={'/assets/photos/cours/1.jpg'}
-        logoPath={'/assets/logo.svg'}
-        title={'Contactez-nous'}
-      /> */}
+      <Header />
       <Hero
         bgPath={'/assets/photos/cours/4.jpg'}
-        logoPath={'/assets/logo.svg'}
-        title={'Site en construction, Bientôt disponible !'}
+        logoPath={'/assets/cloche.svg'}
+        title={'Contactez-nous'}
       />
-      {/* <ContactForm /> */}
+
+      <ContactForm />
       <Footer />
     </>
   );

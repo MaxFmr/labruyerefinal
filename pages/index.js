@@ -36,7 +36,7 @@ export default function Home() {
         />
       </Head>
       <HomePage />
-      {/* <ContactForm /> */}
+      <ContactForm />
       <Footer />
     </>
   );

@@ -10,7 +10,7 @@ const Legal = () => {
       <Header />
       <Hero
         bgPath={'/assets/photos/service.webp'}
-        logoPath={'/assets/logo.svg'}
+        logoPath={'/assets/cloche.svg'}
         title={'mentions légales'}
       />
       <Link href={'/contact'}>retour au formulaire de contact</Link>
