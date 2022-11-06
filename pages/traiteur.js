@@ -94,7 +94,7 @@ const TraiteurPage = () => {
       <ParalaxBanner
         photoPath={'/assets/photos/traiteur/salle_edito.webp'}
         text={
-          'Nous pouvons vous proposer une salle privative de 18 places assises pour vos repas privés ou rencontres professionelles.'
+          'A la recherche d’une salle privative  (jusque 18 places assises) pour vos repas privés ou rencontres professionnelles, ? Contactez-nous.'
         }
       />
 
