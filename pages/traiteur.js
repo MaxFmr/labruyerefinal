@@ -1,9 +1,7 @@
-import Hero from '../components/Hero/Hero';
 import ContactForm from '../components/ContactForm/ContactForm';
 import Service from '../components/Service/Service';
 import Header from '../components/Header/Header';
-import Banner1 from '../components/Banner1/Banner1';
-import Link from 'next/link';
+
 import ParalaxBanner from '../components/ParallaxBanner/ParallaxBanner';
 import Head from 'next/head';
 import Footer from '../components/footer/Footer';
@@ -65,6 +63,9 @@ const TraiteurPage = () => {
         link={'/traiteur#form'}
         textLink='Réserver'
       />
+      <div style={{ height: '45px' }}></div>
+
+      <ParalaxBanner photoPath={'/assets/photos/traiteur/2.jpg'} />
 
       <Service
         textColor={''}
@@ -94,7 +95,7 @@ const TraiteurPage = () => {
       <ParalaxBanner
         photoPath={'/assets/photos/traiteur/salle_edito.webp'}
         text={
-          'A la recherche d’une salle privative  (jusque 18 places assises) pour vos repas privés ou rencontres professionnelles, ? Contactez-nous.'
+          'A la recherche d’une salle privative  (jusque 18 places assises) pour vos repas privés ou rencontres professionnelles? Nous sommes équipés d’un grand écran plat interractif et tactile, idéal pour les présentations et le travail collectif.'
         }
       />
 

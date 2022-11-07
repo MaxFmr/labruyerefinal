@@ -27,8 +27,8 @@ const Reveil = () => {
         La Table de la Bruyère est le traiteur exclusif du domaine Le Réveil de
         la Bruyère.
         <br /> Nous bénéficions d’un cadre de rêve, au coeur de l’Avesnois, à
-        proximité de Valenciennes, dans une ancienne maison de famille, niché au
-        milieu d’un parc.
+        proximité de Valenciennes, dans une ancienne maison de famille, nichée
+        au milieu d’un parc.
         <br />
         <div style={{ marginTop: '10px' }}></div>
         <Link href='https://www.lereveildelabruyere.com/fr'>

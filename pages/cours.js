@@ -74,7 +74,7 @@ const CoursPage = () => {
 
       <ParalaxBanner
         photoPath={'/assets/photos/cours/3.jpg'}
-        text='Le cours de cuisine est un moment convivial, idéal pour générer de la cohésion sur des évenements de type "team building" ou encore créer un temps collectif pendant un enterrement de vie de célibataire !'
+        text='Le cours de cuisine est un moment convivial, idéal pour générer de la cohésion sur des évenements de type "team building" ou encore créer un temps collectif pendant un événement privilégié (enterrement de vie de célibataire, réunion de famille, activité entres amis ... ).'
       />
 
       <Service
@@ -82,7 +82,8 @@ const CoursPage = () => {
         bgColor={'#fbf3e0'}
         photoPath={'/assets/photos/cours/4.jpg'}
         title={'Réservations'}
-        text='Prenez contact avec nous par téléphone ou via le formulaire ci-dessous pour réserver un cours, ou connaître les ateliers organisés afin de vous y joindre.'
+        text='Prenez contact avec nous par téléphone ou via le formulaire ci-dessous pour réserver un cours, ou connaître les ateliers organisés afin de vous y joindre.
+       '
         ImageSide='left'
         link={'/cours#form'}
         textLink='Réserver'
@@ -93,6 +94,16 @@ const CoursPage = () => {
         photoPath={'/assets/photos/culi12.jpg'}
         title={'L’école s’invite aussi chez vous !'}
         text='Pour un cours particulier ou collectif à domicile, idéal pour un moment convivial entre amis ou en famille !'
+        link={'/cours#form'}
+        textLink='Réserver'
+      />
+      <Service
+        textColor={'#2F4858'}
+        bgColor={'#fbf3e0'}
+        photoPath={'/assets/photos/cours/4.jpg'}
+        title={'Modalités et Tarifs'}
+        text='Les cours de cuisine sont organisés le lundi après-midi, toutes les deux semaines, de 13H00 à 15H30. Le tarif est de 80€ par personne. Nos cours sont prévus pour des groupes comprenant jusque 8 personnes.'
+        ImageSide='left'
         link={'/cours#form'}
         textLink='Réserver'
       />

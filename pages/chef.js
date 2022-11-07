@@ -37,7 +37,6 @@ const Chef = () => {
         bgPath={'https://www.maximekerlidou.fr/videos/bruyere.mp4'}
         logoPath={'/assets/cloche.svg'}
         title={'Chef à domicile'}
-        text='Le Chef à domicile permet d’organiser un repas chez soi. Il vous laisse ainsi profiter de la compagnie de vos invités. '
         link={'/chef#form'}
         textLink='Réserver'
       />
@@ -60,7 +59,8 @@ const Chef = () => {
         bgColor={'#2d8e8e'}
         photoPath={'/assets/photos/chef/1.webp'}
         title={'Pour vous ou avec vous'}
-        text='La prestation Chef à domicile vous libère mais si vous désirez intervenir dans la préparation de votre repas, c’est possible !'
+        text='Devenez acteur de votre évènement. La prestation Chef à domicile vous libère des contraintes.
+        Le Chef à domicile permet d’organiser un repas chez soi. Il vous laisse ainsi profiter de la compagnie de vos invités. '
         link={'/chef#form'}
         textLink='Réserver'
       />

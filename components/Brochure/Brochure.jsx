@@ -40,6 +40,13 @@ const Brochure = () => {
         <Link href={'https://www.maximekerlidou.fr/pdf/tarifs.pdf'}>
           <a target='_blank'>Consulter notre brochure au format PDF</a>
         </Link>
+        <p>
+          Les <strong>cours de cuisine</strong> sont organisés le lundi
+          après-midi, toutes les deux semaines de 13H00 à 15H30. Le tarif est de
+          80€ par personne. Nos cours sont prévus pour des groupes comprenant
+          jusque
+          <strong> 8 personnes.</strong>
+        </p>
       </div>
     </StyledBrochure>
   );
