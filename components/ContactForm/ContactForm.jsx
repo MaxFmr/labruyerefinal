@@ -155,9 +155,9 @@ const ContactForm = () => {
       </div>
       <div className='logo'>
         <Image
-          src='/assets/logo.svg'
-          height={500}
-          width={500}
+          src='/assets/g8.svg'
+          height={300}
+          width={300}
           alt="logo de l'entreprise traiteur la table de la Bruyère Valenciennes"
         />
       </div>

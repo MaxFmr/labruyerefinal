@@ -11,6 +11,7 @@ const StyledParallaxBanner = styled.section`
     height: 50vh;
   }
   .text {
+    text-align: center;
     span {
       text-align: center;
     }
