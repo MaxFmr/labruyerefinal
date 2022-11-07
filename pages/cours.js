@@ -82,7 +82,7 @@ const CoursPage = () => {
         bgColor={'#fbf3e0'}
         photoPath={'/assets/photos/cours/4.jpg'}
         title={'Réservations'}
-        text='Prenez contact avec nous par téléphone ou via le formulaire ci-dessous pour réserver un cours, ou connaître les ateliers orgnisés afin de vous y joindre.'
+        text='Prenez contact avec nous par téléphone ou via le formulaire ci-dessous pour réserver un cours, ou connaître les ateliers organisés afin de vous y joindre.'
         ImageSide='left'
         link={'/cours#form'}
         textLink='Réserver'
