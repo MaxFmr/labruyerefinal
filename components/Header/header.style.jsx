@@ -42,6 +42,17 @@ const StyledHeader = styled.header`
         margin-left: 20px;
       }
     }
+    @media (min-width: 1520px) {
+      button {
+        margin-left: 25px;
+      }
+    }
+    @media (max-width: 1520px) {
+      width: auto;
+      button {
+        margin-left: 20px;
+      }
+    }
     @media (max-width: 600px) {
       font-size: 30%;
       width: auto;
