@@ -95,7 +95,7 @@ const TraiteurPage = () => {
       <ParalaxBanner
         photoPath={'/assets/photos/traiteur/salle_edito.webp'}
         text={
-          'A la recherche d’une salle privative  (jusque 18 places assises) pour vos repas privés ou rencontres professionnelles? Nous sommes équipés d’un grand écran plat interractif et tactile, idéal pour les présentations et le travail collectif.'
+          'A la recherche d’une salle privative (jusque 18 places assises) pour vos repas privés ou rencontres professionnelles? Contactez-nous ! Nous sommes équipés d’un grand écran plat interractif et tactile, idéal pour les présentations et le travail collectif.'
         }
       />
 
