@@ -37,6 +37,10 @@ const ContactPage = () => {
       />
 
       <ContactForm />
+      <div className='widget'>
+        <script src='https://apps.elfsight.com/p/platform.js' defer></script>
+        <div class='elfsight-app-95b6498d-f823-4cc4-baba-46fbb9d1960c'></div>
+      </div>
       <Footer />
     </>
   );

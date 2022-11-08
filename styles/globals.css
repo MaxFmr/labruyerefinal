@@ -14,3 +14,11 @@ body {
 
   -webkit-font-smoothing: antialiased;
 }
+
+.widget {
+  position: fixed;
+  height: 80px;
+  overflow: hidden;
+  left: -10px;
+  bottom: 15px;
+}

@@ -46,9 +46,9 @@ const StyledHomePage = styled.section`
       :hover {
         color: #2d8e8e;
       }
-      font-weight: 300;
     }
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: bolder;
 
     @media (min-width: 768px) {
       font-size: 25px;
