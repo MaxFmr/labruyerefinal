@@ -20,6 +20,7 @@ const StyledHero = styled.section`
     height: 200px;
     display: flex;
     margin-top: -10%;
+    margin-bottom: 15px;
   }
   .text {
     width: 60%;

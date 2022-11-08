@@ -19,7 +19,7 @@ const StyledHeroVideo = styled.section`
     height: 200px;
     display: flex;
     margin-top: -10%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .text {
     width: 60%;
