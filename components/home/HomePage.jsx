@@ -81,7 +81,7 @@ const HomePage = () => {
           </Link>
         </div>
         <div className='scroll'>
-          <AiFillDownCircle size={40} color={'#257676'} />{' '}
+          <AiFillDownCircle size={40} color={'#257676'} />
         </div>
         <div className='widget'>
           <script src='https://apps.elfsight.com/p/platform.js' defer></script>

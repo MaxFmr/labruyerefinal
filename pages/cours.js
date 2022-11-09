@@ -100,7 +100,7 @@ const CoursPage = () => {
       <Service
         textColor={'#2F4858'}
         bgColor={'#fbf3e0'}
-        photoPath={'/assets/photos/cours/4.jpg'}
+        photoPath={'/assets/photos/huile.webp'}
         title={'Modalités et Tarifs'}
         text='Les cours de cuisine sont organisés le lundi après-midi, toutes les deux semaines, de 13H00 à 15H30. Le tarif est de 80€ par personne. Nos cours sont prévus pour des groupes comprenant jusque 8 personnes.'
         ImageSide='left'
