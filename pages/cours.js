@@ -91,7 +91,7 @@ const CoursPage = () => {
       <Service
         textColor={''}
         bgColor={'#2d8e8e'}
-        photoPath={'/assets/photos/culi12.jpg'}
+        photoPath={'/assets/photos/ris.webp'}
         title={'L’école s’invite aussi chez vous !'}
         text='Pour un cours particulier ou collectif à domicile, idéal pour un moment convivial entre amis ou en famille !'
         link={'/cours#form'}
