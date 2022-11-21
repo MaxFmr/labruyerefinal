@@ -6,6 +6,7 @@ const StyledPostsPreview = styled.section`
   justify-content: center;
   color: #2d8e8e;
   text-align: center;
+
   span {
     font-size: x-large;
     font-weight: bold;
