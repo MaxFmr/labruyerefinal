@@ -5,6 +5,7 @@ const StyledService = styled.section`
   height: 35vh;
   align-items: center;
   justify-content: center;
+
   margin: 15% 2% 15% 2%;
   @media (max-width: 400px) {
     margin-bottom: -20px;
@@ -37,7 +38,6 @@ const StyledService = styled.section`
   .text {
     /* box-shadow: -11px -5px 15px -5px #2f4858; */
     border-radius: 5px;
-
     margin: 5%;
     overflow: hidden;
     width: 55%;

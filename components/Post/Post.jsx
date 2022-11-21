@@ -31,7 +31,7 @@ const Post = ({ post }) => {
           <Image
             src={photos[1]}
             height={1000}
-            width={600}
+            width={700}
             objectFit='cover'
             alt={postTitle + title2}
           />
@@ -49,7 +49,7 @@ const Post = ({ post }) => {
           <Image
             src={photos[2]}
             height={1000}
-            width={600}
+            width={700}
             objectFit='cover'
             alt={postTitle + title3}
           />
