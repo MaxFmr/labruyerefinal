@@ -31,11 +31,20 @@ const Brochure = () => {
   };
   return (
     <StyledBrochure>
+      <div className='link'>
+        <Link href={'https://www.maximekerlidou.fr/pdf/menufetes.pdf'}>
+          <a target='_blank'>Consultez notre menu pour les fêtes 2022/2023</a>
+        </Link>
+      </div>
+      <div style={{ height: '40px' }}></div>
+      <h2>Notre carte à l’année : </h2>
+
       <ImageGallery
         items={photosGallery}
         showThumbnails={false}
         startIndex={imgId}
       />
+
       <div className='link'>
         <Link href={'https://www.maximekerlidou.fr/pdf/tarifs.pdf'}>
           <a target='_blank'>Consulter notre brochure au format PDF</a>

@@ -12,7 +12,7 @@ const StyledHeader = styled.header`
   background-color: ${({ theme }) => theme.colors.primary};
   z-index: 10;
 
-  @media (max-width: 1021px) {
+  @media (max-width: 1170px) {
     display: none;
   }
 

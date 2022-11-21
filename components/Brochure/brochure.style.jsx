@@ -4,6 +4,8 @@ const StyledBrochure = styled.section`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  color: #257676;
+
   .link {
     margin-top: 5%;
     width: 300px;

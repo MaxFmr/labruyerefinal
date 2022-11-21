@@ -10,11 +10,12 @@ const Post = ({ post }) => {
       <h1>{postTitle}</h1>
       <h2>{title1}</h2>
       <p>{text1}</p>
+
       <div className='photo'>
         <Image
           src={photos[0]}
-          height={400}
-          width={600}
+          height={1000}
+          width={700}
           objectFit='cover'
           alt={postTitle + title1}
         />
@@ -29,7 +30,7 @@ const Post = ({ post }) => {
         <div className='photo'>
           <Image
             src={photos[1]}
-            height={400}
+            height={1000}
             width={600}
             objectFit='cover'
             alt={postTitle + title2}
@@ -47,7 +48,7 @@ const Post = ({ post }) => {
         <div className='photo'>
           <Image
             src={photos[2]}
-            height={400}
+            height={1000}
             width={600}
             objectFit='cover'
             alt={postTitle + title3}

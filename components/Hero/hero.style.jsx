@@ -42,7 +42,7 @@ const StyledHero = styled.section`
     right: 10%;
     bottom: 90%;
     z-index: 10;
-    @media (min-width: 1021px) {
+    @media (min-width: 1170px) {
       display: none;
     }
   }

@@ -33,6 +33,9 @@ const StyledArticlePreview = styled.section`
   }
 
   .date {
+    display: flex;
+
+    justify-content: center;
     h2 {
       margin-top: 20px;
     }

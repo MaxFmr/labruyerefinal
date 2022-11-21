@@ -35,8 +35,8 @@ const articlePage = ({ post }) => {
       </Head>
       <Header />
       <Hero
-        bgPath={'/assets/photos/service.webp'}
-        logoPath={'/assets/logo.svg'}
+        bgPath={'/assets/photos/actus/1.jpg'}
+        logoPath={'/assets/cloche.svg'}
         title={article.postTitle}
         text={article.date}
       />
