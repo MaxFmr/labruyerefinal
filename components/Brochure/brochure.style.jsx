@@ -11,6 +11,7 @@ const StyledBrochure = styled.section`
     width: 300px;
     text-align: center;
     font-size: larger;
+
     a {
       color: #257676;
     }
