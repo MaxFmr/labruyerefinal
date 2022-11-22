@@ -28,7 +28,7 @@ export default function Home() {
         <meta property='url' content='https://www.latabledelabruyere.com' />
         <meta property='og:title' content='La Table de La Bruyère - Traiteur' />
         <meta property='og:type' content='video.movie' />
-        <meta property='og:image' content='/assets/photos/service.webp' />
+        <meta property='og:image' content='/assets/photos/vic.webp' />
         <meta
           property='video'
           content='https://www.maximekerlidou.fr/videos/bruyere.mp4'
