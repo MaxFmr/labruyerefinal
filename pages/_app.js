@@ -37,6 +37,7 @@ function MyApp({ Component, pageProps }) {
         />
         <title>La Table de La Bruyère - Traiteur</title>
         <meta
+          name='image'
           property='og:image'
           content='https://www.maximekerlidou.fr/photos/labruyere/guillaume.webp'
         />
