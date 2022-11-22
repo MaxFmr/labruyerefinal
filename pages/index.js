@@ -13,6 +13,10 @@ export default function Home() {
           content='eTvl94KTN6CVkVMX_dD6hOqWSQLv_dNencmVmWoB4O4'
         />
         <title>La Table de La Bruyère - Traiteur</title>
+        <meta
+          property='og:image'
+          content='https://www.maximekerlidou.fr/photos/labruyere/guillaume.webp'
+        />
 
         <meta
           name='description'
@@ -28,7 +32,7 @@ export default function Home() {
         <meta property='url' content='https://www.latabledelabruyere.com' />
         <meta property='og:title' content='La Table de La Bruyère - Traiteur' />
         <meta property='og:type' content='video.movie' />
-        <meta property='og:image' content='/assets/photos/vic.webp' />
+
         <meta
           property='video'
           content='https://www.maximekerlidou.fr/videos/bruyere.mp4'
