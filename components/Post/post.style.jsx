@@ -4,6 +4,7 @@ const StyledPost = styled.section`
   flex-direction: column;
   color: #2f4858;
   margin: 4%;
+
   h1 {
     font-size: 40px;
   }
