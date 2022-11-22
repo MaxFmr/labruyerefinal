@@ -18,6 +18,7 @@ export default function Home() {
           property='og:image'
           content='https://www.maximekerlidou.fr/photos/labruyere/guillaume.webp'
         />
+        <meta name='author' content='La Table de la Bruyère' />
 
         <meta
           name='description'
