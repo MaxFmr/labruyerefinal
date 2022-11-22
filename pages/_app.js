@@ -35,6 +35,8 @@ function MyApp({ Component, pageProps }) {
           name='google-site-verification'
           content='eTvl94KTN6CVkVMX_dD6hOqWSQLv_dNencmVmWoB4O4'
         />
+        <meta name='author' content='La Table de la Bruyère' />
+
         <title>La Table de La Bruyère - Traiteur</title>
         <meta
           name='image'
