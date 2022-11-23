@@ -138,7 +138,7 @@ const ContactForm = () => {
               <Link href={'/legal'}>Mentions légales</Link>
             </div>
             <div className='btn'>
-              <button type='submit'>Evoyer</button>
+              <button type='submit'>Envoyer</button>
             </div>
           </form>
         ) : (
