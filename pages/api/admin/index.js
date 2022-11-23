@@ -2,7 +2,7 @@ const AdminRoute = async (req, res) => {
   if (req.method === 'POST') {
     //create
     try {
-      const mdp = 'labruyereadmin';
+      const mdp = process.env.NEXT_PUBLIC_MDP;
       if (req.body.password === mdp) {
         res.json({ login: 'ok' });
       } else {
