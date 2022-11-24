@@ -3,11 +3,13 @@ import ImageGallery from 'react-image-gallery';
 import StyledGalery from './galery.style';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import { useScrollTo } from 'react-use-window-scroll';
+import { useWindowSize } from 'usehooks-ts';
 
 import { useState } from 'react';
 
 const GaleryGrid = () => {
   const scrollTo = useScrollTo();
+  const { width, height } = useWindowSize();
 
   const [clicked, setClicked] = useState(false);
   const [imgId, setImgId] = useState(undefined);
@@ -28,19 +30,21 @@ const GaleryGrid = () => {
     });
   }
   const handleClick = (id) => {
-    scrollTo(665, 0);
-    setClicked(!clicked);
-    setImgId(id);
+    if (width > 600) {
+      scrollTo(665, 0);
+      setClicked(!clicked);
+      setImgId(id);
+    }
   };
   return (
     <StyledGalery>
-      {clicked ? (
+      {clicked && width > 600 ? (
         <div className='carousel'>
           <button className='closeButton' onClick={() => setClicked(false)}>
             <Image
               src='/assets/xmark-solid.svg'
-              height={30}
-              width={30}
+              height={40}
+              width={40}
               alt='closing logo'
             />
           </button>

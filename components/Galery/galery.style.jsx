@@ -23,6 +23,12 @@ const StyledGalery = styled.section`
     div {
       height: 500;
       width: 500;
+      @media (min-width: 600px) {
+        cursor: pointer;
+        :hover {
+          opacity: 0.9;
+        }
+      }
     }
   }
   .closeButton {
