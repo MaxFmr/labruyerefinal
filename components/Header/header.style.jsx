@@ -12,13 +12,12 @@ const StyledHeader = styled.header`
   background-color: ${({ theme }) => theme.colors.primary};
   z-index: 10;
 
-  @media (max-width: 1170px) {
+  @media (max-width: 1345px) {
     display: none;
   }
 
   font-size: 30px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
-  justify-content: space-between;
   .title {
     cursor: pointer;
     border: solid ${({ theme }) => theme.colors.green} 2px;
@@ -32,25 +31,25 @@ const StyledHeader = styled.header`
     }
   }
   .buttons {
-    width: 55%;
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 22px;
+    margin-left: 100px;
     @media (max-width: 1520px) {
-      width: auto;
       button {
-        margin-left: 20px;
+        margin-left: 50px;
       }
     }
     @media (min-width: 1520px) {
+      margin-left: 200px;
       button {
-        margin-left: 25px;
+        margin-left: 70px;
       }
     }
     @media (max-width: 1520px) {
       width: auto;
       button {
-        margin-left: 20px;
+        margin-left: 50px;
       }
     }
     @media (max-width: 600px) {
@@ -59,9 +58,9 @@ const StyledHeader = styled.header`
     }
     button {
       display: inline-block;
+
       font-family: 'Abhaya Libre', serif;
       font-size: 100%;
-
       background: none;
       border: none;
       color: #fbf3e0;
@@ -79,6 +78,30 @@ const StyledHeader = styled.header`
         width: 100%;
         //transition: width .3s;
       }
+      :focus {
+        color: ${({ theme }) => theme.colors.dark};
+      }
+    }
+  }
+  .services {
+    position: absolute;
+    top: 60.1px;
+    display: flex;
+    left: 250px;
+    background-color: ${({ theme }) => theme.colors.primary};
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
+
+    flex-direction: column;
+    padding: 20px;
+    button {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      margin-left: 0;
+      width: inherit;
+    }
+    @media (min-width: 1520px) {
+      left: 380px;
     }
   }
 `;

@@ -1,14 +1,10 @@
 import StyledMenu from './menu.style';
-import { GrFormClose } from 'react-icons/gr';
 import Link from 'next/link';
 
 const Menu1 = ({ setDisplayMenu }) => {
   return (
     <StyledMenu>
-      <div
-        className='closeIcon'
-        style={{ color: '#257676' }}
-        onClick={() => setDisplayMenu(false)}>
+      <div className='closeIcon' onClick={() => setDisplayMenu(false)}>
         <span>FERMER</span>
       </div>
 
@@ -32,6 +28,9 @@ const Menu1 = ({ setDisplayMenu }) => {
           </li>
           <li>
             <Link href='/actus'> ❃ Fêtes de fin d’année</Link>
+          </li>
+          <li>
+            <Link href='/galery'> ❃ Galerie</Link>
           </li>
           <li>
             <Link href='/'> ❃ Accueil</Link>

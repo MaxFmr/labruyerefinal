@@ -14,14 +14,17 @@ const CoursPage = () => {
 
         <meta
           name='description'
-          content='Cours de cuisine. École de la Table de La Bruyère à Valenciennes, vivez, seul(e) ou en groupe, en cuisne ou à domicile, à la demi-journée, une expérience unique qui vous transporte dans une école de la table inspirée des plus grandes institutions gastronomiques Française. Vous serez en mesure de surprendre vos convives, avec une cuisine de restaurant. Les techniques professionnelles et astuces du chef vous permettrons d’améliorer vos recettes. Le cours de cuisine est un moment convivial, idéal pour générer de la cohésion sur des évenements de type "team building" ou encore créer un temps collectif pendant un enterrement de vie de célibataire !'
+          content='Cours de cuisine à Valenciennes. École de la Table de La Bruyère, vivez, seul(e) ou en groupe, en cuisne ou à domicile, à la demi-journée, une expérience unique qui vous transporte dans une école de la table inspirée des plus grandes institutions gastronomiques Française. Vous serez en mesure de surprendre vos convives, avec une cuisine de restaurant. Les techniques professionnelles et astuces du chef vous permettrons d’améliorer vos recettes. Le cours de cuisine est un moment convivial, idéal pour générer de la cohésion sur des évenements de type "team building" ou encore créer un temps collectif pendant un enterrement de vie de célibataire !'
         />
         <meta
           property='og:url'
           content='https://www.latabledelabruyere.com/cours'
         />
 
-        <meta property='og:video' content='' />
+        <meta
+          property='og:video'
+          content='https://www.maximekerlidou.fr/videos/cours.mp4'
+        />
 
         <meta
           property='url'

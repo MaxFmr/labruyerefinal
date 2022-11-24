@@ -31,7 +31,10 @@ const ActusPage = ({ posts }) => {
           property='url'
           content='https://www.latabledelabruyere.com/actus'
         />
-        <meta property='video' content='' />
+        <meta
+          property='video'
+          content='https://www.maximekerlidou.fr/videos/cours.mp4'
+        />
         <meta property='video' content='' />
         <meta property='video' content='' />
       </Head>

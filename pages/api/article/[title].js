@@ -2,10 +2,8 @@ import connectMongo from '../../../utils/connectMongo';
 import Article from '../../../models/article';
 
 export async function findOneArticle(title) {
-  console.log(title);
   await connectMongo();
   const article = await Article.findOne({ postTitle: title });
-  console.log(article);
   return article;
 }
 

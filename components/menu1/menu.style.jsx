@@ -1,10 +1,17 @@
 import styled from 'styled-components';
 const StyledMenu = styled.section`
   opacity: 0.95;
-  height: 55vh;
+  height: 500px;
   position: fixed;
   right: 0.1px;
-  background-color: #fbf3e0;
+  background-color: #2e8e8e;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  @media (max-width: 400px) {
+    height: 450px;
+  }
   width: 70vw;
   @media (min-width: 700px) {
     width: 40vw;
@@ -16,14 +23,15 @@ const StyledMenu = styled.section`
   top: 80px;
   display: flex;
   align-items: center;
-  border-radius: 10px;
-  padding: 5px;
   z-index: 100;
   a {
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.green};
+    color: ${({ theme }) => theme.colors.secondary};
     font-size: 24px;
     cursor: pointer;
+    :focus {
+      color: ${({ theme }) => theme.colors.dark};
+    }
     @media (max-width: 400px) {
       font-size: 18px;
     }
@@ -32,16 +40,16 @@ const StyledMenu = styled.section`
     color: ${({ theme }) => theme.colors.green};
     text-decoration: none;
     cursor: pointer;
-    margin-bottom: 7%;
+    margin-bottom: 30px;
   }
   ul {
     list-style-type: none;
   }
   .closeIcon {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 70%;
-    color: #257676;
+    color: ${({ theme }) => theme.colors.secondary};
     font-weight: bold;
   }
 `;

@@ -34,12 +34,20 @@ const TraiteurPage = () => {
         <meta property='og:type' content='video.movie' />
         <meta property='og:image' content='/assets/photos/service.webp' />
         <meta
-          property='video'
+          name='video'
           content='https://www.maximekerlidou.fr/videos/bruyere.mp4'
         />
         <meta
           property='og:video'
           content='https://www.maximekerlidou.fr/videos/bruyere.mp4'
+        />
+        <meta
+          property='og:image'
+          content='https://www.maximekerlidou.fr/photos/labruyere/guillaume.webp'
+        />
+        <meta
+          property='image'
+          content='https://www.maximekerlidou.fr/photos/labruyere/guillaume.webp'
         />
       </Head>
       <Header />

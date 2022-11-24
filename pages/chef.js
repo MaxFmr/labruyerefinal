@@ -22,7 +22,10 @@ const Chef = () => {
           content='https://www.latabledelabruyere.com/chef'
         />
 
-        <meta property='og:video' content='' />
+        <meta
+          property='og:video'
+          content='https://www.maximekerlidou.fr/videos/cours.mp4'
+        />
 
         <meta
           property='url'

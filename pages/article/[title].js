@@ -12,7 +12,9 @@ const articlePage = ({ post }) => {
   return (
     <>
       <Head>
-        <title>{article.postTitle}</title>
+        <title>
+          La Table de la Bruyère Traiteur à Valenciennes {article.postTitle}
+        </title>
         <meta name='description' content={article.text1} />
         <meta
           property='og:url'
