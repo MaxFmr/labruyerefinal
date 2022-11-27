@@ -12,7 +12,7 @@ const TraiteurPage = () => {
   return (
     <>
       <Head>
-        <title>La Table de La Bruyère - Traiteur</title>
+        <title>La Table de La Bruyère - Traiteur à Valenciennes</title>
 
         <meta
           name='description'
@@ -30,7 +30,14 @@ const TraiteurPage = () => {
           property='url'
           content='https://www.latabledelabruyere.com/traiteur'
         />
-        <meta property='og:title' content='La Table de La Bruyère - Traiteur' />
+        <meta
+          property='og:title'
+          content='La Table de La Bruyère - Traiteur à Vlenciennes'
+        />
+        <meta
+          property='title'
+          content='La Table de La Bruyère - Traiteur à Valencienns'
+        />
         <meta property='og:type' content='video.movie' />
         <meta property='og:image' content='/assets/photos/service.webp' />
         <meta
