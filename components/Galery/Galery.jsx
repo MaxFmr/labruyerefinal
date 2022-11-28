@@ -16,7 +16,7 @@ const GaleryGrid = () => {
 
   let urlArr = [];
 
-  for (let i = 1; i < 107; i++) {
+  for (let i = 1; i < 106; i++) {
     urlArr.push(
       `https://www.maximekerlidou.fr/photos/labruyere/galery/_${i}.webp`
     );
