@@ -57,7 +57,6 @@ const HomePage = () => {
               'https://instagram.com/latabledelabruyere?igshid=YmMyMTA2M2Y='
             }>
             <div>
-              {' '}
               <FaInstagram
                 size={50}
                 color='#fbf3e0'
@@ -71,7 +70,6 @@ const HomePage = () => {
               'https://www.facebook.com/La-Table-De-La-Bruyere-102142975538310/'
             }>
             <div>
-              {' '}
               <FaFacebook
                 size={50}
                 color='#fbf3e0'
