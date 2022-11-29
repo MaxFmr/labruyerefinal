@@ -47,7 +47,7 @@ export default function Home() {
         />
         <meta
           property='og:description'
-          content='Faites appel à un traiteur d’exception à Valenciennes, pour un évènement inoubliable. La Table de La Bruyère, Traiteur évenementiel, Chef à domicile, cours de cuisine, mariages, baptèmes, séminaires, cours de cuisine, à Valenciennes, Wargnies, dans le Valenciennois et l’Avesnois'
+          content='Faites appel à un traiteur d’exception à Valenciennes et en ses environs, pour un évènement inoubliable. La Table de La Bruyère, Traiteur évenementiel, Chef à domicile, cours de cuisine, mariages, baptèmes, séminaires, cours de cuisine, à Valenciennes, Wargnies, dans le Valenciennois et l’Avesnois'
         />
         <meta property='og:site_name' content='La Table De La Bruyère' />
 
@@ -55,11 +55,11 @@ export default function Home() {
 
         <meta
           name='description'
-          content='Faites appel à un traiteur d’exception à Valenciennes, pour un évènement inoubliable. La Table de La Bruyère, Traiteur évenementiel, Chef à domicile, cours de cuisine, mariages, baptèmes, séminaires, cours de cuisine, à Valenciennes, Wargnies, dans le Valenciennois et l’Avesnois'
+          content='Faites appel à un traiteur d’exception à Valenciennes et ses environs, pour un évènement inoubliable. La Table de La Bruyère, Traiteur évenementiel, Chef à domicile, cours de cuisine, mariages, baptèmes, séminaires, cours de cuisine, à Valenciennes, Wargnies, dans le Valenciennois et l’Avesnois'
         />
         <meta
           name='twitter:description'
-          content='Faites appel à un traiteur d’exception à Valenciennes, pour un évènement inoubliable. La Table de La Bruyère, Traiteur évenementiel, Chef à domicile, cours de cuisine, mariages, baptèmes, séminaires, cours de cuisine, à Valenciennes, Wargnies, dans le Valenciennois et l’Avesnois'
+          content='Faites appel à un traiteur d’exception à Valenciennes, pour un évènement inoubliable. La Table de La Bruyère, Traiteur évenementiel, Chef à domicile, cours de cuisine, mariage, baptème, séminaire, cours de cuisine, à Valenciennes, Wargnies, dans le Valenciennois et l’Avesnois'
         />
         <meta property='og:url' content='https://www.latabledelabruyere.com' />
 

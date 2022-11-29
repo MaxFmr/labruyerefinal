@@ -16,8 +16,8 @@ const TraiteurPage = () => {
 
         <meta
           name='description'
-          content='Faites appel à un traiteur d’exception, La Table de La Bruyère, Traiteur évenementiel, chef à domicile, évenements, mariages, baptèmes, séminaires etc., cours de cuisine, à Valenciennes, Wargnies, dans le Valenciennois et l’Avesnois. Notre chef Guillaume STILE, a exercé dans des restaurants réputés, dont La Gentilhommière.
-          Il s’est perfectionné au cours de rencontres avec des grands noms de la cuisine française notamment les Chefs Yann Morel, Marc Meurin, Emmanuel Hernandez, Philippe Mille et Hervé Raphanel.'
+          content='Faites appel à un traiteur d’exception à Vlenciennes eg ses environs, La Table de La Bruyère, Traiteur évenementiel, chef à domicile, évenement, mariage, baptème, séminaires etc., cours de cuisine, à Valenciennes, Wargnies, dans le Valenciennois et l’Avesnois. Notre chef Guillaume STILE, a exercé dans des restaurants réputés, dont La Gentilhommière.
+          Il s’est perfectionné au cours de rencontres avec des grands noms de la cuisine française notamment les Chefs Yann Morel, Marc Meurin, Emmanuel Hernandez, Philippe Mille et Hervé Raphanel. La cuisine de Restaurant chez vous.'
         />
         <meta
           property='og:url'
