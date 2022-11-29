@@ -118,7 +118,7 @@ const TraiteurPage = () => {
         bgColor={'#2d8e8e'}
         photoPath={'/assets/photos/foie.webp'}
         title={'Vos évenements'}
-        text='Un mariage, un anniversaire, une fête de famille, un séminaire... Nous vous rejoignons à l’endroit de votre choix pour concrétiser votre projet et en faire un moment unique.'
+        text='Un mariage, un anniversaire, une fête de famille, un séminaire... Nous vous rejoignons à l’endroit de votre choix pour concrétiser votre projet et en faire un moment unique'
         link={'/traiteur#form'}
         textLink='Réserver'
       />
