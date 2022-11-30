@@ -25,7 +25,7 @@ const Service = ({
                 height={800}
                 width={720}
                 objectFit='cover'
-                alt='photo traiteur le table de la bruyère valenciennes'
+                alt='photo traiteur le table de la bruyère à Valenciennes'
               />
             </Parallax>
           </div>

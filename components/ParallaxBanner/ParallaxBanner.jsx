@@ -21,7 +21,7 @@ const ParalaxBanner = ({ photoPath, text, logo }) => {
               src={logo}
               height={150}
               width={150}
-              alt="logo de l'entreprise le réveil de la bruyère gite salle de réception"
+              alt='traiteur produit la table de la bruyère valenciennes'
             />
           </div>
         )}
