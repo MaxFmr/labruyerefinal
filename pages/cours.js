@@ -58,7 +58,7 @@ const CoursPage = () => {
         photoPath={'/assets/photos/cours/1.jpg'}
         title={'Une École'}
         ImageSide='left'
-        text=' Vivez, seul(e) ou en groupe, à la demi-journée, une expérience unique qui vous transporte dans une école de la table inspirée des plus grandes institutions gastronomiques Françaises.   
+        text=' Vivez, seul(e) ou en groupe, à la demi-journée, une expérience unique, une cours de cuisine qui vous transporte dans une école de la table inspirée des plus grandes institutions gastronomiques Françaises.   
 '
         link={'/cours#form'}
         textLink='Réserver'
@@ -68,7 +68,7 @@ const CoursPage = () => {
         bgColor={'#2d8e8e'}
         photoPath={'/assets/photos/cours/2.jpg'}
         title={'Des compétences'}
-        text='Vous serez en mesure de surprendre vos convives, avec une cuisine de restaurant. Les techniques professionnelles et astuces du chef vous permettrons d’améliorer vos recettes
+        text='Après le cours, vous serez en mesure de surprendre vos convives, avec une cuisine de restaurant. Les techniques professionnelles et astuces du chef vous permettrons d’améliorer vos recettes
 !'
         link={'/cours#form'}
         textLink='Réserver'
@@ -85,7 +85,7 @@ const CoursPage = () => {
         bgColor={'#fbf3e0'}
         photoPath={'/assets/photos/cours/4.jpg'}
         title={'Réservations'}
-        text='Prenez contact avec nous par téléphone ou via le formulaire ci-dessous pour réserver un cours, ou connaître les ateliers organisés afin de vous y joindre.
+        text='Prenez contact avec nous par téléphone ou via le formulaire ci-dessous pour réserver un cours de cuisine, ou connaître les ateliers organisés afin de vous y joindre.
        '
         ImageSide='left'
         link={'/cours#form'}
@@ -96,7 +96,7 @@ const CoursPage = () => {
         bgColor={'#2d8e8e'}
         photoPath={'/assets/photos/ris.webp'}
         title={'L’école s’invite aussi chez vous !'}
-        text='Pour un cours particulier ou collectif à domicile, idéal pour un moment convivial entre amis ou en famille !'
+        text='Pour un cours de cuisine particulier ou collectif à domicile, idéal pour un moment convivial entre amis ou en famille !'
         link={'/cours#form'}
         textLink='Réserver'
       />
