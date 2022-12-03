@@ -71,6 +71,8 @@ const GaleryGrid = () => {
                   width={700}
                   alt={url}
                   objectFit='cover'
+                  placeholder='blur'
+                  blurDataURL={url}
                 />
               </div>
             );
