@@ -16,14 +16,14 @@ const GaleryGrid = () => {
 
   let urlArr = [];
 
-  for (let i = 1; i < 106; i++) {
+  for (let i = 128; i > 1; i--) {
     urlArr.push(
       `https://www.maximekerlidou.fr/photos/labruyere/galery/_${i}.webp`
     );
   }
   let photosGallery = [];
 
-  for (let index = 1; index < 107; index++) {
+  for (let index = 128; index > 1; index--) {
     photosGallery.push({
       original: `https://www.maximekerlidou.fr/photos/labruyere/galery/_${index}.webp`,
       thumbnail: `https://www.maximekerlidou.fr/photos/labruyere/galery/_${index}.webp`,
