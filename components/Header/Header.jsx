@@ -47,10 +47,7 @@ const Header = () => {
           <button onClick={() => router.push('/tarifs')}>
             ❃ Brochure & Tarifs
           </button>
-          <button onClick={() => router.push('/actus')}>
-            {' '}
-            ❃ Fêtes de fin d’année
-          </button>
+          <button onClick={() => router.push('/actus')}> ❃ Actualités</button>
           <button onClick={() => router.push('/galery')}> ❃ Galerie</button>
         </nav>
       </div>

@@ -13,7 +13,8 @@ const articlePage = ({ post }) => {
     <>
       <Head>
         <title>
-          La Table de la Bruyère Traiteur à Valenciennes {article.postTitle}
+          La Table de la Bruyère Traiteur à Valenciennes et alentours,
+          actualités {article.postTitle}
         </title>
         <meta name='description' content={article.text1} />
         <meta
