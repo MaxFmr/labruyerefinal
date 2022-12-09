@@ -168,16 +168,17 @@ const Articles = () => {
                 return (
                   <div key={art._id}>
                     <div>
-                      {' '}
                       <span>{art._id}</span>
                     </div>
-
-                    <button
-                      onClick={() => {
-                        removeArticle(art._id);
-                      }}>
-                      X
-                    </button>
+                    <div>
+                      <span>{art.postTitle}</span>
+                      <button
+                        onClick={() => {
+                          removeArticle(art._id);
+                        }}>
+                        X
+                      </button>
+                    </div>
                   </div>
                 );
               })}
