@@ -27,7 +27,7 @@ const Menu1 = ({ setDisplayMenu }) => {
             <Link href='/tarifs'> ❃ Brochure & Tarifs</Link>
           </li>
           <li>
-            <Link href='/actus'> ❃ Fêtes de fin d’année</Link>
+            <Link href='/actus'> ❃ Actualités</Link>
           </li>
           <li>
             <Link href='/galery'> ❃ Galerie</Link>
