@@ -13,7 +13,7 @@ const HomePage = () => {
       <StyledHomePage>
         <video
           playsInline
-          src='https://www.maximekerlidou.fr/videos/bruyere.mp4'
+          src='https://www.maximekerlidou.fr/videos/bruyere.webm'
           muted
           loop
           autoPlay
