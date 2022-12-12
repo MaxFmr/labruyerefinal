@@ -60,13 +60,11 @@ const TraiteurPage = () => {
       <Header />
 
       <HeroVideo
-        bgPath={'https://www.maximekerlidou.fr/videos/bruyere.mp4'}
+        bgPath={'https://www.maximekerlidou.fr/videos/bruyere.webm'}
         logoPath={'/assets/cloche.svg'}
         title={'Traiteur'}
         text='Qualité, saisonnalité, expertise et conseil.'
       />
-
-      {/* <Banner1 bgPath={'/assets/photos/equipe.jpeg'} /> */}
 
       <Service
         textColor={'#2F4858'}
