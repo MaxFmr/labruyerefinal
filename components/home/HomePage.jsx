@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
 import { AiFillDownCircle } from 'react-icons/ai';
-import { FcGoogle } from 'react-icons/fc';
 import { useRouter } from 'next/router';
 
 const HomePage = () => {
