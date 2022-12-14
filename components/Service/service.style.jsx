@@ -36,7 +36,6 @@ const StyledService = styled.section`
   }
 
   .text {
-    /* box-shadow: -11px -5px 15px -5px #2f4858; */
     border-radius: 5px;
     margin: 5%;
     overflow: hidden;

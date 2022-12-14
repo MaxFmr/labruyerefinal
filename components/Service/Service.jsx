@@ -15,7 +15,12 @@ const Service = ({
 }) => {
   return (
     <StyledService
-      bg={{ path: photoPath, color: bgColor, textColor: textColor }}>
+      bg={{
+        path: photoPath,
+        color: bgColor,
+        textColor: textColor,
+        side: ImageSide,
+      }}>
       {ImageSide === 'left' ? (
         <>
           <div className='photo'>
@@ -29,7 +34,7 @@ const Service = ({
               />
             </Parallax>
           </div>
-          <div className='text'>
+          <div className='text' style={{}}>
             <span className='title'>{title}</span>
             <p>{text}</p>
             <span className='link'>
@@ -39,7 +44,12 @@ const Service = ({
         </>
       ) : (
         <>
-          <div style={{ padding: '4%' }} className='text'>
+          <div
+            style={{
+              padding: '4%',
+              boxShadow: '5px 5px 6px -3px rgba(0,0,0,0.41)',
+            }}
+            className='text'>
             <span className='title'>{title}</span>
             <p>{text}</p>
             <span className='link2'>

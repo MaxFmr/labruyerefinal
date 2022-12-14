@@ -31,9 +31,11 @@ const Reveil = () => {
         au milieu d’un parc.
         <br />
         <div style={{ marginTop: '10px' }}></div>
-        <Link href='https://www.lereveildelabruyere.com/fr'>
-          Infos et réservations
-        </Link>
+        <div className='cta'>
+          <Link href='https://www.lereveildelabruyere.com/fr'>
+            Infos et réservations
+          </Link>
+        </div>
       </p>
     </StyledReveil>
   );
