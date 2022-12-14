@@ -103,7 +103,6 @@ const TraiteurPage = () => {
         link={'/traiteur#form'}
         textLink='Réserver'
       />
-      <div style={{ height: '45px' }}></div>
 
       <Service
         bgColor={'#2d8e8e'}
