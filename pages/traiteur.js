@@ -105,13 +105,6 @@ const TraiteurPage = () => {
       />
       <div style={{ height: '45px' }}></div>
 
-      <ParalaxBanner
-        photoPath={'/assets/photos/traiteur/salle_edito.webp'}
-        text={
-          'A la recherche d’une salle privative avec repas traiteur (jusque 18 places assises) pour vos repas privés ou rencontres professionnelles? Contactez-nous ! Nous sommes équipés d’un grand écran interractif et tactile, idéal pour les présentations et le travail collectif.'
-        }
-      />
-
       <Service
         bgColor={'#2d8e8e'}
         photoPath={'/assets/photos/foie.webp'}
