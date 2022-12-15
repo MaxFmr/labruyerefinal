@@ -46,6 +46,7 @@ const StyledMenu = styled.section`
     list-style-type: none;
   }
   .closeIcon {
+    cursor: pointer;
     position: absolute;
     top: 5%;
     left: 70%;
