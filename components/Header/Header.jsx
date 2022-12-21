@@ -14,6 +14,7 @@ const Header = () => {
           height={50}
           width={50}
           alt="logo de l'entreprise traiteur la table de la Bruyère Valenciennes"
+          priority
         />
       </div>
       <div className='buttons'>

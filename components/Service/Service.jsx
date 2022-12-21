@@ -31,6 +31,7 @@ const Service = ({
                 width={720}
                 objectFit='cover'
                 alt='photo traiteur le table de la bruyère à Valenciennes'
+                blurDataURL={photoPath}
               />
             </Parallax>
           </div>
@@ -60,6 +61,7 @@ const Service = ({
             <Parallax speed={-2} translateY={[-10, 10]}>
               <Image
                 src={photoPath}
+                blurDataURL={photoPath}
                 height={800}
                 width={720}
                 objectFit='cover'

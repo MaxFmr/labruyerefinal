@@ -1,5 +1,4 @@
 import StyledArticlePreview from './articlePreview.style';
-import axios from 'axios';
 
 const ArticlePreview = ({ article }) => {
   return (

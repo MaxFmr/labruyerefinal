@@ -18,6 +18,7 @@ const Post = ({ post }) => {
           width={700}
           objectFit='cover'
           alt={postTitle + title1}
+          blurDataURL={photos[0]}
         />
       </div>
       {title2 && (
@@ -34,6 +35,7 @@ const Post = ({ post }) => {
             width={700}
             objectFit='cover'
             alt={postTitle + title2}
+            blurDataURL={photos[1]}
           />
         </div>
       )}
@@ -52,6 +54,7 @@ const Post = ({ post }) => {
             width={700}
             objectFit='cover'
             alt={postTitle + title3}
+            blurDataURL={photos[2]}
           />
         </div>
       )}
