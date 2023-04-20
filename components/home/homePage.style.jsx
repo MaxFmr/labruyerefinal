@@ -5,6 +5,7 @@ const StyledHomePage = styled.section`
   box-sizing: border-box;
   video {
     overflow: scroll;
+    
   }
 
   .header {

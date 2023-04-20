@@ -15,6 +15,7 @@ export default function Home() {
         <title>
           La Table de La Bruyère - Traiteur, Valenciennes, Hauts de France
         </title>
+        
         <meta
           name='image'
           property='og:image'

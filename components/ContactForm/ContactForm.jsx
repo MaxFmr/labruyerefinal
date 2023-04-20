@@ -4,13 +4,16 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
 import { useState } from 'react';
 import { ColorRing } from 'react-loader-spinner';
 import Modale from '../Modale/Modale';
+import ReCAPTCHA from 'react-google-recaptcha';
+import axios from 'axios';
+
 const ContactForm = () => {
   const router = useRouter();
   const form = useRef();
+  const captchaRef = useRef(null);
 
   const [loader, setLoader] = useState(false);
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -18,25 +21,36 @@ const ContactForm = () => {
   const OpenModal = () => setIsOpen(true);
   const onCloseModal = () => setIsOpen(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
+    const token = captchaRef.current.getValue();
+
     e.preventDefault();
-    emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE,
-        form.current,
-        process.env.NEXT_PUBLIC_EMAILJS_APIKEY
-      )
-      .then(setLoader(true))
-      .then(
-        (result) => {
-          setLoader(false);
-          OpenModal();
-        },
-        (error) => {
-          alert(error.text);
-        }
-      );
+
+    captchaRef.current.reset();
+
+    //post token to server to verify it
+    const response = await axios.post('/api/captcha', { token });
+    if (response.data.success === true) {
+      emailjs
+        .sendForm(
+          process.env.NEXT_PUBLIC_EMAILJS_ID,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE,
+          form.current,
+          process.env.NEXT_PUBLIC_EMAILJS_APIKEY
+        )
+        .then(setLoader(true))
+        .then(
+          (result) => {
+            setLoader(false);
+            OpenModal();
+          },
+          (error) => {
+            alert(error.text);
+          }
+        );
+    } else {
+      alert('Le captcha a échoué, vous êtes considéré comme un robot');
+    }
   };
 
   let defaultValue = '';
@@ -137,6 +151,12 @@ const ContactForm = () => {
               </span>
               <Link href={'/legal'}>Mentions légales</Link>
             </div>
+            <div>
+              <ReCAPTCHA
+                sitekey={process.env.NEXT_PUBLIC_CAPTCHA_SECRET_KEY}
+                ref={captchaRef}
+              />
+            </div>
             <div className='btn'>
               <button type='submit'>Envoyer</button>
             </div>
@@ -164,4 +184,5 @@ const ContactForm = () => {
     </StyledContactForm>
   );
 };
+
 export default ContactForm;
