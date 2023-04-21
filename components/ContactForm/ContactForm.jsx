@@ -22,6 +22,7 @@ const ContactForm = () => {
   const onCloseModal = () => setIsOpen(false);
 
   const sendEmail = async (e) => {
+    //captcha token
     const token = captchaRef.current.getValue();
 
     e.preventDefault();
@@ -29,27 +30,34 @@ const ContactForm = () => {
     captchaRef.current.reset();
 
     //post token to server to verify it
-    const response = await axios.post('/api/captcha', { token });
-    if (response.data.success === true) {
-      emailjs
-        .sendForm(
-          process.env.NEXT_PUBLIC_EMAILJS_ID,
-          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE,
-          form.current,
-          process.env.NEXT_PUBLIC_EMAILJS_APIKEY
-        )
-        .then(setLoader(true))
-        .then(
-          (result) => {
-            setLoader(false);
-            OpenModal();
-          },
-          (error) => {
-            alert(error.text);
-          }
-        );
-    } else {
-      alert('Le captcha a échoué, vous êtes considéré comme un robot');
+
+    try {
+      const response = await axios.post('/api/captcha', { token });
+
+      if (response.data.success === true) {
+        alert('Le captcha a été validé, vous pouvez envoyer votre message');
+        emailjs
+          .sendForm(
+            process.env.NEXT_PUBLIC_EMAILJS_ID,
+            process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE,
+            form.current,
+            process.env.NEXT_PUBLIC_EMAILJS_APIKEY
+          )
+          .then(setLoader(true))
+          .then(
+            () => {
+              setLoader(false);
+              OpenModal();
+            },
+            (error) => {
+              alert(error.text);
+            }
+          );
+      } else {
+        alert('Le captcha a échoué, vous êtes considéré comme un robot');
+      }
+    } catch (error) {
+      alert(error.text);
     }
   };
 
