@@ -17,6 +17,7 @@ const HeroVideo = ({ title, bgPath, text, logoPath }) => {
             <video
               src={bgPath}
               playsInline
+              playsinline
               muted
               loop
               autoPlay
