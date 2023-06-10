@@ -16,12 +16,10 @@ const HeroVideo = ({ title, bgPath, text, logoPath }) => {
           children: (
             <video
               src={bgPath}
-              autoPlay
-              autoplay
               playsInline
-              playsinline
               muted
               loop
+              autoPlay
               style={{
                 height: '100%',
                 objectFit: 'cover',
