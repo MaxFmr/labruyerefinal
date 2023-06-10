@@ -11,14 +11,12 @@ const HomePage = () => {
     <>
       <StyledHomePage>
         <video
+          type='video/mp4'
           src='https://www.maximekerlidou.fr/videos/bruyere.mp4'
-          playsinline
           autoPlay
           playsInline
           muted
           loop
-          type='video/mp4'
-          autoplay
           style={{
             height: '100%',
             objectFit: 'cover',
