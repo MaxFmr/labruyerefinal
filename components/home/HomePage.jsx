@@ -11,6 +11,7 @@ const HomePage = () => {
     <>
       <StyledHomePage>
         <video
+          playsinline
           playsInline
           src='https://www.maximekerlidou.fr/videos/bruyere.mp4'
           muted
