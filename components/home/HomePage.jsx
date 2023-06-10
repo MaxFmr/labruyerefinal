@@ -16,6 +16,7 @@ const HomePage = () => {
           muted
           loop
           autoPlay
+          autoplays
           style={{
             height: '100%',
             objectFit: 'cover',

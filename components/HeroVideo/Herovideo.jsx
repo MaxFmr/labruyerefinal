@@ -20,6 +20,7 @@ const HeroVideo = ({ title, bgPath, text, logoPath }) => {
               muted
               loop
               autoPlay
+              autoplay
               style={{
                 height: '100%',
                 objectFit: 'cover',
