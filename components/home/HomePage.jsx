@@ -18,7 +18,7 @@ const HomePage = () => {
           loop
           autoPlay
           type='video/mp4'
-          autoplays
+          autoplay
           style={{
             height: '100%',
             objectFit: 'cover',
