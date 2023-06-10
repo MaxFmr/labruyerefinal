@@ -16,6 +16,7 @@ const HomePage = () => {
           muted
           loop
           autoPlay
+          type='video/mp4'
           autoplays
           style={{
             height: '100%',
