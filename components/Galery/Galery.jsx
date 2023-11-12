@@ -9,7 +9,7 @@ import { useState } from 'react';
 
 const GaleryGrid = () => {
   const scrollTo = useScrollTo();
-  const { width, height } = useWindowSize();
+  const { width } = useWindowSize();
 
   const [clicked, setClicked] = useState(false);
   const [imgId, setImgId] = useState(undefined);

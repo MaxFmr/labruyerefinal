@@ -61,6 +61,8 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const param = params.title;
 
+  console.log(param);
+
   const post = await findOneArticle(param);
   const article = JSON.stringify(post);
   return { props: { post: article } };

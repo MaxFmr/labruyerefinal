@@ -5,7 +5,7 @@ import ImageGallery from 'react-image-gallery';
 import StyledBrochure from './brochure.style';
 import Link from 'next/link';
 
-const Brochure = () => {
+const Brochure = ({}) => {
   const [clicked, setClicked] = useState(false);
   const [imgId, setImgId] = useState();
   const photos = [];
@@ -25,17 +25,30 @@ const Brochure = () => {
       alt: `Brochure tarifaire la Table de la Bruyère page n°${index}`,
     });
   }
-  const handleClick = (id) => {
-    setClicked(!clicked);
-    setImgId(id);
-  };
+
   return (
     <StyledBrochure>
-      <div className='link'>
-        <Link href={'https://www.maximekerlidou.fr/pdf/menufetes.pdf'}>
-          <a target='_blank'>Consultez notre menu pour les fêtes 2022/2023</a>
+      <div
+        className='link'
+        style={{
+          fontSize: '30px',
+          border: 'solid 0.5px',
+          padding: '2%',
+          borderRadius: '5px',
+        }}>
+        <Link href={'/article/Notre%20menu%20pour%20les%20fêtes%20en%202023'}>
+          <a>
+            Consultez notre menu pour les <strong>fêtes 2023/2024</strong>
+          </a>
         </Link>
       </div>
+
+      <div className='link' style={{ marginTop: '20px' }}>
+        <Link href={'https://www.maximekerlidou.fr/pdf/menufetes_2023.pdf'}>
+          <a target='_blank'>Version PDF</a>
+        </Link>
+      </div>
+
       <div style={{ height: '40px' }}></div>
       <h2>Notre carte à l’année : </h2>
 
@@ -60,4 +73,5 @@ const Brochure = () => {
     </StyledBrochure>
   );
 };
+
 export default Brochure;

@@ -7,16 +7,18 @@ const PostsPreview = ({ articles }) => {
 
   return (
     <StyledPostsPreview>
-      {articles.map((art, index) => {
-        return (
-          <div
-            key={index}
-            onClick={() => router.push(`/article/${art.postTitle}`)}>
-            <ArticlePreview article={art} />
-            <span>{art.date}</span>
-          </div>
-        );
-      })}
+      {articles
+        .sort((a, b) => new Date(b.date) - new Date(a.date))
+        .map((art, index) => {
+          return (
+            <div
+              key={index}
+              onClick={() => router.push(`/article/${art.postTitle}`)}>
+              <ArticlePreview article={art} />
+              <span>{art.date}</span>
+            </div>
+          );
+        })}
     </StyledPostsPreview>
   );
 };

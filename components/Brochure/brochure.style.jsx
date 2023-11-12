@@ -8,12 +8,12 @@ const StyledBrochure = styled.section`
 
   .link {
     margin-top: 5%;
-    width: 300px;
     text-align: center;
     font-size: larger;
 
     a {
       color: #257676;
+      text-decoration: none;
     }
     p {
       color: #257676;

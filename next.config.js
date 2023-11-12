@@ -11,6 +11,7 @@ module.exports = {
     domains: [
       'res.cloudinary.com',
       'www.maximekerlidou.fr',
+      'maximekerlidou.fr',
       'www.istockphoto.com',
       'media.istockphoto.com',
       'www.latabledelabruyere.com',
