@@ -1,13 +1,10 @@
 import 'react-image-gallery/styles/css/image-gallery.css';
 import { useState } from 'react';
-import Image from 'next/image';
 import ImageGallery from 'react-image-gallery';
 import StyledBrochure from './brochure.style';
 import Link from 'next/link';
 
 const Brochure = ({}) => {
-  const [clicked, setClicked] = useState(false);
-  const [imgId, setImgId] = useState();
   const photos = [];
 
   let photosGallery = [];
@@ -55,7 +52,7 @@ const Brochure = ({}) => {
       <ImageGallery
         items={photosGallery}
         showThumbnails={false}
-        startIndex={imgId}
+        startIndex={0}
       />
 
       <div className='link'>
