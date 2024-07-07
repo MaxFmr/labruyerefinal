@@ -66,9 +66,9 @@ const ContactForm = () => {
     case "/traiteur":
       defaultValue = "Traiteur évènentiel";
       break;
-    case "/chef":
-      defaultValue = "Chef à domicile";
-      break;
+    // case "/chef":
+    //   defaultValue = "Chef à domicile";
+    //   break;
     case "/cours":
       defaultValue = "Cours de cuisine";
       break;
@@ -84,7 +84,7 @@ const ContactForm = () => {
         <h3>Par téléphone au :</h3>
         <Link href="tel:+33672597863">
           <a>06 80 88 46 15</a>
-        </Link>{" "}
+        </Link>
         <h2>Via ce formulaire : </h2>
         <span>
           A la réception de votre message, nous vous recontacterons au plus
@@ -96,9 +96,9 @@ const ContactForm = () => {
             <label>Sujet de votre message : </label>
             <select name="service" id="service" defaultValue={defaultValue}>
               <option value="">Sectionnez un type de prestation*</option>
-              <option value="Traiteur évènentiel">Traiteur évènementiel</option>
+              {/* <option value="Traiteur évènentiel">Traiteur évènementiel</option> */}
               <option value="Cours de cuisine">Cours de cuisine</option>
-              <option value="Chef à domicile">Chef à domicile</option>
+              {/* <option value="Chef à domicile">Chef à domicile</option> */}
             </select>
             <div>
               <input
